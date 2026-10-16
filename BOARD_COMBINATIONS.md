@@ -276,6 +276,40 @@ light-square Bishop) plus the constrained generators
 suite asserts the start's component has 7,560 states and that all 10
 deployed cards are valid + reachable.
 
+## 3b. State space (how many unique boards exist)
+
+The constraints induce a clean, finite state space. Enumerating all
+placements under the deck constraints (5 distinct pieces, Bishop on a
+fixed color, Knight not on the centre) and quotienting by the 8-element
+dihedral group D4 (rotations + mirrors — the card transforms the game
+allows) gives:
+
+| Component | Raw placements | D4 orbits (unique canonical boards) |
+|---|---:|---:|
+| **dark-bishop** (5-cell set) | **7,560** | **945** |
+| light-bishop (4-cell set) | 5,880 | 735 |
+| **total (both colors)** | **13,440** | **1,680** |
+
+The numbers divide evenly (7560/8 = 945; 5880/8 = 735) because the D4 action
+is **free** on each component: no non-identity symmetry can fix a placement,
+since any reflection or non-trivial rotation swaps at least one pair of
+squares, and with 5 distinct pieces a swapped pair can never hold the same
+piece. D4 also preserves both deck constraints (it keeps (r+c) parity, hence
+Bishop color; and fixes the centre, hence the Knight-off-centre rule), so
+the action is clean on the constrained set.
+
+**Deck coverage.** Our 60-card deck (`cards.json`) covers **60 / 945 ≈ 6.3%**
+of the dark-component canonical boards — the same fraction a 60-card physical
+deck would cover if it is all-dark (as the 10 known cards suggest). The
+remaining 885 canonical dark boards are available as alternates; the full
+enumeration lives in `enumerate-boards.js` / `canonical-boards.json`.
+
+**Implication for verification.** When the physical deck is available,
+`boardHash` each real card and look it up in `canonical-boards.json`: a hit
+confirms the card is one of our 945 dark boards (it must be, by the
+constraint), and matching it against `cards.json`'s 60 tells us how many of
+our generated 50 are real vs. novel.
+
 ## 4. The three GitHub repos
 
 The README links three repos. I cloned and inspected each one. **None of
