@@ -227,10 +227,145 @@ starting position for the current card.
 - Audio: `/assets/chess-piece-move.wav`, `/assets/win.wav`,
   `/assets/lose.wav`.
 
-## 4. Verification against the physical board game
+## 3a. Reachability & board coloring (deck constraints)
 
-**Status: unverified — the 10 web-app boards cannot be confirmed against
-the 60-card physical deck from public web sources.**
+**Board coloring** (standard chess convention, matches the physical game):
+
+- **5 dark cells** = corners + center = even parity = `{0, 2, 4, 6, 8}`
+- **4 light cells** = edges = odd parity = `{1, 3, 5, 7}`
+- **Pieces**: a single **light**-colored set (not two armies) — same as
+  repo 2's note ("único set de 5 piezas compartidas").
+
+> The deployed site renders the board **cosmetically flipped**: its HTML
+> paints even-parity squares `#fdfcfb` (light) and odd-parity `#e6e1d8`
+> (dark), i.e. opposite to standard chess. So on screen the bishop
+> *appears* to sit on light squares, but in physical-game coloring it is
+> on a dark square (the 5-cell set). Component membership is unchanged;
+> it's a rendering choice, not a rules difference.
+
+**Two connected components.** Enumerating all legal placements (5 distinct
+pieces, Knight not on the centre) and BFS over the move graph yields exactly
+**2 components**, partitioned by the Bishop's square color:
+
+| Component | Bishop on | Size | Reachable from the deployed start? |
+|---|---|---|---|
+| **dark-bishop** | a dark cell (5-cell set) | **7,560** | yes — the start `R . N / . K . / B Q .` has B@6 (dark) |
+| light-bishop | a light cell (4-cell set) | 5,880 | no |
+
+No legal move ever changes a Bishop's color, so the two never connect.
+Carry-over between cards (pieces stay where they landed, then a new target
+is drawn) **only works within one component**. The deployed deck is entirely
+in the **dark-bishop (7,560-state) component**: the fixed start has B@6
+(dark) and all 10 target cards place B on a dark square (0, 2, or 6) —
+verified empirically (the reachable set from the start has exactly 7,560
+placements and contains all 10 cards).
+
+**Constraints for our generated collection** (wired into
+`royal-study-engine.js`):
+
+1. **Bishop on a dark square** (the 5-cell set) → stays in the 7,560-state
+   dark component the deployed deck uses, so carry-over always works.
+2. **Knight never on the centre** (square 4) → geometric on 3×3 (a knight
+   can't reach (1,1) from any square; from the centre it can't move at
+   all). Enforced to avoid emitting a dead start.
+
+These are encoded as `isValidPlacement(p)` (rejects N at centre and a
+light-square Bishop) plus the constrained generators
+`randomValidPlacement` / `randomValidTargetFor` / `generateValidPuzzle`.
+`isReachable(a, b)` / `reachableSet(start)` validate membership; the test
+suite asserts the start's component has 7,560 states and that all 10
+deployed cards are valid + reachable.
+
+## 4. The three GitHub repos
+
+The README links three repos. I cloned and inspected each one. **None of
+them contain the official 60 physical cards.** Summary:
+
+| # | Repo | What it is | Fixed cards? | Cards in source |
+|---|------|------------|--------------|-----------------|
+| 1 | `Manuel-Avecilla/the_royal_study` | Next.js — **the source of the deployed site** (`the-royal-study-chess.vercel.app`) | yes (hand-picked) | **10** (`src/lib/levels.json`) |
+| 2 | `jostivtrb-create/The-Royal-Study` | Vite PWA "The Royal Enchanted" | **no** — generates puzzles at random at runtime | 0 (procedural) |
+| 3 | `rmoya81/the-royal-study` | Vite + Three.js 3D | yes, but **auto-generated**, not the official deck | 24 solo puzzles + **40** DUO cards |
+
+### repo 1 — `Manuel-Avecilla/the_royal_study` (Next.js)
+
+This is the source of the web app we reverse-engineered in §2–§3. The 10
+target cards live in `src/lib/levels.json` and are identical to the array we
+extracted from the deployed JS chunk:
+
+```json
+[
+  ". K . / R . Q / B . N",
+  "R . N / . K . / B . Q",
+  "K . R / . Q . / B N .",
+  "B . K / Q . R / . N .",
+  ". N B / K . Q / R . .",
+  "R N . / . . K / B . Q",
+  "K . Q / R . N / B . .",
+  "B K R / . Q . / . N .",
+  "B R N / . . . / K Q .",
+  "N . Q / . . K / B R ."
+]
+```
+
+Fixed starting board in `src/lib/levels.ts`:
+`"R . N / . K . / B Q ."`. Matches §2 exactly. So repo 1 = the deployed
+site; nothing new here.
+
+### repo 2 — `jostivtrb-create/The-Royal-Study` (Vite PWA)
+
+Branded "The Royal Enchanted". The README states it is "inspirado
+libremente" (loosely inspired) by the board game. Its engine
+(`src/game/engine.ts`) has a `randomTargetFor()` / `generatePuzzle()`
+generator and a BFS `minSolution()`/`solve()` that create puzzles **on the
+fly at runtime**. There is no fixed card list anywhere in the repo. It
+cannot contribute the 60 cards.
+
+Useful regardless: its `engine.ts` is the cleanest reference
+implementation of the rules + BFS solver + dihedral-group transforms
+(rot CW/CCW/mirror H/V, with cost table) among the three repos.
+
+### repo 3 — `rmoya81/the-royal-study` (Vite + Three.js 3D)
+
+A 3D version. `src/game/puzzles.js` is **auto-generated** by
+`scripts/generate-puzzles.js` (fixed seed → deterministic, but generated,
+not the official deck). It contains two datasets:
+
+- **`LEVELS`** — 24 solo "studies" in 3 groups of 8:
+  - `aprendiz` (Aprendiz): **3 pieces** R/N/K, no transforms.
+  - `maestro` (Maestro): **4 pieces** Q/R/N/K, rotate allowed.
+  - `granmaestro` (Gran Maestro): **5 pieces** Q/R/B/N/K, rotate + mirror.
+  - Each study = `{ start, goal, par (BFS-verified), transforms }`.
+- **`DUO`** — **40 cards** for the 2-player carry-over bidding mode, each
+  an arrangement of all 5 pieces (K/Q/R/B/N). This is the closest thing to
+  a "card deck" in any of the repos — but it's 40 generated arrangements,
+  not the 60 printed cards.
+
+This repo also adds two rules not present in the others (claimed to be
+"faithful to the Philos rulebook"): the **Bishop must stay on dark
+squares** and the **Knight may never occupy the centre**. repo 1 and the
+printed rules I read do not state these explicitly, but they follow from
+standard chess on a 3×3 (a bishop on a light square can never reach a dark
+one; a knight cannot reach the centre from any 3×3 square). Worth noting as
+a possible point of divergence vs. the physical cards.
+
+### Conclusion from the repos
+
+- The **10 cards** in §2 come from repo 1 / the deployed site and are a
+  hand-picked subset, not the full deck.
+- repo 2 generates puzzles at random — no cards to extract.
+- repo 3 has **40 generated DUO cards + 24 generated solo studies** with a
+  BFS solver; these are a *reimplementation*, not the official 60-card
+  deck. They may or may not overlap with the physical cards.
+- **No repo or public source enumerates the official 60 physical cards.**
+  To obtain them you still need the physical game or the author/publisher.
+- Repo 3's generator + BFS solver is, however, a good starting point if
+  you later want to *generate* a plausible 60-card set yourself.
+
+## 5. Verification against the physical board game
+
+**Status: unverified — none of the 10 (repo 1) or 40 (repo 3) boards can
+be confirmed against the 60-card physical deck from public sources.**
 
 What is known:
 
@@ -272,14 +407,103 @@ challenge phase).
 
 ---
 
-## Appendix — source files fetched
+## Appendix A — repo 3's generated card data (`rmoya81/the-royal-study`)
 
-| URL | Purpose |
+> **These are NOT the official 60 physical cards.** They are auto-generated
+> by `scripts/generate-puzzles.js` (fixed seed). Included here because they
+> are the largest concrete, fully-specified card set found in any repo, and
+> the 40 DUO cards are the closest analogue to a physical "objective card"
+> (a single 5-piece arrangement). Board index: row 0 = top, col 0 = left.
+
+### A.1 — `DUO.cards` (40 cards, all 5 pieces K/Q/R/B/N)
+
+1. `Q . R / . B . / K N .`
+2. `. . Q / K . . / B R N`
+3. `R . . / N . . / K Q B`
+4. `R . . / . Q N / B . K`
+5. `Q . B / R . . / . N K`
+6. `B . . / N . K / Q R .`
+7. `K N . / Q B . / R . .`
+8. `K . N / R . . / Q . B`
+9. `B . . / K . R / . N Q`
+10. `B . . / . . N / Q R K`
+11. `. Q B / . . K / N R .`
+12. `B Q R / . . . / N K .`
+13. `N R B / . K . / . Q .`
+14. `. K Q / N . . / R . B`
+15. `. . . / N . K / Q R B`
+16. `. . N / . . K / Q R B`
+17. `K N Q / . . . / B R .`
+18. `B . K / . . N / R Q .`
+19. `. . N / R K . / Q . B`
+20. `K . N / . Q . / B R .`
+21. `. K B / N . . / Q R .`
+22. `N K . / . . . / B Q R`
+23. `B . Q / . . K / N . R`
+24. `B N R / Q . . / K . .`
+25. `Q N . / K . . / . R B`
+26. `B R N / . . K / . . Q`
+27. `R K N / . . Q / B . .`
+28. `B Q N / . K . / . . R`
+29. `K . R / . Q N / . . B`
+30. `R N . / K . Q / . . B`
+31. `B N . / R Q . / . K .`
+32. `R . K / . Q . / B N .`
+33. `B . K / Q R . / N . .`
+34. `. K B / N R . / . . Q`
+35. `B R K / Q . . / . . N`
+36. `B . R / Q K . / N . .`
+37. `. . . / Q R . / B N K`
+38. `Q . N / R . K / . . B`
+39. `R Q . / . . . / B N K`
+40. `. . B / K . N / R Q .`
+
+### A.2 — `LEVELS` solo studies (24; start → goal, BFS par)
+
+#### Aprendiz (3 pieces R/N/K, no transforms) — 8 studies
+
+1. start `. . . / N K R / . . .` → goal `R . . / . . . / . K N` (par 4)
+2. start `. R N / . K . / . . .` → goal `R . . / N . . / . K .` (par 3)
+3. start `. N . / . . . / K R .` → goal `. . K / . . . / N R .` (par 3)
+4. start `. K . / . R N / . . .` → goal `. . K / . R . / . N .` (par 3)
+5. start `. . . / . R . / N . K` → goal `. N . / . . K / R . .` (par 4)
+6. start `. . K / R . . / . N .` → goal `N . . / . . K / . R .` (par 4)
+7. start `K . . / . . R / N . .` → goal `. N . / . . . / . K R` (par 4)
+8. start `. . . / R . K / . . N` → goal `. N . / R . . / K . .` (par 3)
+
+#### Maestro (4 pieces Q/R/N/K, rotate) — 8 studies
+
+1. start `R N . / . . Q / K . .` → goal `K R . / . Q . / N . .` (par 4)
+2. start `. R N / Q . K / . . .` → goal `N . . / R K . / Q . .` (par 3)
+3. start `. N . / . . Q / R K .` → goal `R K . / . Q N / . . .` (par 3)
+4. start `N . R / K . . / . . Q` → goal `Q . N / . . R / . . K` (par 5)
+5. start `N . K / Q . . / R . .` → goal `K . . / Q . . / N R .` (par 3)
+6. start `Q N . / R . . / . K .` → goal `. Q . / N . K / . . R` (par 4)
+7. start `. . Q / . . . / K R N` → goal `. R . / K . . / N . Q` (par 4)
+8. start `Q . . / . R K / . N .` → goal `. . Q / . R K / . . N` (par 3)
+
+#### Gran Maestro (5 pieces Q/R/B/N/K, rotate + mirror) — 8 studies
+
+1. start `. Q R / . B N / . K .` → goal `N . . / K Q . / B . R` (par 4)
+2. start `. R . / Q K . / . N B` → goal `K . . / N Q R / . . B` (par 5)
+3. start `R . . / . Q . / B N K` → goal `R Q . / . K . / . N B` (par 4)
+4. start `K . . / . . N / B Q R` → goal `. K B / Q . . / . N R` (par 4)
+5. start `R Q . / . K . / N . B` → goal `. Q R / . B N / . . K` (par 5)
+6. start `R . B / . . K / Q . N` → goal `. K . / N . . / Q R B` (par 5)
+7. start `K . R / . B . / N Q .` → goal `. N . / . B K / R . Q` (par 5)
+8. start `N . . / K Q . / . R B` → goal `. . B / Q . N / K . R` (par 5)
+
+---
+
+## Appendix B — source files fetched / inspected
+
+| URL / path | Purpose |
 |-----|---------|
 | `https://the-royal-study-chess.vercel.app/` | App shell; confirmed Next.js + Spanish UI. |
-| `…/_next/static/chunks/app/page-bdf3c8756188ac81.js` | Main game logic: board data, state machine, move validation, rendering. |
-| `…/_next/static/chunks/43-1b10d41d11987599.js` | Vendor chunk (no game data). |
-| `…/_next/static/chunks/945-24710e330d08e0c9.js` | Vendor chunk (no game data). |
+| `…/_next/static/chunks/app/page-bdf3c8756188ac81.js` | Deployed game logic (the minified source of repo 1). |
+| repo 1 `src/lib/levels.json`, `src/lib/levels.ts`, `src/lib/gameReducer.ts`, `src/lib/chessEngine.ts` | Source of the 10 cards + state machine + move rules. |
+| repo 2 `src/game/engine.ts`, `src/game/pieces.ts` | Random generator + BFS solver + dihedral transforms; no fixed cards. |
+| repo 3 `src/game/puzzles.js`, `src/game/engine.js`, `src/game/solver.js`, `scripts/generate-puzzles.js` | Generated 24 solo studies + 40 DUO cards; generator + BFS solver. |
 | `https://www.philosshop.de/en/The-Royal-Study/2850` | Publisher page: specs, rules PDF link. |
 | `https://boardgamegeek.com/boardgame/451989/the-royal-study` | BGG page (sparse). |
 | Rules PDFs (niggemann.com, chessgamesemporium.com) | Full rules; no card list. |
