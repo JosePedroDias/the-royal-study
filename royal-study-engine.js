@@ -182,6 +182,24 @@ function minSolution(start, target) {
   return best;
 }
 
+// The 4 rotations (id, rot90, rot270, rot180) — the transforms Level 2 allows.
+const ROTATIONS = DIHEDRAL.slice(0, 4);
+
+// Minimum total (moves + op cost) for a given difficulty level:
+//   level 1 → no card transforms (par = minMoves)
+//   level 2 → rotations only (id/rot90/rot270/rot180)
+//   level 3 → full dihedral group (rotations + mirrors, i.e. minSolution)
+function minMovesLevel(start, target, level) {
+  const set = level === 1 ? [DIHEDRAL[0]] : level === 2 ? ROTATIONS : DIHEDRAL;
+  let best = Infinity;
+  for (const { map, cost } of set) {
+    const tt = transformPlacement(target, map);
+    const mv = minMoves(start, tt);
+    if (mv + cost < best) best = mv + cost;
+  }
+  return best;
+}
+
 // ---- Solver with a reconstructed path (moves + ops, interleaving allowed) --
 // Action: { kind: "move", piece, from, to } | { kind: "op", op }
 
@@ -860,8 +878,8 @@ export {
   PIECE_ORDER, N, rc, sq, inBoard,
   legalDestinations, reachable,
   occupiedOf, serialize, equalPlacement,
-  OP_MAP, OP_LABEL, applyOp, transformPlacement, DIHEDRAL,
-  minMoves, minSolution, solve, ALL_OPS,
+  OP_MAP, OP_LABEL, applyOp, transformPlacement, DIHEDRAL, ROTATIONS,
+  minMoves, minMovesLevel, minSolution, solve, ALL_OPS,
   randomPlacement, randomTargetFor, generatePuzzle,
   isDark, BISHOP_COLOR, isValidPlacement, isReachable, reachableSet,
   randomValidPlacement, randomValidTargetFor, generateValidPuzzle,
