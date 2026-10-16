@@ -6,9 +6,9 @@
   "description": "Reverse-engineering The Royal Study (Philos) 3x3 chess puzzle deck.",
   "scripts": {
     "test": "node royal-study-engine.js",
-    "enumerate": "node enumerate-boards.js",
     "cards": "node generate-cards.js",
     "pool": "node generate-pool.js",
-    "simulate": "node simulate-deck.js"
+    "simulate": "node simulate-deck.js",
+    "play": "node play.js"
   }
 }
