@@ -55,7 +55,7 @@ light-square Bishop) and the constrained generators (`randomValidPlacement`,
 | `royal_study_original_rules.pdf` | The original rules PDF (reference). |
 | `package.json` | ESM (`"type": "module"`); `npm` scripts: `test`, `cards`, `pool`, `simulate`, `play`. |
 
-`repos/` (gitignored) holds clones of the three reference repos.
+The three reference repos are linked in `README.md` (not cloned locally).
 
 ## Algorithms & structures
 
