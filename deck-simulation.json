@@ -1,0 +1,602 @@
+{
+  "generatedAt": "2026-10-16T17:33:45.161Z",
+  "count": 60,
+  "startBoard": "R . N / . K . / B Q .",
+  "totals": {
+    "level1": 430,
+    "level23": 308,
+    "transformSavings": 122
+  },
+  "flagThreshold": 9,
+  "flags": [
+    {
+      "id": 21,
+      "level": "L1",
+      "par": 10
+    },
+    {
+      "id": 35,
+      "level": "L1",
+      "par": 10
+    },
+    {
+      "id": 43,
+      "level": "L1",
+      "par": 10
+    },
+    {
+      "id": 47,
+      "level": "L1",
+      "par": 10
+    },
+    {
+      "id": 51,
+      "level": "L1",
+      "par": 10
+    }
+  ],
+  "distribution": {
+    "level1": {
+      "1": 3,
+      "3": 1,
+      "4": 2,
+      "5": 4,
+      "6": 7,
+      "7": 9,
+      "8": 20,
+      "9": 9,
+      "10": 5
+    },
+    "level23": {
+      "1": 3,
+      "3": 4,
+      "4": 10,
+      "5": 18,
+      "6": 14,
+      "7": 9,
+      "8": 2
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "from": "R . N / . K . / B Q .",
+      "to": "R . N / . K . / B . Q",
+      "parL1": 1,
+      "parL23": 1,
+      "isSeed": true,
+      "transformHelp": 0
+    },
+    {
+      "id": 2,
+      "from": "R . N / . K . / B . Q",
+      "to": "R . N / . . . / B K Q",
+      "parL1": 1,
+      "parL23": 1,
+      "isSeed": false,
+      "transformHelp": 0
+    },
+    {
+      "id": 3,
+      "from": "R . N / . . . / B K Q",
+      "to": ". . . / N R K / B Q .",
+      "parL1": 5,
+      "parL23": 5,
+      "isSeed": false,
+      "transformHelp": 0
+    },
+    {
+      "id": 4,
+      "from": ". . . / N R K / B Q .",
+      "to": "R Q N / . . K / . . B",
+      "parL1": 6,
+      "parL23": 5,
+      "isSeed": false,
+      "transformHelp": 1
+    },
+    {
+      "id": 5,
+      "from": "R Q N / . . K / . . B",
+      "to": ". . N / Q B . / R . K",
+      "parL1": 4,
+      "parL23": 4,
+      "isSeed": false,
+      "transformHelp": 0
+    },
+    {
+      "id": 6,
+      "from": ". . N / Q B . / R . K",
+      "to": ". K . / R . Q / B . N",
+      "parL1": 8,
+      "parL23": 5,
+      "isSeed": true,
+      "transformHelp": 3
+    },
+    {
+      "id": 7,
+      "from": ". K . / R . Q / B . N",
+      "to": "K . R / . Q . / B N .",
+      "parL1": 8,
+      "parL23": 8,
+      "isSeed": true,
+      "transformHelp": 0
+    },
+    {
+      "id": 8,
+      "from": "K . R / . Q . / B N .",
+      "to": "R N . / . . K / B . Q",
+      "parL1": 8,
+      "parL23": 6,
+      "isSeed": true,
+      "transformHelp": 2
+    },
+    {
+      "id": 9,
+      "from": "R N . / . . K / B . Q",
+      "to": "B R N / . . . / K Q .",
+      "parL1": 9,
+      "parL23": 8,
+      "isSeed": true,
+      "transformHelp": 1
+    },
+    {
+      "id": 10,
+      "from": "B R N / . . . / K Q .",
+      "to": ". Q K / N . . / B . R",
+      "parL1": 8,
+      "parL23": 5,
+      "isSeed": false,
+      "transformHelp": 3
+    },
+    {
+      "id": 11,
+      "from": ". Q K / N . . / B . R",
+      "to": ". Q B / R . . / . N K",
+      "parL1": 7,
+      "parL23": 7,
+      "isSeed": false,
+      "transformHelp": 0
+    },
+    {
+      "id": 12,
+      "from": ". Q B / R . . / . N K",
+      "to": ". N K / R . . / B Q .",
+      "parL1": 8,
+      "parL23": 3,
+      "isSeed": false,
+      "transformHelp": 5
+    },
+    {
+      "id": 13,
+      "from": ". N K / R . . / B Q .",
+      "to": ". K . / N . . / R Q B",
+      "parL1": 6,
+      "parL23": 4,
+      "isSeed": false,
+      "transformHelp": 2
+    },
+    {
+      "id": 14,
+      "from": ". K . / N . . / R Q B",
+      "to": "K . N / Q B . / . . R",
+      "parL1": 5,
+      "parL23": 5,
+      "isSeed": false,
+      "transformHelp": 0
+    },
+    {
+      "id": 15,
+      "from": "K . N / Q B . / . . R",
+      "to": "B . R / N K . / . Q .",
+      "parL1": 6,
+      "parL23": 5,
+      "isSeed": false,
+      "transformHelp": 1
+    },
+    {
+      "id": 16,
+      "from": "B . R / N K . / . Q .",
+      "to": "B R . / N . K / Q . .",
+      "parL1": 3,
+      "parL23": 3,
+      "isSeed": false,
+      "transformHelp": 0
+    },
+    {
+      "id": 17,
+      "from": "B R . / N . K / Q . .",
+      "to": "N . K / . . . / B R Q",
+      "parL1": 8,
+      "parL23": 5,
+      "isSeed": false,
+      "transformHelp": 3
+    },
+    {
+      "id": 18,
+      "from": "N . K / . . . / B R Q",
+      "to": ". . B / R . . / Q N K",
+      "parL1": 7,
+      "parL23": 4,
+      "isSeed": false,
+      "transformHelp": 3
+    },
+    {
+      "id": 19,
+      "from": ". . B / R . . / Q N K",
+      "to": ". K Q / N R . / B . .",
+      "parL1": 9,
+      "parL23": 6,
+      "isSeed": false,
+      "transformHelp": 3
+    },
+    {
+      "id": 20,
+      "from": ". K Q / N R . / B . .",
+      "to": "B R . / N Q K / . . .",
+      "parL1": 5,
+      "parL23": 4,
+      "isSeed": false,
+      "transformHelp": 1
+    },
+    {
+      "id": 21,
+      "from": "B R . / N Q K / . . .",
+      "to": "N . R / K . . / B Q .",
+      "parL1": 10,
+      "parL23": 5,
+      "isSeed": false,
+      "transformHelp": 5
+    },
+    {
+      "id": 22,
+      "from": "N . R / K . . / B Q .",
+      "to": "B R . / N . . / K Q .",
+      "parL1": 9,
+      "parL23": 6,
+      "isSeed": false,
+      "transformHelp": 3
+    },
+    {
+      "id": 23,
+      "from": "B R . / N . . / K Q .",
+      "to": ". Q B / . R K / . N .",
+      "parL1": 9,
+      "parL23": 5,
+      "isSeed": false,
+      "transformHelp": 4
+    },
+    {
+      "id": 24,
+      "from": ". Q B / . R K / . N .",
+      "to": ". . K / N B R / . . Q",
+      "parL1": 8,
+      "parL23": 6,
+      "isSeed": false,
+      "transformHelp": 2
+    },
+    {
+      "id": 25,
+      "from": ". . K / N B R / . . Q",
+      "to": ". K . / N B R / . . Q",
+      "parL1": 1,
+      "parL23": 1,
+      "isSeed": false,
+      "transformHelp": 0
+    },
+    {
+      "id": 26,
+      "from": ". K . / N B R / . . Q",
+      "to": "B . K / Q . R / . N .",
+      "parL1": 6,
+      "parL23": 6,
+      "isSeed": true,
+      "transformHelp": 0
+    },
+    {
+      "id": 27,
+      "from": "B . K / Q . R / . N .",
+      "to": "K . Q / R . N / B . .",
+      "parL1": 9,
+      "parL23": 5,
+      "isSeed": true,
+      "transformHelp": 4
+    },
+    {
+      "id": 28,
+      "from": "K . Q / R . N / B . .",
+      "to": "B K R / . Q . / . N .",
+      "parL1": 8,
+      "parL23": 5,
+      "isSeed": true,
+      "transformHelp": 3
+    },
+    {
+      "id": 29,
+      "from": "B K R / . Q . / . N .",
+      "to": "N . Q / . . K / B R .",
+      "parL1": 7,
+      "parL23": 7,
+      "isSeed": true,
+      "transformHelp": 0
+    },
+    {
+      "id": 30,
+      "from": "N . Q / . . K / B R .",
+      "to": "B Q R / . . . / . N K",
+      "parL1": 8,
+      "parL23": 7,
+      "isSeed": false,
+      "transformHelp": 1
+    },
+    {
+      "id": 31,
+      "from": "B Q R / . . . / . N K",
+      "to": "R . B / Q . . / N K .",
+      "parL1": 8,
+      "parL23": 5,
+      "isSeed": false,
+      "transformHelp": 3
+    },
+    {
+      "id": 32,
+      "from": "R . B / Q . . / N K .",
+      "to": ". N B / . . K / . Q R",
+      "parL1": 6,
+      "parL23": 5,
+      "isSeed": false,
+      "transformHelp": 1
+    },
+    {
+      "id": 33,
+      "from": ". N B / . . K / . Q R",
+      "to": ". R . / N K . / Q . B",
+      "parL1": 8,
+      "parL23": 6,
+      "isSeed": false,
+      "transformHelp": 2
+    },
+    {
+      "id": 34,
+      "from": ". R . / N K . / Q . B",
+      "to": ". N K / . . . / R Q B",
+      "parL1": 8,
+      "parL23": 6,
+      "isSeed": false,
+      "transformHelp": 2
+    },
+    {
+      "id": 35,
+      "from": ". N K / . . . / R Q B",
+      "to": "B . R / Q . . / K N .",
+      "parL1": 10,
+      "parL23": 3,
+      "isSeed": false,
+      "transformHelp": 7
+    },
+    {
+      "id": 36,
+      "from": "B . R / Q . . / K N .",
+      "to": "N . K / . . R / B Q .",
+      "parL1": 7,
+      "parL23": 6,
+      "isSeed": false,
+      "transformHelp": 1
+    },
+    {
+      "id": 37,
+      "from": "N . K / . . R / B Q .",
+      "to": "B . K / Q . . / R N .",
+      "parL1": 6,
+      "parL23": 5,
+      "isSeed": false,
+      "transformHelp": 1
+    },
+    {
+      "id": 38,
+      "from": "B . K / Q . . / R N .",
+      "to": ". . B / Q K R / . N .",
+      "parL1": 8,
+      "parL23": 4,
+      "isSeed": false,
+      "transformHelp": 4
+    },
+    {
+      "id": 39,
+      "from": ". . B / Q K R / . N .",
+      "to": "K . B / . . Q / . R N",
+      "parL1": 9,
+      "parL23": 6,
+      "isSeed": false,
+      "transformHelp": 3
+    },
+    {
+      "id": 40,
+      "from": "K . B / . . Q / . R N",
+      "to": ". Q N / . R . / K . B",
+      "parL1": 8,
+      "parL23": 3,
+      "isSeed": false,
+      "transformHelp": 5
+    },
+    {
+      "id": 41,
+      "from": ". Q N / . R . / K . B",
+      "to": "N . Q / R B K / . . .",
+      "parL1": 7,
+      "parL23": 5,
+      "isSeed": false,
+      "transformHelp": 2
+    },
+    {
+      "id": 42,
+      "from": "N . Q / R B K / . . .",
+      "to": "N R . / . Q K / . . B",
+      "parL1": 4,
+      "parL23": 4,
+      "isSeed": false,
+      "transformHelp": 0
+    },
+    {
+      "id": 43,
+      "from": "N R . / . Q K / . . B",
+      "to": ". N B / K . Q / R . .",
+      "parL1": 10,
+      "parL23": 6,
+      "isSeed": true,
+      "transformHelp": 4
+    },
+    {
+      "id": 44,
+      "from": ". N B / K . Q / R . .",
+      "to": "B . N / . K . / Q . R",
+      "parL1": 9,
+      "parL23": 5,
+      "isSeed": false,
+      "transformHelp": 4
+    },
+    {
+      "id": 45,
+      "from": "B . N / . K . / Q . R",
+      "to": "N . . / . Q K / . R B",
+      "parL1": 7,
+      "parL23": 7,
+      "isSeed": false,
+      "transformHelp": 0
+    },
+    {
+      "id": 46,
+      "from": "N . . / . Q K / . R B",
+      "to": "B . . / K R Q / . . N",
+      "parL1": 9,
+      "parL23": 4,
+      "isSeed": false,
+      "transformHelp": 5
+    },
+    {
+      "id": 47,
+      "from": "B . . / K R Q / . . N",
+      "to": "N . B / Q . . / K R .",
+      "parL1": 10,
+      "parL23": 6,
+      "isSeed": false,
+      "transformHelp": 4
+    },
+    {
+      "id": 48,
+      "from": "N . B / Q . . / K R .",
+      "to": "B . . / Q R . / K N .",
+      "parL1": 5,
+      "parL23": 5,
+      "isSeed": false,
+      "transformHelp": 0
+    },
+    {
+      "id": 49,
+      "from": "B . . / Q R . / K N .",
+      "to": "N . K / . . Q / . R B",
+      "parL1": 7,
+      "parL23": 6,
+      "isSeed": false,
+      "transformHelp": 1
+    },
+    {
+      "id": 50,
+      "from": "N . K / . . Q / . R B",
+      "to": ". . B / . . N / R K Q",
+      "parL1": 7,
+      "parL23": 6,
+      "isSeed": false,
+      "transformHelp": 1
+    },
+    {
+      "id": 51,
+      "from": ". . B / . . N / R K Q",
+      "to": "B . . / N Q R / K . .",
+      "parL1": 10,
+      "parL23": 4,
+      "isSeed": false,
+      "transformHelp": 6
+    },
+    {
+      "id": 52,
+      "from": "B . . / N Q R / K . .",
+      "to": "R . . / K . Q / N . B",
+      "parL1": 8,
+      "parL23": 7,
+      "isSeed": false,
+      "transformHelp": 1
+    },
+    {
+      "id": 53,
+      "from": "R . . / K . Q / N . B",
+      "to": "K N Q / . . . / B . R",
+      "parL1": 8,
+      "parL23": 7,
+      "isSeed": false,
+      "transformHelp": 1
+    },
+    {
+      "id": 54,
+      "from": "K N Q / . . . / B . R",
+      "to": ". . . / K B N / Q R .",
+      "parL1": 8,
+      "parL23": 7,
+      "isSeed": false,
+      "transformHelp": 1
+    },
+    {
+      "id": 55,
+      "from": ". . . / K B N / Q R .",
+      "to": "B N K / . . R / . . Q",
+      "parL1": 8,
+      "parL23": 4,
+      "isSeed": false,
+      "transformHelp": 4
+    },
+    {
+      "id": 56,
+      "from": "B N K / . . R / . . Q",
+      "to": ". . Q / . B . / K R N",
+      "parL1": 7,
+      "parL23": 5,
+      "isSeed": false,
+      "transformHelp": 2
+    },
+    {
+      "id": 57,
+      "from": ". . Q / . B . / K R N",
+      "to": "R . . / K Q N / . . B",
+      "parL1": 8,
+      "parL23": 7,
+      "isSeed": false,
+      "transformHelp": 1
+    },
+    {
+      "id": 58,
+      "from": "R . . / K Q N / . . B",
+      "to": ". . . / K B R / N . Q",
+      "parL1": 6,
+      "parL23": 6,
+      "isSeed": false,
+      "transformHelp": 0
+    },
+    {
+      "id": 59,
+      "from": ". . . / K B R / N . Q",
+      "to": "N . . / K Q . / . R B",
+      "parL1": 8,
+      "parL23": 4,
+      "isSeed": false,
+      "transformHelp": 4
+    },
+    {
+      "id": 60,
+      "from": "N . . / K Q . / . R B",
+      "to": "B N K / . R . / . . Q",
+      "parL1": 9,
+      "parL23": 7,
+      "isSeed": false,
+      "transformHelp": 2
+    }
+  ]
+}
