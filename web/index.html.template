@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The Royal Study</title>
+<style>
+  :root {
+    --bg: #f5f1e8; --card: #fff; --border: #d4c9b0; --ink: #2d2a26;
+    --royal: #3d3b87; --gold: #c9a227; --green: #4a9d6c; --red: #c74e4e;
+    --muted: #8a8270; --light-sq: #f0e6d2; --dark-sq: #c9b99a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink);
+         display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 20px; }
+  h1 { color: var(--royal); margin-bottom: 4px; font-size: 1.6rem; }
+  .subtitle { color: var(--muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; }
+  .game { display: flex; gap: 40px; flex-wrap: wrap; justify-content: center; }
+  .panel { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .panel h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
+  .board { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--border);
+           padding: 2px; border-radius: 6px; width: 180px; height: 180px; }
+  .sq { display: flex; align-items: center; justify-content: center; font-size: 2rem; cursor: default;
+        border-radius: 3px; user-select: none; position: relative; transition: background 0.15s; }
+  .sq.light { background: var(--light-sq); }
+  .sq.dark { background: var(--dark-sq); }
+  .sq.selected { outline: 3px solid var(--gold); outline-offset: -3px; }
+  .sq.valid::after { content: ""; position: absolute; width: 14px; height: 14px; border-radius: 50%;
+                     background: var(--green); opacity: 0.7; }
+  .sq.clickable { cursor: pointer; }
+  .controls { display: flex; flex-direction: column; gap: 12px; max-width: 320px; width: 100%; }
+  .status { background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+            padding: 12px 16px; font-size: 0.9rem; }
+  .status .label { color: var(--muted); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px; }
+  .status .big { font-size: 1.1rem; font-weight: bold; color: var(--royal); }
+  .status.over { color: var(--red); }
+  .btn-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  button { font: inherit; padding: 8px 16px; border: 1px solid var(--border); border-radius: 6px;
+           background: var(--card); color: var(--ink); cursor: pointer; transition: all 0.15s; }
+  button:hover { background: var(--bg); border-color: var(--royal); }
+  button.primary { background: var(--royal); color: #fff; border-color: var(--royal); }
+  button.primary:hover { background: var(--royal); opacity: 0.9; }
+  button:disabled { opacity: 0.4; cursor: default; }
+  .ops { display: flex; flex-direction: column; gap: 6px; }
+  .op-btn { font-size: 0.8rem; padding: 6px 12px; }
+  .op-btn.used { background: var(--gold); color: #fff; border-color: var(--gold); }
+  .modal-bg { position: fixed; inset: 0; background: rgba(60,60,60,0.5); display: flex;
+              align-items: center; justify-content: center; z-index: 10; }
+  .modal { background: var(--card); border-radius: 12px; padding: 24px 32px; text-align: center;
+           max-width: 360px; box-shadow: 0 8px 32px rgba(0,0,0,0.2); }
+  .modal h2 { color: var(--royal); margin-bottom: 12px; }
+  .modal .pars { text-align: left; margin: 12px 0; font-size: 0.85rem; line-height: 1.6; }
+  .modal .pars div { display: flex; justify-content: space-between; }
+  .hidden { display: none; }
+  .level-pick { display: flex; gap: 12px; margin: 20px 0; }
+  .level-pick button { padding: 12px 24px; font-size: 1rem; }
+</style>
+</head>
+<body>
+<h1>👑 The Royal Study</h1>
+<div class="subtitle">3×3 chess puzzle</div>
+
+<div id="levelScreen">
+  <p style="margin-bottom:12px;color:var(--muted)">Choose difficulty:</p>
+  <div class="level-pick">
+    <button class="primary" onclick="startGame(1)">Level 1<br/><small>no transforms</small></button>
+    <button class="primary" onclick="startGame(2)">Level 2<br/><small>rotations</small></button>
+    <button class="primary" onclick="startGame(3)">Level 3<br/><small>rotations + mirrors</small></button>
+  </div>
+</div>
+
+<div id="bidScreen" class="hidden">
+  <div class="game">
+    <div class="panel" id="goalPanel">
+      <h3>Goal</h3>
+      <div class="board" id="goalBoard"></div>
+    </div>
+    <div class="panel">
+      <h3>Start</h3>
+      <div class="board" id="startBoard"></div>
+    </div>
+  </div>
+  <div class="controls" style="margin-top:20px;align-items:center">
+    <p style="text-align:center;font-size:0.85rem;color:var(--muted);max-width:400px">
+      Study the position. How many total moves (piece moves + card ops) do you need?
+    </p>
+    <div class="btn-row">
+      <input id="bidInput" type="number" min="1" placeholder="your estimate" style="padding:8px 12px;font:inherit;border:1px solid var(--border);border-radius:6px;width:160px"/>
+      <button class="primary" onclick="submitBid()">Start playing</button>
+    </div>
+  </div>
+</div>
+
+<div id="playScreen" class="hidden">
+  <div class="game">
+    <div class="panel">
+      <h3>Goal <span id="transformLabel"></span></h3>
+      <div class="board" id="goalBoardPlay"></div>
+    </div>
+    <div class="panel">
+      <h3>Current</h3>
+      <div class="board" id="currentBoard"></div>
+    </div>
+  </div>
+  <div class="controls" style="margin-top:16px">
+    <div class="status" id="statusBar">
+      <span class="label">estimate · used · remaining</span><br/>
+      <span class="big" id="statusBig"></span>
+    </div>
+    <div class="btn-row" style="justify-content:center">
+      <button onclick="undoMove()">↩ Undo</button>
+      <button onclick="restartPuzzle()">Restart</button>
+      <button onclick="newPuzzle()">New puzzle</button>
+    </div>
+    <div class="ops" id="opsPanel"></div>
+    <p style="font-size:0.75rem;color:var(--muted);text-align:center">
+      Click a piece to see its moves (green dots), then click a destination.
+    </p>
+  </div>
+</div>
+
+<div id="endModal" class="modal-bg hidden">
+  <div class="modal">
+    <h2 id="endTitle"></h2>
+    <p id="endSummary" style="color:var(--muted)"></p>
+    <div class="pars" id="endPars"></div>
+    <button class="primary" onclick="newPuzzle()">Play again</button>
+  </div>
+</div>
+
+<script type="module">
+import { parseGrid, legalDestinations, occupiedOf, applyOp, equalPlacement,
+         minMovesLevel, PIECE_ORDER } from "../royal-study-engine.js";
+
+// The 945 canonical dark boards, inlined at build time (see generate-web.js).
+// __POOL_PLACEHOLDER__
+
+const GLYPH = { K:"♔", Q:"♕", R:"♖", B:"♗", N:"♘" };
+const DARK_SQ = (i) => (Math.floor(i/3) + (i%3)) % 2 === 0;
+const GOAL_OPS = {
+  1: [],
+  2: [{id:"rotCW",label:"rotate 90° CW"},{id:"rotCCW",label:"rotate 90° CCW"}],
+  3: [{id:"rotCW",label:"rotate CW"},{id:"rotCCW",label:"rotate CCW"},
+      {id:"mirrorH",label:"mirror H"},{id:"mirrorV",label:"mirror V"}],
+};
+
+let state = null;
+
+window.startGame = (level) => {
+  document.getElementById("levelScreen").classList.add("hidden");
+  document.getElementById("bidScreen").classList.remove("hidden");
+  const { start, goal } = pickPair();
+  state = {
+    level, startBoard: start, goalOriginal: goal,
+    current: { ...start }, goalDisplay: { ...goal },
+    par: minMovesLevel(start, goal, level),
+    moves: 0, ops: 0, history: [],
+    rotations: 0, mirrorH: false, mirrorV: false,
+    selected: null, validMoves: [], bid: null,
+  };
+  renderBoard("startBoard", start);
+  renderBoard("goalBoard", goal);
+  document.getElementById("bidInput").value = "";
+  document.getElementById("bidInput").focus();
+};
+
+window.submitBid = () => {
+  const v = parseInt(document.getElementById("bidInput").value, 10);
+  if (!v || v < 1) return;
+  state.bid = v;
+  document.getElementById("bidScreen").classList.add("hidden");
+  document.getElementById("playScreen").classList.remove("hidden");
+  renderPlay();
+};
+
+window.newPuzzle = () => {
+  document.getElementById("endModal").classList.add("hidden");
+  document.getElementById("playScreen").classList.add("hidden");
+  document.getElementById("levelScreen").classList.remove("hidden");
+  state = null;
+};
+
+window.restartPuzzle = () => {
+  state.current = { ...state.startBoard };
+  state.goalDisplay = { ...state.goalOriginal };
+  state.moves = 0; state.ops = 0; state.history = [];
+  state.rotations = 0; state.mirrorH = false; state.mirrorV = false;
+  state.selected = null; state.validMoves = [];
+  renderPlay();
+};
+
+window.undoMove = () => {
+  if (!state.history.length) return;
+  const prev = state.history.pop();
+  state.current = prev.current;
+  state.goalDisplay = prev.goalDisplay;
+  state.moves = prev.moves;
+  state.ops = prev.ops;
+  state.rotations = prev.rotations;
+  state.mirrorH = prev.mirrorH;
+  state.mirrorV = prev.mirrorV;
+  state.selected = null; state.validMoves = [];
+  renderPlay();
+};
+
+function pickPair() {
+  const a = BOARDS[Math.floor(Math.random() * BOARDS.length)];
+  let b;
+  do { b = BOARDS[Math.floor(Math.random() * BOARDS.length)]; } while (b === a);
+  return { start: parseGrid(a), goal: parseGrid(b) };
+}
+
+function renderBoard(elId, p) {
+  const el = document.getElementById(elId);
+  el.innerHTML = "";
+  for (let i = 0; i < 9; i++) {
+    const sq = document.createElement("div");
+    sq.className = "sq " + (DARK_SQ(i) ? "dark" : "light");
+    const piece = PIECE_ORDER.find((t) => p[t] === i);
+    if (piece) sq.textContent = GLYPH[piece];
+    el.appendChild(sq);
+  }
+}
+
+function renderPlay() {
+  // Goal board
+  renderBoard("goalBoardPlay", state.goalDisplay);
+  const tl = document.getElementById("transformLabel");
+  const mods = [];
+  if (state.rotations % 4) mods.push(`${state.rotations % 4}×90°`);
+  if (state.mirrorH) mods.push("H");
+  if (state.mirrorV) mods.push("V");
+  tl.textContent = mods.length ? `(${mods.join(" + ")})` : "";
+
+  // Current board (clickable)
+  const cb = document.getElementById("currentBoard");
+  cb.innerHTML = "";
+  const occ = occupiedOf(state.current);
+  for (let i = 0; i < 9; i++) {
+    const sq = document.createElement("div");
+    sq.className = "sq " + (DARK_SQ(i) ? "dark" : "light") + " clickable";
+    const piece = PIECE_ORDER.find((t) => state.current[t] === i);
+    if (piece) sq.textContent = GLYPH[piece];
+    if (state.selected === i) sq.classList.add("selected");
+    if (state.validMoves.includes(i)) sq.classList.add("valid");
+    sq.onclick = () => onSquareClick(i);
+    cb.appendChild(sq);
+  }
+
+  // Status
+  const total = state.moves + state.ops;
+  const remaining = state.bid - total;
+  const big = document.getElementById("statusBig");
+  if (remaining >= 0) { big.textContent = `${state.bid} · ${total} · ${remaining} left`; big.classList.remove("over"); }
+  else { big.textContent = `${state.bid} · ${total} · OVER by ${-remaining}`; big.classList.add("over"); }
+
+  // Ops
+  const opsEl = document.getElementById("opsPanel");
+  opsEl.innerHTML = "";
+  for (const op of GOAL_OPS[state.level]) {
+    const b = document.createElement("button");
+    b.className = "op-btn";
+    b.textContent = `${op.label} (+1)`;
+    b.onclick = () => doOp(op.id);
+    opsEl.appendChild(b);
+  }
+
+  // Check win
+  if (equalPlacement(state.current, state.goalDisplay)) showWin(total);
+}
+
+function onSquareClick(i) {
+  const occ = occupiedOf(state.current);
+  const piece = PIECE_ORDER.find((t) => state.current[t] === i);
+  if (piece) {
+    state.selected = i;
+    state.validMoves = legalDestinations(occ, i, piece);
+  } else if (state.selected !== null && state.validMoves.includes(i)) {
+    const fromPiece = PIECE_ORDER.find((t) => state.current[t] === state.selected);
+    doMove(state.selected, i);
+  } else {
+    state.selected = null;
+    state.validMoves = [];
+  }
+  renderPlay();
+}
+
+function doMove(from, to) {
+  pushHistory();
+  const piece = PIECE_ORDER.find((t) => state.current[t] === from);
+  state.current = { ...state.current, [piece]: to };
+  state.moves++;
+  state.selected = null;
+  state.validMoves = [];
+  renderPlay();
+}
+
+function doOp(op) {
+  pushHistory();
+  state.goalDisplay = applyOp(state.goalDisplay, op);
+  state.ops++;
+  if (op === "rotCW" || op === "rotCCW") state.rotations++;
+  if (op === "mirrorH") state.mirrorH = !state.mirrorH;
+  if (op === "mirrorV") state.mirrorV = !state.mirrorV;
+  state.selected = null;
+  state.validMoves = [];
+  renderPlay();
+}
+
+function pushHistory() {
+  state.history.push({
+    current: { ...state.current },
+    goalDisplay: { ...state.goalDisplay },
+    moves: state.moves, ops: state.ops,
+    rotations: state.rotations, mirrorH: state.mirrorH, mirrorV: state.mirrorV,
+  });
+}
+
+function showWin(total) {
+  const within = total <= state.bid;
+  document.getElementById("endTitle").textContent = within ? "🎉 Solved!" : "Solved (over bid)";
+  document.getElementById("endSummary").textContent =
+    `Your total: ${total} (moves ${state.moves} + ops ${state.ops}). Bid: ${state.bid} — ${within ? "✓ within" : "✗ over"}.`;
+  const pars = document.getElementById("endPars");
+  const p1 = minMovesLevel(state.startBoard, state.goalOriginal, 1);
+  const p2 = minMovesLevel(state.startBoard, state.goalOriginal, 2);
+  const p3 = minMovesLevel(state.startBoard, state.goalOriginal, 3);
+  pars.innerHTML = `
+    <div><span>Level 1 (no transforms)</span><b>${p1}</b></div>
+    <div><span>Level 2 (rotations)</span><b>${p2}</b></div>
+    <div><span>Level 3 (rotations + mirrors)</span><b>${p3}</b></div>
+    <div style="margin-top:8px"><span>You played Level ${state.level}, par: <b>${state.par}</b></span></div>`;
+  document.getElementById("endModal").classList.remove("hidden");
+}
+</script>
+</body>
+</html>

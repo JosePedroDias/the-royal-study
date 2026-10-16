@@ -17,9 +17,9 @@
 // Rules summary: no captures, pieces move only to EMPTY squares, no jumping except
 // the Knight. The Knight can never reach the centre square of a 3x3 by geometry
 // (the original additionally rejects N at the centre in randomPlacement).
-
-import { fileURLToPath } from "node:url";
-import { argv } from "node:process";
+//
+// Node-only imports are kept INSIDE main() (see below) so the module is safe
+// to import from the browser — the engine logic itself is pure JS.
 
 // ---- Types & constants -----------------------------------------------------
 
@@ -639,7 +639,8 @@ function dedupeBoards(boards) {
 // ---- main / built-in test suite --------------------------------------------
 // Mirrors scripts/test-engine.ts from the original.
 
-async function main() {
+async function main(opts = {}) {
+  const { argv = [], exit = (c) => {} } = opts;
   let pass = 0, fail = 0;
   const check = (name, cond) => {
     if (cond) pass++;
@@ -865,14 +866,23 @@ async function main() {
         ok++;
       }
       console.log(`solver sweep: ${ok}/${boards.length} boards OK${bad ? `, ${bad} failed` : ""}`);
-      if (bad) process.exit(1);
+      if (bad) exit(1);
     }
   }
 
-  if (fail > 0) process.exit(1);
+  if (fail > 0) exit(1);
 }
 
-if (fileURLToPath(import.meta.url) === argv[1]) main();
+// Run main() only when executed as a script in Node (not when imported, and
+// not in the browser). Node deps are imported lazily here so the module is
+// isomorphic — safe to import from a <script type="module"> with no node:.
+if (typeof process !== "undefined" && process.versions?.node) {
+  const { fileURLToPath } = await import("node:url");
+  const { argv } = await import("node:process");
+  if (fileURLToPath(import.meta.url) === argv[1]) {
+    await main({ fileURLToPath, argv, exit: process.exit.bind(process) });
+  }
+}
 
 export {
   PIECE_ORDER, N, rc, sq, inBoard,

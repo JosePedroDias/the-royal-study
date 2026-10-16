@@ -9,6 +9,7 @@
     "cards": "node generate-cards.js",
     "pool": "node generate-pool.js",
     "simulate": "node simulate-deck.js",
-    "play": "node play.js"
+    "play": "node play.js",
+    "web": "node generate-web.js"
   }
 }
