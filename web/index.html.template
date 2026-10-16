@@ -18,10 +18,12 @@
   .game { display: flex; gap: 40px; flex-wrap: wrap; justify-content: center; }
   .panel { display: flex; flex-direction: column; align-items: center; gap: 10px; }
   .panel h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
-  .board { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--border);
-           padding: 2px; border-radius: 6px; width: 180px; height: 180px; }
+  .board { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);
+           gap: 2px; background: var(--border); padding: 2px; border-radius: 6px;
+           width: 180px; height: 180px; }
   .sq { display: flex; align-items: center; justify-content: center; font-size: 2rem; cursor: default;
-        border-radius: 3px; user-select: none; position: relative; transition: background 0.15s; }
+        border-radius: 3px; user-select: none; position: relative; transition: background 0.15s;
+        aspect-ratio: 1 / 1; min-width: 0; min-height: 0; }
   .sq.light { background: var(--light-sq); }
   .sq.dark { background: var(--dark-sq); }
   .sq.selected { outline: 3px solid var(--gold); outline-offset: -3px; }
@@ -135,7 +137,7 @@ import { parseGrid, legalDestinations, occupiedOf, applyOp, equalPlacement,
 // The 945 canonical dark boards, inlined at build time (see generate-web.js).
 // __POOL_PLACEHOLDER__
 
-const GLYPH = { K:"♔", Q:"♕", R:"♖", B:"♗", N:"♘" };
+const GLYPH = { K:"♚", Q:"♛", R:"♜", B:"♝", N:"♞" };
 const DARK_SQ = (i) => (Math.floor(i/3) + (i%3)) % 2 === 0;
 const GOAL_OPS = {
   1: [],
