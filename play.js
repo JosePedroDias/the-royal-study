@@ -118,11 +118,35 @@ async function main() {
   const par1 = minMovesLevel(startBoard, goalOriginal, 1);
   const par2 = minMovesLevel(startBoard, goalOriginal, 2);
   const par3 = minMovesLevel(startBoard, goalOriginal, 3);
+  const par = level === 1 ? par1 : level === 2 ? par2 : par3;
 
+  // ---- Prediction phase: show the boards, ask for the player's estimate ----
+  // The player studies the position and bids how many total moves (piece
+  // moves + op costs) they think they need. This is the core challenge —
+  // they don't see the par until after they've played.
+  clear();
+  output.write("👑 The Royal Study — terminal\n");
+  output.write(`\n${levelName(level)}\n\n`);
+  output.write(renderBoard(goalDisplay, "── GOAL (target card) ──") + "\n\n");
+  output.write(renderBoard(current, "── START ──") + "\n\n");
+  output.write("Study the position. How many total moves (piece moves + card\n");
+  output.write("ops) do you think you need to reach the goal?\n\n");
+
+  let bid = null;
+  while (bid === null) {
+    let ans;
+    try { ans = await rl.question("your estimate: "); }
+    catch { rl.close(); return; }
+    ans = (ans || "").trim();
+    const n = parseInt(ans, 10);
+    if (Number.isFinite(n) && n >= 1) bid = n;
+    else output.write("(enter a positive number)\n");
+  }
+
+  // ---- Play phase ----
   let moves = 0;
   let ops = 0;
   const history = [];
-  let solved = false;
 
   while (true) {
     clear();
@@ -131,18 +155,25 @@ async function main() {
     output.write(renderBoard(goalDisplay, "── GOAL (target card) ──") + "\n\n");
     output.write(renderBoard(current, "── CURRENT ──") + "\n");
 
-    output.write(`\nmoves ${moves} · ops ${ops} · total ${moves + ops}\n`);
+    const total = moves + ops;
+    const remaining = bid - total;
+    output.write(
+      `\nestimate ${bid} · used ${total} · ` +
+      (remaining >= 0 ? `remaining ${remaining}` : `OVER by ${-remaining}`) +
+      `\n`,
+    );
 
     if (equalPlacement(current, goalDisplay)) {
-      solved = true;
+      const within = total <= bid;
       output.write(
         `\n🎉 Solved!\n` +
-        `  your total: ${moves + ops} (moves ${moves} + ops ${ops})\n` +
+        `  your total: ${total} (moves ${moves} + ops ${ops})\n` +
+        `  your estimate: ${bid}  →  ${within ? "✓ within bid" : "✗ over bid"}\n` +
         `\n  pars (revealed):\n` +
         `    Level 1 (no transforms):      ${par1}\n` +
         `    Level 2 (rotations):          ${par2}\n` +
         `    Level 3 (rotations + mirrors): ${par3}\n` +
-        `\n  you played Level ${level}; par for this level was ${level === 1 ? par1 : level === 2 ? par2 : par3}.\n`,
+        `\n  you played Level ${level}; par for this level was ${par}.\n`,
       );
       rl.close();
       return;
@@ -179,12 +210,7 @@ async function main() {
     ans = (ans || "").trim().toLowerCase();
     if (!ans) continue;
     if (ans === "q" || ans === "quit") {
-      output.write(
-        `\n  pars (revealed):\n` +
-        `    Level 1 (no transforms):      ${par1}\n` +
-        `    Level 2 (rotations):          ${par2}\n` +
-        `    Level 3 (rotations + mirrors): ${par3}\n\n`,
-      );
+      revealPars(output, par1, par2, par3, par, level);
       rl.close();
       return;
     }
@@ -204,12 +230,7 @@ async function main() {
     }
     const choice = options[idx];
     if (choice.kind === "quit") {
-      output.write(
-        `\n  pars (revealed):\n` +
-        `    Level 1 (no transforms):      ${par1}\n` +
-        `    Level 2 (rotations):          ${par2}\n` +
-        `    Level 3 (rotations + mirrors): ${par3}\n\n`,
-      );
+      revealPars(output, par1, par2, par3, par, level);
       rl.close();
       return;
     }
@@ -232,6 +253,16 @@ async function main() {
     }
   }
   rl.close();
+}
+
+function revealPars(output, par1, par2, par3, par, level) {
+  output.write(
+    `\n  pars (revealed):\n` +
+    `    Level 1 (no transforms):      ${par1}\n` +
+    `    Level 2 (rotations):          ${par2}\n` +
+    `    Level 3 (rotations + mirrors): ${par3}\n` +
+    `\n  you played Level ${level}; par for this level was ${par}.\n\n`,
+  );
 }
 
 main().catch((e) => { console.error(e); exit(1); });
