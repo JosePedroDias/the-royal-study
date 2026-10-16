@@ -159,7 +159,6 @@ async function main() {
 
   // Write cards.json
   const deck = {
-    generatedAt: new Date().toISOString(),
     count: cards.length,
     startBoard: "R . N / . K . / B Q .",
     component: "dark-bishop (7560 states)",

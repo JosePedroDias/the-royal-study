@@ -105,7 +105,6 @@ async function main() {
 
   // Write a machine-readable report.
   const report = {
-    generatedAt: new Date().toISOString(),
     count: cards.length,
     startBoard: toGrid(START),
     totals: { level1: totalL1, level23: totalL23, transformSavings: totalL1 - totalL23 },

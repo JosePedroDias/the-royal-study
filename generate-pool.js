@@ -120,7 +120,6 @@ async function main() {
 
   // Write pool.json
   const out = {
-    generatedAt: new Date().toISOString(),
     component: "dark-bishop (7,560 states, 945 D4 orbits)",
     count: pool.length,
     dedupKey: "boardHash (D4-invariant; one entry per orbit, the lex-min grid)",

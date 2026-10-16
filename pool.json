@@ -1,5 +1,4 @@
 {
-  "generatedAt": "2026-10-16T17:53:13.193Z",
   "component": "dark-bishop (7,560 states, 945 D4 orbits)",
   "count": 945,
   "dedupKey": "boardHash (D4-invariant; one entry per orbit, the lex-min grid)",
