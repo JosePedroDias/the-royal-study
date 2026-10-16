@@ -6,9 +6,10 @@
 // (possibly transformed) goal. The three pars (one per level) are computed
 // up front but NOT shown until you complete the puzzle.
 //
-//   node play.js [level]
+//   node play.js [level] [--unicode]
 //     level: 1 = no transforms; 2 = rotations only; 3 = rotations + mirrors
-//            (default: 3)
+//            (default: 3, or prompt)
+//     --unicode: render pieces as chess glyphs (♔♕♖♗♘) instead of letters
 //
 // Controls: type the number of a move and Enter. u = undo, q = quit.
 //   - piece moves re-list every turn (every legal destination for every piece)
@@ -27,6 +28,9 @@ const {
 } = E;
 
 const PIECE_NAME = { K: "King", Q: "Queen", R: "Rook", B: "Bishop", N: "Knight" };
+// Unicode chess glyphs (white pieces — the single set the game uses).
+const PIECE_GLYPH = { K: "♔", Q: "♕", R: "♖", B: "♗", N: "♘" };
+const UNICODE = argv.includes("--unicode");
 
 // Goal-card ops available at each level. Level 1 = none; Level 2 = rotations;
 // Level 3 = rotations + mirrors.
@@ -49,7 +53,11 @@ const GOAL_OPS = {
 function renderBoard(p, title) {
   const cells = Array(9).fill(" ");
   for (const t of PIECE_ORDER) if (p[t] != null) cells[p[t]] = t;
-  const cell = (i) => (cells[i] === " " ? " · " : ` ${cells[i]} `);
+  const cell = (i) => {
+    const c = cells[i];
+    if (c === " ") return " · ";
+    return UNICODE ? ` ${PIECE_GLYPH[c]} ` : ` ${c} `;
+  };
   const sep = "  ├───┼───┼───┤";
   return [
     title,
@@ -86,10 +94,12 @@ async function main() {
   const rl = createInterface({ input, output, prompt: "" });
   const clear = () => output.write("\x1B[2J\x1B[H");
 
-  // Pick level interactively (argv[2] can preselect, else prompt).
+  // Pick level: a numeric argv (1/2/3) preselects; else prompt.
+  // (--unicode is handled separately and ignored here.)
+  const levelArg = argv.find((a) => /^[123]$/.test(a));
   let level;
-  if (argv[2] && [1, 2, 3].includes(parseInt(argv[2], 10))) {
-    level = parseInt(argv[2], 10);
+  if (levelArg) {
+    level = parseInt(levelArg, 10);
   } else {
     clear();
     output.write("👑 The Royal Study — terminal\n\n");
@@ -190,7 +200,7 @@ async function main() {
           piece: t,
           from: current[t],
           to: d,
-          label: `${PIECE_NAME[t]} @${current[t]} → ${d}`,
+          label: `${UNICODE ? PIECE_GLYPH[t] : PIECE_NAME[t]} @${current[t]} → ${d}`,
         });
       }
     }
