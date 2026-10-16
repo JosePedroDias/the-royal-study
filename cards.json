@@ -1,0 +1,613 @@
+{
+  "generatedAt": "2026-10-16T17:07:14.400Z",
+  "count": 60,
+  "startBoard": "R . N / . K . / B Q .",
+  "component": "dark-bishop (7560 states)",
+  "dedupKey": "boardHash (dihedral orbit, D4-invariant)",
+  "parFrom": "fixed start R . N / . K . / B Q .",
+  "parLevel1": "minMoves (no card transforms) — Level 1",
+  "parLevel23": "minSolution (rotate + mirror allowed) — Levels 2/3",
+  "seedsNote": "the 10 isSeed:true cards are the deployed-site cards (known-real subset); the rest are plausible but unverified against the physical 60-card deck.",
+  "cards": [
+    {
+      "id": 1,
+      "board": "R . N / . K . / B . Q",
+      "hash": "B.Q.K.R.N",
+      "hashNum": 1869015,
+      "parLevel1": 1,
+      "parLevel23": 1,
+      "isSeed": true,
+      "seedNo": 2
+    },
+    {
+      "id": 2,
+      "board": "R . N / . . . / B K Q",
+      "hash": "B.RK..Q.N",
+      "hashNum": 1928595,
+      "parLevel1": 2,
+      "parLevel23": 2,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 3,
+      "board": ". . . / N R K / B Q .",
+      "hash": "...KRN.QB",
+      "hashNum": 22705,
+      "parLevel1": 4,
+      "parLevel23": 4,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 4,
+      "board": "R Q N / . . K / . . B",
+      "hash": "..B..KRQN",
+      "hashNum": 47295,
+      "parLevel1": 4,
+      "parLevel23": 4,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 5,
+      "board": ". . N / Q B . / R . K",
+      "hash": "..NQB.R.K",
+      "hashNum": 172550,
+      "parLevel1": 4,
+      "parLevel23": 4,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 6,
+      "board": ". K . / R . Q / B . N",
+      "hash": ".K.Q.RN.B",
+      "hashNum": 592165,
+      "parLevel1": 5,
+      "parLevel23": 5,
+      "isSeed": true,
+      "seedNo": 1
+    },
+    {
+      "id": 7,
+      "board": "K . R / . Q . / B N .",
+      "hash": "..RNQ.B.K",
+      "hashNum": 261830,
+      "parLevel1": 5,
+      "parLevel23": 5,
+      "isSeed": true,
+      "seedNo": 3
+    },
+    {
+      "id": 8,
+      "board": "R N . / . . K / B . Q",
+      "hash": ".KQN..R.B",
+      "hashNum": 770005,
+      "parLevel1": 5,
+      "parLevel23": 5,
+      "isSeed": true,
+      "seedNo": 6
+    },
+    {
+      "id": 9,
+      "board": "B R N / . . . / K Q .",
+      "hash": "..NQ.RK.B",
+      "hashNum": 172225,
+      "parLevel1": 5,
+      "parLevel23": 5,
+      "isSeed": true,
+      "seedNo": 9
+    },
+    {
+      "id": 10,
+      "board": ". Q K / N . . / B . R",
+      "hash": ".NBQ..K.R",
+      "hashNum": 917645,
+      "parLevel1": 5,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 11,
+      "board": ". Q B / R . . / . N K",
+      "hash": ".NKR...QB",
+      "hashNum": 972025,
+      "parLevel1": 5,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 12,
+      "board": ". N K / R . . / B Q .",
+      "hash": "..KQ.NBR.",
+      "hashNum": 125130,
+      "parLevel1": 5,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 13,
+      "board": ". K . / N . . / R Q B",
+      "hash": "..BK.Q.NR",
+      "hashNum": 63095,
+      "parLevel1": 5,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 14,
+      "board": "K . N / Q B . / . . R",
+      "hash": "..RQB.K.N",
+      "hashNum": 265755,
+      "parLevel1": 6,
+      "parLevel23": 4,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 15,
+      "board": "B . R / N K . / . Q .",
+      "hash": "..RQK..NB",
+      "hashNum": 266995,
+      "parLevel1": 6,
+      "parLevel23": 3,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 16,
+      "board": "B R . / N . K / Q . .",
+      "hash": "..QK.N.RB",
+      "hashNum": 202855,
+      "parLevel1": 6,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 17,
+      "board": "N . K / . . . / B R Q",
+      "hash": "B.NR..Q.K",
+      "hashNum": 1858610,
+      "parLevel1": 6,
+      "parLevel23": 6,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 18,
+      "board": ". . B / R . . / Q N K",
+      "hash": "..BR..QNK",
+      "hashNum": 85700,
+      "parLevel1": 6,
+      "parLevel23": 6,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 19,
+      "board": ". K Q / N R . / B . .",
+      "hash": "..B.RNQK.",
+      "hashNum": 53940,
+      "parLevel1": 6,
+      "parLevel23": 6,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 20,
+      "board": "B R . / N Q K / . . .",
+      "hash": "...KQN.RB",
+      "hashNum": 21415,
+      "parLevel1": 6,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 21,
+      "board": "N . R / K . . / B Q .",
+      "hash": "..RQ..BKN",
+      "hashNum": 264435,
+      "parLevel1": 6,
+      "parLevel23": 4,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 22,
+      "board": "B R . / N . . / K Q .",
+      "hash": "...Q.RKNB",
+      "hashNum": 32275,
+      "parLevel1": 6,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 23,
+      "board": ". Q B / . R K / . N .",
+      "hash": "...NRQ.KB",
+      "hashNum": 30685,
+      "parLevel1": 6,
+      "parLevel23": 6,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 24,
+      "board": ". . K / N B R / . . Q",
+      "hash": "..KNBR..Q",
+      "hashNum": 119020,
+      "parLevel1": 6,
+      "parLevel23": 6,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 25,
+      "board": ". K . / N B R / . . Q",
+      "hash": "..QNBR.K.",
+      "hashNum": 212340,
+      "parLevel1": 6,
+      "parLevel23": 6,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 26,
+      "board": "B . K / Q . R / . N .",
+      "hash": ".N.Q.RB.K",
+      "hashNum": 872030,
+      "parLevel1": 7,
+      "parLevel23": 6,
+      "isSeed": true,
+      "seedNo": 4
+    },
+    {
+      "id": 27,
+      "board": "K . Q / R . N / B . .",
+      "hash": "..BN.RQ.K",
+      "hashNum": 71210,
+      "parLevel1": 7,
+      "parLevel23": 7,
+      "isSeed": true,
+      "seedNo": 7
+    },
+    {
+      "id": 28,
+      "board": "B K R / . Q . / . N .",
+      "hash": "..BNQK..R",
+      "hashNum": 75605,
+      "parLevel1": 7,
+      "parLevel23": 6,
+      "isSeed": true,
+      "seedNo": 8
+    },
+    {
+      "id": 29,
+      "board": "N . Q / . . K / B R .",
+      "hash": ".KQR..B.N",
+      "hashNum": 785415,
+      "parLevel1": 7,
+      "parLevel23": 6,
+      "isSeed": true,
+      "seedNo": 10
+    },
+    {
+      "id": 30,
+      "board": "B Q R / . . . / . N K",
+      "hash": "..BN.QK.R",
+      "hashNum": 70925,
+      "parLevel1": 7,
+      "parLevel23": 6,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 31,
+      "board": "R . B / Q . . / N K .",
+      "hash": "..BK..NQR",
+      "hashNum": 62345,
+      "parLevel1": 7,
+      "parLevel23": 4,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 32,
+      "board": ". N B / . . K / . Q R",
+      "hash": "...N.QBKR",
+      "hashNum": 24245,
+      "parLevel1": 7,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 33,
+      "board": ". R . / N K . / Q . B",
+      "hash": "..BRK..NQ",
+      "hashNum": 88150,
+      "parLevel1": 7,
+      "parLevel23": 6,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 34,
+      "board": ". N K / . . . / R Q B",
+      "hash": "..RN.QK.B",
+      "hashNum": 257545,
+      "parLevel1": 7,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 35,
+      "board": "B . R / Q . . / K N .",
+      "hash": "..RN..KQB",
+      "hashNum": 256705,
+      "parLevel1": 7,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 36,
+      "board": "N . K / . . R / B Q .",
+      "hash": ".QBR..K.N",
+      "hashNum": 1205355,
+      "parLevel1": 7,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 37,
+      "board": "B . K / Q . . / R N .",
+      "hash": "..KN..RQB",
+      "hashNum": 116845,
+      "parLevel1": 7,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 38,
+      "board": ". . B / Q K R / . N .",
+      "hash": "..BQKR.N.",
+      "hashNum": 81450,
+      "parLevel1": 7,
+      "parLevel23": 7,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 39,
+      "board": "K . B / . . Q / . R N",
+      "hash": "..KR..NQB",
+      "hashNum": 132325,
+      "parLevel1": 7,
+      "parLevel23": 7,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 40,
+      "board": ". Q N / . R . / K . B",
+      "hash": "..KQR.N.B",
+      "hashNum": 131005,
+      "parLevel1": 7,
+      "parLevel23": 7,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 41,
+      "board": "N . Q / R B K / . . .",
+      "hash": "...KBRQ.N",
+      "hashNum": 18075,
+      "parLevel1": 7,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 42,
+      "board": "N R . / . Q K / . . B",
+      "hash": "..B.QKNR.",
+      "hashNum": 52410,
+      "parLevel1": 7,
+      "parLevel23": 4,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 43,
+      "board": ". N B / K . Q / R . .",
+      "hash": "..RQ.KBN.",
+      "hashNum": 264870,
+      "parLevel1": 8,
+      "parLevel23": 5,
+      "isSeed": true,
+      "seedNo": 5
+    },
+    {
+      "id": 44,
+      "board": "B . N / . K . / Q . R",
+      "hash": "B.N.K.Q.R",
+      "hashNum": 1822325,
+      "parLevel1": 8,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 45,
+      "board": "N . . / . Q K / . R B",
+      "hash": "..NKQ.BR.",
+      "hashNum": 160770,
+      "parLevel1": 8,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 46,
+      "board": "B . . / K R Q / . . N",
+      "hash": "..BQRKN..",
+      "hashNum": 84780,
+      "parLevel1": 8,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 47,
+      "board": "N . B / Q . . / K R .",
+      "hash": "..BR..KQN",
+      "hashNum": 85635,
+      "parLevel1": 8,
+      "parLevel23": 6,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 48,
+      "board": "B . . / Q R . / K N .",
+      "hash": "....RNBQK",
+      "hashNum": 7190,
+      "parLevel1": 8,
+      "parLevel23": 7,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 49,
+      "board": "N . K / . . Q / . R B",
+      "hash": "..NR..BQK",
+      "hashNum": 178910,
+      "parLevel1": 8,
+      "parLevel23": 3,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 50,
+      "board": ". . B / . . N / R K Q",
+      "hash": "..B..NRKQ",
+      "hashNum": 47500,
+      "parLevel1": 8,
+      "parLevel23": 6,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 51,
+      "board": "B . . / N Q R / K . .",
+      "hash": "..BRQN..K",
+      "hashNum": 91370,
+      "parLevel1": 8,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 52,
+      "board": "R . . / K . Q / N . B",
+      "hash": "..RQ.KB.N",
+      "hashNum": 264855,
+      "parLevel1": 8,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 53,
+      "board": "K N Q / . . . / B . R",
+      "hash": "B.K..NR.Q",
+      "hashNum": 1773760,
+      "parLevel1": 8,
+      "parLevel23": 7,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 54,
+      "board": ". . . / K B N / Q R .",
+      "hash": "...KBNQR.",
+      "hashNum": 17670,
+      "parLevel1": 9,
+      "parLevel23": 7,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 55,
+      "board": "B N K / . . R / . . Q",
+      "hash": "..B..NQRK",
+      "hashNum": 47480,
+      "parLevel1": 9,
+      "parLevel23": 6,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 56,
+      "board": ". . Q / . B . / K R N",
+      "hash": "..K.BRQ.N",
+      "hashNum": 95835,
+      "parLevel1": 9,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 57,
+      "board": "R . . / K Q N / . . B",
+      "hash": "..BKQNR..",
+      "hashNum": 68220,
+      "parLevel1": 9,
+      "parLevel23": 5,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 58,
+      "board": ". . . / K B R / N . Q",
+      "hash": "...KBRN.Q",
+      "hashNum": 18040,
+      "parLevel1": 9,
+      "parLevel23": 7,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 59,
+      "board": "N . . / K Q . / . R B",
+      "hash": "..B.QRNK.",
+      "hashNum": 53040,
+      "parLevel1": 9,
+      "parLevel23": 4,
+      "isSeed": false,
+      "seedNo": null
+    },
+    {
+      "id": 60,
+      "board": "B N K / . R . / . . Q",
+      "hash": "..B.RNQ.K",
+      "hashNum": 53930,
+      "parLevel1": 9,
+      "parLevel23": 7,
+      "isSeed": false,
+      "seedNo": null
+    }
+  ]
+}
