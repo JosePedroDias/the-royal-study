@@ -6,7 +6,10 @@ constraining the board to a 3x3 one. The challenge is trying to
 - [boardgamegeek page](https://boardgamegeek.com/boardgame/451989/the-royal-study)
 - [bgg review in text](https://boardgamegeek.com/thread/3661260/the-royal-study-a-review-by-meepletales)
 - [cuby review in video](https://youtu.be/9PY5n2_ThE0)
-- [a web version of the game](https://the-royal-study-chess.vercel.app/)
+- [a web version of the game 1](https://the-royal-study-chess.vercel.app/)
+- [repo for game 1](https://github.com/Manuel-Avecilla/the_royal_study)
+- [repo for game 2](https://github.com/jostivtrb-create/The-Royal-Study)
+- [repo for game 3](https://github.com/rmoya81/the-royal-study)
 
 I want to be able to at least obtain all "The Royal Study" board cards.
 Eventually reverse engineer the full web app, but that's a secondary goal.
