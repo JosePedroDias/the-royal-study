@@ -83,11 +83,29 @@ function levelName(level) {
 // ---- main ------------------------------------------------------------------
 
 async function main() {
-  // Level from argv or default to 3.
-  let level = 3;
-  if (argv[2]) {
-    const n = parseInt(argv[2], 10);
-    if (n === 1 || n === 2 || n === 3) level = n;
+  const rl = createInterface({ input, output, prompt: "" });
+  const clear = () => output.write("\x1B[2J\x1B[H");
+
+  // Pick level interactively (argv[2] can preselect, else prompt).
+  let level;
+  if (argv[2] && [1, 2, 3].includes(parseInt(argv[2], 10))) {
+    level = parseInt(argv[2], 10);
+  } else {
+    clear();
+    output.write("👑 The Royal Study — terminal\n\n");
+    output.write("Choose difficulty:\n");
+    output.write("  1. Level 1 (no transforms)\n");
+    output.write("  2. Level 2 (rotations)\n");
+    output.write("  3. Level 3 (rotations + mirrors)\n\n");
+    while (true) {
+      let ans;
+      try { ans = await rl.question("level (1-3): "); }
+      catch { rl.close(); return; }
+      ans = (ans || "").trim();
+      const n = parseInt(ans, 10);
+      if (n === 1 || n === 2 || n === 3) { level = n; break; }
+      output.write("(pick 1, 2, or 3)\n");
+    }
   }
 
   const { startGrid, goalGrid } = pickPair();
@@ -105,9 +123,6 @@ async function main() {
   let ops = 0;
   const history = [];
   let solved = false;
-
-  const rl = createInterface({ input, output, prompt: "" });
-  const clear = () => output.write("\x1B[2J\x1B[H");
 
   while (true) {
     clear();
