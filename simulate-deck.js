@@ -7,12 +7,14 @@
 //
 //   node simulate-deck.js
 
-"use strict";
-
-const E = require("./royal-study-engine.js");
+import { writeFile } from "node:fs/promises";
+import { join } from "node:path";
+import { fileURLToPath } from "node:url";
+import { argv } from "node:process";
+import * as E from "./royal-study-engine.js";
+import deck from "./cards.json" with { type: "json" };
 const { parseGrid, toGrid, minMoves, minSolution, solve, describePath,
         equalPlacement, isValidPlacement, isReachable } = E;
-const deck = require("./cards.json");
 
 const START = parseGrid("R . N / . K . / B Q .");
 
@@ -22,7 +24,7 @@ const START = parseGrid("R . N / . K . / B Q .");
 // transforms). Not a hard rule, just a sanity flag.
 const FLAG_AT = 9;
 
-function main() {
+async function main() {
   const cards = deck.cards;
   if (cards.length !== 60) throw new Error(`expected 60 cards, got ${cards.length}`);
 
@@ -102,8 +104,6 @@ function main() {
   }
 
   // Write a machine-readable report.
-  const fs = require("fs");
-  const path = require("path");
   const report = {
     generatedAt: new Date().toISOString(),
     count: cards.length,
@@ -114,8 +114,9 @@ function main() {
     distribution: { level1: distL1, level23: distL23 },
     steps: rows,
   };
-  fs.writeFileSync(path.join(__dirname, "deck-simulation.json"), JSON.stringify(report, null, 2) + "\n");
+  await writeFile(join(__dirname, "deck-simulation.json"), JSON.stringify(report, null, 2) + "\n");
   console.log("\nWrote deck-simulation.json");
 }
 
-if (require.main === module) main();
+const __dirname = fileURLToPath(new URL(".", import.meta.url));
+if (fileURLToPath(import.meta.url) === argv[1]) main();

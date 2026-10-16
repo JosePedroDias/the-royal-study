@@ -15,9 +15,11 @@
 //
 //   node generate-cards.js
 
-"use strict";
-
-const E = require("./royal-study-engine.js");
+import { writeFile } from "node:fs/promises";
+import { join } from "node:path";
+import { fileURLToPath } from "node:url";
+import { argv } from "node:process";
+import * as E from "./royal-study-engine.js";
 const { parseGrid, toGrid, boardHash, boardHashNum,
         isValidPlacement, minMoves, minSolution, equalPlacement,
         PIECE_ORDER, rc } = E;
@@ -126,7 +128,7 @@ function build() {
 }
 
 // ---- main ------------------------------------------------------------------
-function main() {
+async function main() {
   const t0 = Date.now();
   const { cards, tries } = build();
   const dt = Date.now() - t0;
@@ -156,8 +158,6 @@ function main() {
   console.log(`par range: ${cards[0].parLevel1} .. ${cards[cards.length - 1].parLevel1}`);
 
   // Write cards.json
-  const fs = require("fs");
-  const path = require("path");
   const deck = {
     generatedAt: new Date().toISOString(),
     count: cards.length,
@@ -170,7 +170,7 @@ function main() {
     seedsNote: "the 10 isSeed:true cards are the deployed-site cards (known-real subset); the rest are plausible but unverified against the physical 60-card deck.",
     cards,
   };
-  fs.writeFileSync(path.join(__dirname, "cards.json"), JSON.stringify(deck, null, 2) + "\n");
+  await writeFile(join(__dirname, "cards.json"), JSON.stringify(deck, null, 2) + "\n");
   console.log("\nWrote cards.json");
 
   // Write CARDS.md table
@@ -197,8 +197,9 @@ function main() {
     lines.push(`| ${par} | ${byPar[par]} |`);
   }
   lines.push("");
-  fs.writeFileSync(path.join(__dirname, "CARDS.md"), lines.join("\n"));
+  await writeFile(join(__dirname, "CARDS.md"), lines.join("\n"));
   console.log("Wrote CARDS.md");
 }
 
-if (require.main === module) main();
+const __dirname = fileURLToPath(new URL(".", import.meta.url));
+if (fileURLToPath(import.meta.url) === argv[1]) main();

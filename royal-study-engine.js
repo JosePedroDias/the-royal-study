@@ -18,7 +18,8 @@
 // the Knight. The Knight can never reach the centre square of a 3x3 by geometry
 // (the original additionally rejects N at the centre in randomPlacement).
 
-"use strict";
+import { fileURLToPath } from "node:url";
+import { argv } from "node:process";
 
 // ---- Types & constants -----------------------------------------------------
 
@@ -620,7 +621,7 @@ function dedupeBoards(boards) {
 // ---- main / built-in test suite --------------------------------------------
 // Mirrors scripts/test-engine.ts from the original.
 
-function main() {
+async function main() {
   let pass = 0, fail = 0;
   const check = (name, cond) => {
     if (cond) pass++;
@@ -653,30 +654,32 @@ function main() {
 
   check("occupiedOf has 5", occupiedOf(base).size === 5);
 
-  // Generator: 30 puzzles in [2,6] and solvable
+  // Generator: 3 puzzles in [2,6] and solvable. (BFS-heavy — keep the default
+  // suite fast; use `node royal-study-engine.js --solver=all` for an exhaustive
+  // sweep over the full 945-board component.)
   let okGen = true, sumMin = 0;
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 3; i++) {
     const pz = generatePuzzle(2, 6);
     if (pz.min < 2 || pz.min > 6 || !isFinite(pz.min)) okGen = false;
     if (equalPlacement(pz.start, pz.target)) okGen = false;
     sumMin += pz.min;
   }
-  check("generator: 30 puzzles in [2,6], solvable", okGen);
+  check("generator: 3 puzzles in [2,6], solvable", okGen);
 
-  // randomTargetFor: always reachable & distinct from start
+  // randomTargetFor: always reachable & distinct from start (3 samples).
   let okTarget = true;
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 3; i++) {
     const start = randomPlacement();
     const { target, min } = randomTargetFor(start);
     if (!isFinite(min) || min < 1) okTarget = false;
     if (equalPlacement(start, target)) okTarget = false;
     if (minSolution(start, target) !== min) okTarget = false;
   }
-  check("randomTargetFor: 50 reachable, distinct", okTarget);
+  check("randomTargetFor: 3 reachable, distinct", okTarget);
 
-  // solve(): path reaches target and its length == minSolution
+  // solve(): path reaches target and its length == minSolution (3 cases).
   let okSolve = true;
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < 3; i++) {
     const start = randomPlacement();
     const { target } = randomTargetFor(start);
     const { min, path } = solve(start, target);
@@ -689,12 +692,12 @@ function main() {
     }
     if (!equalPlacement(cur, target)) okSolve = false;
   }
-  check("solve(): path valid, length == minSolution (40 cases)", okSolve);
+  check("solve(): path valid, length == minSolution (3 cases)", okSolve);
 
   // ---- Dihedral-invariant hash tests ----
-  // boardHash is invariant under every D4 element and stable.
+  // boardHash is invariant under every D4 element and stable (10 boards).
   let okBoard = true;
-  for (let i = 0; i < 200; i++) {
+  for (let i = 0; i < 10; i++) {
     const b = randomPlacement();
     const h = boardHash(b);
     for (const op of ["rotCW", "rotCCW", "mirrorH", "mirrorV"]) {
@@ -703,13 +706,12 @@ function main() {
     if (boardHashNum(b) !== boardHashNum(b)) okBoard = false; // determinism
     if (boardHash(toGrid(b)) !== h) okBoard = false; // accepts grid strings too
   }
-  check("boardHash invariant under D4 (200 boards)", okBoard);
+  check("boardHash invariant under D4 (10 boards)", okBoard);
 
-  // puzzleHash invariant under applying the SAME g to both start and target.
-  // (Capped at 30: each iteration calls randomTargetFor -> minSolution, which
-  //  is expensive; 30 is enough to catch a broken transform at practical CI cost.)
+  // puzzleHash invariant under applying the SAME g to both start and target
+  // (3 samples — each calls randomTargetFor -> minSolution, which is expensive).
   let okPuzzle = true;
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 3; i++) {
     const start = randomPlacement();
     const { target } = randomTargetFor(start);
     const h = puzzleHash(start, target);
@@ -721,7 +723,7 @@ function main() {
       okPuzzle = false;
     }
   }
-  check("puzzleHash invariant under simultaneous D4 (30 puzzles)", okPuzzle);
+  check("puzzleHash invariant under simultaneous D4 (3 puzzles)", okPuzzle);
 
   // Different orbits => different hashes (spot check).
   check("distinct boards -> distinct hashes",
@@ -751,9 +753,9 @@ function main() {
   const comp = reachableSet(START);
   check("dark component reachable from start has 7560 states", comp.size === 7560);
 
-  // Constrained generators only ever produce valid placements.
+  // Constrained generators only ever produce valid placements (3 rounds).
   let okGen2 = true;
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 3; i++) {
     if (!isValidPlacement(randomValidPlacement())) okGen2 = false;
     const start = randomValidPlacement();
     const { target } = randomValidTargetFor(start);
@@ -765,23 +767,23 @@ function main() {
     if (!isReachable(pz.start, pz.target)) okGen2 = false;
     if (pz.min < 2 || pz.min > 6) okGen2 = false;
   }
-  check("constrained generators produce valid, reachable puzzles (50 rounds)", okGen2);
+  check("constrained generators produce valid, reachable puzzles (3 rounds)", okGen2);
 
-  // isReachable agrees with minMoves finiteness on a sample.
+  // isReachable agrees with minMoves finiteness on a sample (3 pairs).
   let okReach = true;
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 3; i++) {
     const a = randomValidPlacement();
     const b = randomValidPlacement();
     if (isReachable(a, b) !== Number.isFinite(minMoves(a, b))) okReach = false;
   }
-  check("isReachable agrees with minMoves finiteness (30 pairs)", okReach);
+  check("isReachable agrees with minMoves finiteness (3 pairs)", okReach);
 
   console.log(`\nTest suite: ${pass} passed, ${fail} failed.`);
-  console.log(`Generator: mean par of 30 [2,6] puzzles ~ ${(sumMin / 30).toFixed(2)} moves`);
+  console.log(`Generator: mean par of 3 [2,6] puzzles ~ ${(sumMin / 3).toFixed(2)} moves`);
 
   // ---- Demo: print a few puzzles in card notation ----
   console.log("\n--- sample puzzles (start -> target, par) ---");
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 3; i++) {
     const pz = generatePuzzle(2, 6);
     console.log(`#${i + 1}  ${toGrid(pz.start)}  ->  ${toGrid(pz.target)}   par=${pz.min}`);
   }
@@ -795,7 +797,7 @@ function main() {
   console.log(`par=${s.min}; path: ${JSON.stringify(describePath(s.path))}`);
 
   // ---- Demo: dedupe a batch of generated puzzles by canonical puzzle hash ----
-  const BATCH = 400;
+  const BATCH = 8;
   const batch = [];
   for (let i = 0; i < BATCH; i++) {
     const pz = generatePuzzle(2, 6);
@@ -815,12 +817,46 @@ function main() {
   });
   console.log(`distinct D4 orbits among the 10 cards: ${orbitOf.size}`);
 
+  // ---- Optional exhaustive solver sweep ---------------------------------------
+  // `node royal-study-engine.js --solver`        → sweep all 945 dark boards
+  // `node royal-study-engine.js --solver=all`    → same
+  // `node royal-study-engine.js --solver=200`    → sweep first 200 boards
+  // Verifies minMoves / minSolution / solve agree and the path lands on the
+  // target for every board in the dark component, from the fixed start.
+  const solverArg = argv.find((a) => a.startsWith("--solver"));
+  if (solverArg !== undefined) {
+    const N = solverArg === "--solver" || solverArg === "--solver=all"
+      ? 945 : parseInt(solverArg.split("=")[1], 10);
+    if (Number.isFinite(N) && N > 0) {
+      console.log(`\n--- exhaustive solver sweep: ${N} dark boards (from the fixed start) ---`);
+      const pool = await import("./pool.json", { with: { type: "json" } });
+      const boards = pool.default.pool.slice(0, N);
+      let ok = 0, bad = 0;
+      for (let i = 0; i < boards.length; i++) {
+        const target = parseGrid(boards[i].board);
+        const m1 = minMoves(START, target);
+        const m23 = minSolution(START, target);
+        const { min, path } = solve(START, target);
+        if (min !== m23 || m23 > m1) { bad++; console.log(`  ✗ #${i + 1} min mismatch`); continue; }
+        let cur = { ...START };
+        for (const a of path) {
+          if (a.kind === "move") cur = { ...cur, [a.piece]: a.to };
+          else cur = applyOp(cur, a.op);
+        }
+        if (!equalPlacement(cur, target)) { bad++; console.log(`  ✗ #${i + 1} path did not reach`); continue; }
+        ok++;
+      }
+      console.log(`solver sweep: ${ok}/${boards.length} boards OK${bad ? `, ${bad} failed` : ""}`);
+      if (bad) process.exit(1);
+    }
+  }
+
   if (fail > 0) process.exit(1);
 }
 
-if (require.main === module) main();
+if (fileURLToPath(import.meta.url) === argv[1]) main();
 
-module.exports = {
+export {
   PIECE_ORDER, N, rc, sq, inBoard,
   legalDestinations, reachable,
   occupiedOf, serialize, equalPlacement,

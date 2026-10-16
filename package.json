@@ -1,0 +1,14 @@
+{
+  "name": "the-royal-study",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Reverse-engineering The Royal Study (Philos) 3x3 chess puzzle deck.",
+  "scripts": {
+    "test": "node royal-study-engine.js",
+    "enumerate": "node enumerate-boards.js",
+    "cards": "node generate-cards.js",
+    "pool": "node generate-pool.js",
+    "simulate": "node simulate-deck.js"
+  }
+}

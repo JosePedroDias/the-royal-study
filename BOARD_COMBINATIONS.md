@@ -304,8 +304,8 @@ deck would cover if it is all-dark (as the 10 known cards suggest). The
 remaining 885 canonical dark boards are available as alternates; the full
 catalog lives in `pool.json` / `POOL.md` (945 entries, one per orbit, no pars
 — pars are only meaningful per-card-deck because of carry-over, not for a
-catalog). `enumerate-boards.js` produces the raw enumeration; `generate-pool.js`
-turns it into the catalog and cross-checks the 60 deck hashes against it.
+catalog). `generate-pool.js` enumerates the dark component directly, dedups
+by `boardHash`, and cross-checks the 60 deck hashes against it.
 
 **Implication for verification.** When the physical deck is available,
 `boardHash` each real card and look it up by `hash` in `pool.json`: a hit
