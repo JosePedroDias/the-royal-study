@@ -1,0 +1,8515 @@
+{
+  "generatedAt": "2026-10-16T17:41:29.754Z",
+  "component": "dark-bishop (7,560 states, 945 D4 orbits)",
+  "count": 945,
+  "dedupKey": "boardHash (D4-invariant; one entry per orbit, the lex-min grid)",
+  "note": "Catalog of all 945 canonical boards a dark-component deck can draw from. Each entry is one D4 orbit (one canonical board standing for all 8 rotations/mirrors). inDeck:true means the board is one of our 60 generated cards (cards.json). Pars are intentionally omitted: in the real deck each card's start is the previous card's landing position (carry-over), so a fixed-start par would only be meaningful for card 1. Use `hash` to verify a physical card against this catalog.",
+  "inDeckCount": 60,
+  "pool": [
+    {
+      "id": 1,
+      "board": "N Q R / . B K / . . .",
+      "hash": "....BKNQR",
+      "hashNum": 1865,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 1
+    },
+    {
+      "id": 2,
+      "board": "N R Q / . B K / . . .",
+      "hash": "....BKNRQ",
+      "hashNum": 1870,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 2
+    },
+    {
+      "id": 3,
+      "board": "R N Q / K B . / . . .",
+      "hash": "....BKQNR",
+      "hashNum": 1895,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 3
+    },
+    {
+      "id": 4,
+      "board": "N K . / R B . / Q . .",
+      "hash": "....BKQRN",
+      "hashNum": 1905,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 4
+    },
+    {
+      "id": 5,
+      "board": "Q N R / K B . / . . .",
+      "hash": "....BKRNQ",
+      "hashNum": 1930,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 5
+    },
+    {
+      "id": 6,
+      "board": "N K . / Q B . / R . .",
+      "hash": "....BKRQN",
+      "hashNum": 1935,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 6
+    },
+    {
+      "id": 7,
+      "board": "R N . / Q B . / K . .",
+      "hash": "....BNKQR",
+      "hashNum": 2045,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 7
+    },
+    {
+      "id": 8,
+      "board": "Q N . / R B . / K . .",
+      "hash": "....BNKRQ",
+      "hashNum": 2050,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 8
+    },
+    {
+      "id": 9,
+      "board": "R N . / K B . / Q . .",
+      "hash": "....BNQKR",
+      "hashNum": 2105,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 9
+    },
+    {
+      "id": 10,
+      "board": "K N . / R B . / Q . .",
+      "hash": "....BNQRK",
+      "hashNum": 2120,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 10
+    },
+    {
+      "id": 11,
+      "board": "Q N . / K B . / R . .",
+      "hash": "....BNRKQ",
+      "hashNum": 2140,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 11
+    },
+    {
+      "id": 12,
+      "board": "K N . / Q B . / R . .",
+      "hash": "....BNRQK",
+      "hashNum": 2150,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 12
+    },
+    {
+      "id": 13,
+      "board": "K N R / . B Q / . . .",
+      "hash": "....BQKNR",
+      "hashNum": 2255,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 13
+    },
+    {
+      "id": 14,
+      "board": "N R K / Q B . / . . .",
+      "hash": "....BQKRN",
+      "hashNum": 2265,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 14
+    },
+    {
+      "id": 15,
+      "board": "N K R / . B Q / . . .",
+      "hash": "....BQNKR",
+      "hashNum": 2285,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 15
+    },
+    {
+      "id": 16,
+      "board": "N R K / . B Q / . . .",
+      "hash": "....BQNRK",
+      "hashNum": 2300,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 16
+    },
+    {
+      "id": 17,
+      "board": "N K R / Q B . / . . .",
+      "hash": "....BQRKN",
+      "hashNum": 2355,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 17
+    },
+    {
+      "id": 18,
+      "board": "K N R / Q B . / . . .",
+      "hash": "....BQRNK",
+      "hashNum": 2360,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 18
+    },
+    {
+      "id": 19,
+      "board": "K N Q / . B R / . . .",
+      "hash": "....BRKNQ",
+      "hashNum": 2470,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 19
+    },
+    {
+      "id": 20,
+      "board": "N Q K / R B . / . . .",
+      "hash": "....BRKQN",
+      "hashNum": 2475,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 20
+    },
+    {
+      "id": 21,
+      "board": "N K Q / . B R / . . .",
+      "hash": "....BRNKQ",
+      "hashNum": 2500,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 21
+    },
+    {
+      "id": 22,
+      "board": "N Q K / . B R / . . .",
+      "hash": "....BRNQK",
+      "hashNum": 2510,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 22
+    },
+    {
+      "id": 23,
+      "board": "N K Q / R B . / . . .",
+      "hash": "....BRQKN",
+      "hashNum": 2535,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 23
+    },
+    {
+      "id": 24,
+      "board": "K N Q / R B . / . . .",
+      "hash": "....BRQNK",
+      "hashNum": 2540,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 24
+    },
+    {
+      "id": 25,
+      "board": "B Q R / . K N / . . .",
+      "hash": "....KNBQR",
+      "hashNum": 3305,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 25
+    },
+    {
+      "id": 26,
+      "board": "B R Q / . K N / . . .",
+      "hash": "....KNBRQ",
+      "hashNum": 3310,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 26
+    },
+    {
+      "id": 27,
+      "board": "B N . / R K . / Q . .",
+      "hash": "....KNQRB",
+      "hashNum": 3415,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 27
+    },
+    {
+      "id": 28,
+      "board": "B N . / Q K . / R . .",
+      "hash": "....KNRQB",
+      "hashNum": 3445,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 28
+    },
+    {
+      "id": 29,
+      "board": "B N R / . K Q / . . .",
+      "hash": "....KQBNR",
+      "hashNum": 3515,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 29
+    },
+    {
+      "id": 30,
+      "board": "B R N / . K Q / . . .",
+      "hash": "....KQBRN",
+      "hashNum": 3525,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 30
+    },
+    {
+      "id": 31,
+      "board": "B R N / Q K . / . . .",
+      "hash": "....KQNRB",
+      "hashNum": 3595,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 31
+    },
+    {
+      "id": 32,
+      "board": "B N R / Q K . / . . .",
+      "hash": "....KQRNB",
+      "hashNum": 3655,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 32
+    },
+    {
+      "id": 33,
+      "board": "B N Q / . K R / . . .",
+      "hash": "....KRBNQ",
+      "hashNum": 3730,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 33
+    },
+    {
+      "id": 34,
+      "board": "B Q N / . K R / . . .",
+      "hash": "....KRBQN",
+      "hashNum": 3735,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 34
+    },
+    {
+      "id": 35,
+      "board": "B Q N / R K . / . . .",
+      "hash": "....KRNQB",
+      "hashNum": 3805,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 35
+    },
+    {
+      "id": 36,
+      "board": "B N Q / R K . / . . .",
+      "hash": "....KRQNB",
+      "hashNum": 3835,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 36
+    },
+    {
+      "id": 37,
+      "board": "B N R / . Q K / . . .",
+      "hash": "....QKBNR",
+      "hashNum": 5675,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 37
+    },
+    {
+      "id": 38,
+      "board": "B R N / . Q K / . . .",
+      "hash": "....QKBRN",
+      "hashNum": 5685,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 38
+    },
+    {
+      "id": 39,
+      "board": "B R N / K Q . / . . .",
+      "hash": "....QKNRB",
+      "hashNum": 5755,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 39
+    },
+    {
+      "id": 40,
+      "board": "B N R / K Q . / . . .",
+      "hash": "....QKRNB",
+      "hashNum": 5815,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 40
+    },
+    {
+      "id": 41,
+      "board": "B K R / . Q N / . . .",
+      "hash": "....QNBKR",
+      "hashNum": 5885,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 41
+    },
+    {
+      "id": 42,
+      "board": "B R K / . Q N / . . .",
+      "hash": "....QNBRK",
+      "hashNum": 5900,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 42
+    },
+    {
+      "id": 43,
+      "board": "B N . / R Q . / K . .",
+      "hash": "....QNKRB",
+      "hashNum": 5935,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 43
+    },
+    {
+      "id": 44,
+      "board": "B N . / K Q . / R . .",
+      "hash": "....QNRKB",
+      "hashNum": 6025,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 44
+    },
+    {
+      "id": 45,
+      "board": "B K N / . Q R / . . .",
+      "hash": "....QRBKN",
+      "hashNum": 6315,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 45
+    },
+    {
+      "id": 46,
+      "board": "B N K / . Q R / . . .",
+      "hash": "....QRBNK",
+      "hashNum": 6320,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 46
+    },
+    {
+      "id": 47,
+      "board": "B N K / R Q . / . . .",
+      "hash": "....QRKNB",
+      "hashNum": 6355,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 47
+    },
+    {
+      "id": 48,
+      "board": "B K N / R Q . / . . .",
+      "hash": "....QRNKB",
+      "hashNum": 6385,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 48
+    },
+    {
+      "id": 49,
+      "board": "B N Q / . R K / . . .",
+      "hash": "....RKBNQ",
+      "hashNum": 6970,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 49
+    },
+    {
+      "id": 50,
+      "board": "B Q N / . R K / . . .",
+      "hash": "....RKBQN",
+      "hashNum": 6975,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 50
+    },
+    {
+      "id": 51,
+      "board": "B Q N / K R . / . . .",
+      "hash": "....RKNQB",
+      "hashNum": 7045,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 51
+    },
+    {
+      "id": 52,
+      "board": "B N Q / K R . / . . .",
+      "hash": "....RKQNB",
+      "hashNum": 7075,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 52
+    },
+    {
+      "id": 53,
+      "board": "B K Q / . R N / . . .",
+      "hash": "....RNBKQ",
+      "hashNum": 7180,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 53
+    },
+    {
+      "id": 54,
+      "board": "B Q K / . R N / . . .",
+      "hash": "....RNBQK",
+      "hashNum": 7190,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 54
+    },
+    {
+      "id": 55,
+      "board": "B N . / Q R . / K . .",
+      "hash": "....RNKQB",
+      "hashNum": 7225,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 55
+    },
+    {
+      "id": 56,
+      "board": "B N . / K R . / Q . .",
+      "hash": "....RNQKB",
+      "hashNum": 7285,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 56
+    },
+    {
+      "id": 57,
+      "board": "B K N / . R Q / . . .",
+      "hash": "....RQBKN",
+      "hashNum": 7395,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 57
+    },
+    {
+      "id": 58,
+      "board": "B N K / . R Q / . . .",
+      "hash": "....RQBNK",
+      "hashNum": 7400,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 58
+    },
+    {
+      "id": 59,
+      "board": "B N K / Q R . / . . .",
+      "hash": "....RQKNB",
+      "hashNum": 7435,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 59
+    },
+    {
+      "id": 60,
+      "board": "B K N / Q R . / . . .",
+      "hash": "....RQNKB",
+      "hashNum": 7465,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 60
+    },
+    {
+      "id": 61,
+      "board": "B Q R / K . N / . . .",
+      "hash": "...K.NBQR",
+      "hashNum": 16265,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 61
+    },
+    {
+      "id": 62,
+      "board": "B R Q / K . N / . . .",
+      "hash": "...K.NBRQ",
+      "hashNum": 16270,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 62
+    },
+    {
+      "id": 63,
+      "board": "B N . / R . . / Q K .",
+      "hash": "...K.NQRB",
+      "hashNum": 16375,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 63
+    },
+    {
+      "id": 64,
+      "board": "B N . / Q . . / R K .",
+      "hash": "...K.NRQB",
+      "hashNum": 16405,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 64
+    },
+    {
+      "id": 65,
+      "board": "B N R / K . Q / . . .",
+      "hash": "...K.QBNR",
+      "hashNum": 16475,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 65
+    },
+    {
+      "id": 66,
+      "board": "B R N / K . Q / . . .",
+      "hash": "...K.QBRN",
+      "hashNum": 16485,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 66
+    },
+    {
+      "id": 67,
+      "board": "B R N / Q . K / . . .",
+      "hash": "...K.QNRB",
+      "hashNum": 16555,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 67
+    },
+    {
+      "id": 68,
+      "board": "B N R / Q . K / . . .",
+      "hash": "...K.QRNB",
+      "hashNum": 16615,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 68
+    },
+    {
+      "id": 69,
+      "board": "B N Q / K . R / . . .",
+      "hash": "...K.RBNQ",
+      "hashNum": 16690,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 69
+    },
+    {
+      "id": 70,
+      "board": "B Q N / K . R / . . .",
+      "hash": "...K.RBQN",
+      "hashNum": 16695,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 70
+    },
+    {
+      "id": 71,
+      "board": "B Q N / R . K / . . .",
+      "hash": "...K.RNQB",
+      "hashNum": 16765,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 71
+    },
+    {
+      "id": 72,
+      "board": "B N Q / R . K / . . .",
+      "hash": "...K.RQNB",
+      "hashNum": 16795,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 72
+    },
+    {
+      "id": 73,
+      "board": "R N . / Q B . / . K .",
+      "hash": "...KBN.QR",
+      "hashNum": 17525,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 73
+    },
+    {
+      "id": 74,
+      "board": "Q N . / R B . / . K .",
+      "hash": "...KBN.RQ",
+      "hashNum": 17530,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 74
+    },
+    {
+      "id": 75,
+      "board": "R N . / . B . / Q K .",
+      "hash": "...KBNQ.R",
+      "hashNum": 17645,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 75
+    },
+    {
+      "id": 76,
+      "board": ". N . / R B . / Q K .",
+      "hash": "...KBNQR.",
+      "hashNum": 17670,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 76
+    },
+    {
+      "id": 77,
+      "board": "Q N . / . B . / R K .",
+      "hash": "...KBNR.Q",
+      "hashNum": 17680,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 77
+    },
+    {
+      "id": 78,
+      "board": ". N . / Q B . / R K .",
+      "hash": "...KBNRQ.",
+      "hashNum": 17700,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 78
+    },
+    {
+      "id": 79,
+      "board": ". N R / K B Q / . . .",
+      "hash": "...KBQ.NR",
+      "hashNum": 17735,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 79
+    },
+    {
+      "id": 80,
+      "board": "N R . / Q B K / . . .",
+      "hash": "...KBQ.RN",
+      "hashNum": 17745,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 80
+    },
+    {
+      "id": 81,
+      "board": "N K . / . B . / R Q .",
+      "hash": "...KBQN.R",
+      "hashNum": 17825,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 81
+    },
+    {
+      "id": 82,
+      "board": "N K . / R B . / . Q .",
+      "hash": "...KBQNR.",
+      "hashNum": 17850,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 82
+    },
+    {
+      "id": 83,
+      "board": "N . R / Q B K / . . .",
+      "hash": "...KBQR.N",
+      "hashNum": 17895,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 83
+    },
+    {
+      "id": 84,
+      "board": "R N . / K B Q / . . .",
+      "hash": "...KBQRN.",
+      "hashNum": 17910,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 84
+    },
+    {
+      "id": 85,
+      "board": ". N Q / K B R / . . .",
+      "hash": "...KBR.NQ",
+      "hashNum": 17950,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 85
+    },
+    {
+      "id": 86,
+      "board": "N Q . / R B K / . . .",
+      "hash": "...KBR.QN",
+      "hashNum": 17955,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 86
+    },
+    {
+      "id": 87,
+      "board": "N K . / . B . / Q R .",
+      "hash": "...KBRN.Q",
+      "hashNum": 18040,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 87
+    },
+    {
+      "id": 88,
+      "board": "N K . / Q B . / . R .",
+      "hash": "...KBRNQ.",
+      "hashNum": 18060,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 88
+    },
+    {
+      "id": 89,
+      "board": "N . Q / R B K / . . .",
+      "hash": "...KBRQ.N",
+      "hashNum": 18075,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 89
+    },
+    {
+      "id": 90,
+      "board": "Q N . / K B R / . . .",
+      "hash": "...KBRQN.",
+      "hashNum": 18090,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 90
+    },
+    {
+      "id": 91,
+      "board": "B N . / R Q . / . K .",
+      "hash": "...KQN.RB",
+      "hashNum": 21415,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 91
+    },
+    {
+      "id": 92,
+      "board": "B . R / K Q N / . . .",
+      "hash": "...KQNB.R",
+      "hashNum": 21425,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 92
+    },
+    {
+      "id": 93,
+      "board": "B R . / K Q N / . . .",
+      "hash": "...KQNBR.",
+      "hashNum": 21450,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 93
+    },
+    {
+      "id": 94,
+      "board": "B N . / . Q . / R K .",
+      "hash": "...KQNR.B",
+      "hashNum": 21565,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 94
+    },
+    {
+      "id": 95,
+      "board": "B N . / R Q K / . . .",
+      "hash": "...KQR.NB",
+      "hashNum": 21835,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 95
+    },
+    {
+      "id": 96,
+      "board": "B . N / K Q R / . . .",
+      "hash": "...KQRB.N",
+      "hashNum": 21855,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 96
+    },
+    {
+      "id": 97,
+      "board": "B N . / K Q R / . . .",
+      "hash": "...KQRBN.",
+      "hashNum": 21870,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 97
+    },
+    {
+      "id": 98,
+      "board": "B . N / R Q K / . . .",
+      "hash": "...KQRN.B",
+      "hashNum": 21925,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 98
+    },
+    {
+      "id": 99,
+      "board": "B N . / Q R . / . K .",
+      "hash": "...KRN.QB",
+      "hashNum": 22705,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 99
+    },
+    {
+      "id": 100,
+      "board": "B . Q / K R N / . . .",
+      "hash": "...KRNB.Q",
+      "hashNum": 22720,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 100
+    },
+    {
+      "id": 101,
+      "board": "B Q . / K R N / . . .",
+      "hash": "...KRNBQ.",
+      "hashNum": 22740,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 101
+    },
+    {
+      "id": 102,
+      "board": "B N . / . R . / Q K .",
+      "hash": "...KRNQ.B",
+      "hashNum": 22825,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 102
+    },
+    {
+      "id": 103,
+      "board": "B N . / Q R K / . . .",
+      "hash": "...KRQ.NB",
+      "hashNum": 22915,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 103
+    },
+    {
+      "id": 104,
+      "board": "B . N / K R Q / . . .",
+      "hash": "...KRQB.N",
+      "hashNum": 22935,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 104
+    },
+    {
+      "id": 105,
+      "board": "B N . / K R Q / . . .",
+      "hash": "...KRQBN.",
+      "hashNum": 22950,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 105
+    },
+    {
+      "id": 106,
+      "board": "B . N / Q R K / . . .",
+      "hash": "...KRQN.B",
+      "hashNum": 23005,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 106
+    },
+    {
+      "id": 107,
+      "board": "B N . / K . . / R Q .",
+      "hash": "...N.QBKR",
+      "hashNum": 24245,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 107
+    },
+    {
+      "id": 108,
+      "board": "B N . / R . . / K Q .",
+      "hash": "...N.QBRK",
+      "hashNum": 24260,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 108
+    },
+    {
+      "id": 109,
+      "board": "B R K / Q . N / . . .",
+      "hash": "...N.QKRB",
+      "hashNum": 24295,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 109
+    },
+    {
+      "id": 110,
+      "board": "B K R / Q . N / . . .",
+      "hash": "...N.QRKB",
+      "hashNum": 24385,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 110
+    },
+    {
+      "id": 111,
+      "board": "B N . / K . . / Q R .",
+      "hash": "...N.RBKQ",
+      "hashNum": 24460,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 111
+    },
+    {
+      "id": 112,
+      "board": "B N . / Q . . / K R .",
+      "hash": "...N.RBQK",
+      "hashNum": 24470,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 112
+    },
+    {
+      "id": 113,
+      "board": "B Q K / R . N / . . .",
+      "hash": "...N.RKQB",
+      "hashNum": 24505,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 113
+    },
+    {
+      "id": 114,
+      "board": "B K Q / R . N / . . .",
+      "hash": "...N.RQKB",
+      "hashNum": 24565,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 114
+    },
+    {
+      "id": 115,
+      "board": ". N . / K B . / R Q .",
+      "hash": "...NBQ.KR",
+      "hashNum": 25505,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 115
+    },
+    {
+      "id": 116,
+      "board": ". N . / R B . / K Q .",
+      "hash": "...NBQ.RK",
+      "hashNum": 25520,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 116
+    },
+    {
+      "id": 117,
+      "board": "K N . / . B . / R Q .",
+      "hash": "...NBQK.R",
+      "hashNum": 25565,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 117
+    },
+    {
+      "id": 118,
+      "board": "K N . / R B . / . Q .",
+      "hash": "...NBQKR.",
+      "hashNum": 25590,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 118
+    },
+    {
+      "id": 119,
+      "board": "R N . / . B . / K Q .",
+      "hash": "...NBQR.K",
+      "hashNum": 25670,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 119
+    },
+    {
+      "id": 120,
+      "board": "R N . / K B . / . Q .",
+      "hash": "...NBQRK.",
+      "hashNum": 25680,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 120
+    },
+    {
+      "id": 121,
+      "board": ". N . / K B . / Q R .",
+      "hash": "...NBR.KQ",
+      "hashNum": 25720,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 121
+    },
+    {
+      "id": 122,
+      "board": ". N . / Q B . / K R .",
+      "hash": "...NBR.QK",
+      "hashNum": 25730,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 122
+    },
+    {
+      "id": 123,
+      "board": "K N . / . B . / Q R .",
+      "hash": "...NBRK.Q",
+      "hashNum": 25780,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 123
+    },
+    {
+      "id": 124,
+      "board": "K N . / Q B . / . R .",
+      "hash": "...NBRKQ.",
+      "hashNum": 25800,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 124
+    },
+    {
+      "id": 125,
+      "board": "Q N . / . B . / K R .",
+      "hash": "...NBRQ.K",
+      "hashNum": 25850,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 125
+    },
+    {
+      "id": 126,
+      "board": "Q N . / K B . / . R .",
+      "hash": "...NBRQK.",
+      "hashNum": 25860,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 126
+    },
+    {
+      "id": 127,
+      "board": "B R . / Q K N / . . .",
+      "hash": "...NKQ.RB",
+      "hashNum": 26815,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 127
+    },
+    {
+      "id": 128,
+      "board": "B N . / . K . / R Q .",
+      "hash": "...NKQB.R",
+      "hashNum": 26825,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 128
+    },
+    {
+      "id": 129,
+      "board": "B N . / R K . / . Q .",
+      "hash": "...NKQBR.",
+      "hashNum": 26850,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 129
+    },
+    {
+      "id": 130,
+      "board": "B . R / Q K N / . . .",
+      "hash": "...NKQR.B",
+      "hashNum": 26965,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 130
+    },
+    {
+      "id": 131,
+      "board": "B Q . / R K N / . . .",
+      "hash": "...NKR.QB",
+      "hashNum": 27025,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 131
+    },
+    {
+      "id": 132,
+      "board": "B N . / . K . / Q R .",
+      "hash": "...NKRB.Q",
+      "hashNum": 27040,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 132
+    },
+    {
+      "id": 133,
+      "board": "B N . / Q K . / . R .",
+      "hash": "...NKRBQ.",
+      "hashNum": 27060,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 133
+    },
+    {
+      "id": 134,
+      "board": "B . Q / R K N / . . .",
+      "hash": "...NKRQ.B",
+      "hashNum": 27145,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 134
+    },
+    {
+      "id": 135,
+      "board": "B K . / R Q N / . . .",
+      "hash": "...NQR.KB",
+      "hashNum": 29605,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 135
+    },
+    {
+      "id": 136,
+      "board": "B N . / . Q . / K R .",
+      "hash": "...NQRB.K",
+      "hashNum": 29630,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 136
+    },
+    {
+      "id": 137,
+      "board": "B N . / K Q . / . R .",
+      "hash": "...NQRBK.",
+      "hashNum": 29640,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 137
+    },
+    {
+      "id": 138,
+      "board": "B . K / R Q N / . . .",
+      "hash": "...NQRK.B",
+      "hashNum": 29665,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 138
+    },
+    {
+      "id": 139,
+      "board": "B K . / Q R N / . . .",
+      "hash": "...NRQ.KB",
+      "hashNum": 30685,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 139
+    },
+    {
+      "id": 140,
+      "board": "B N . / . R . / K Q .",
+      "hash": "...NRQB.K",
+      "hashNum": 30710,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 140
+    },
+    {
+      "id": 141,
+      "board": "B N . / K R . / . Q .",
+      "hash": "...NRQBK.",
+      "hashNum": 30720,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 141
+    },
+    {
+      "id": 142,
+      "board": "B . K / Q R N / . . .",
+      "hash": "...NRQK.B",
+      "hashNum": 30745,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 142
+    },
+    {
+      "id": 143,
+      "board": "B K N / Q . R / . . .",
+      "hash": "...Q.RBKN",
+      "hashNum": 32235,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 143
+    },
+    {
+      "id": 144,
+      "board": "B N K / Q . R / . . .",
+      "hash": "...Q.RBNK",
+      "hashNum": 32240,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 144
+    },
+    {
+      "id": 145,
+      "board": "B N K / R . Q / . . .",
+      "hash": "...Q.RKNB",
+      "hashNum": 32275,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 145
+    },
+    {
+      "id": 146,
+      "board": "B K N / R . Q / . . .",
+      "hash": "...Q.RNKB",
+      "hashNum": 32305,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 146
+    },
+    {
+      "id": 147,
+      "board": "N K . / R B Q / . . .",
+      "hash": "...QBR.KN",
+      "hashNum": 33495,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 147
+    },
+    {
+      "id": 148,
+      "board": "K N . / R B Q / . . .",
+      "hash": "...QBR.NK",
+      "hashNum": 33500,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 148
+    },
+    {
+      "id": 149,
+      "board": "N . K / R B Q / . . .",
+      "hash": "...QBRK.N",
+      "hashNum": 33555,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 149
+    },
+    {
+      "id": 150,
+      "board": "K N . / Q B R / . . .",
+      "hash": "...QBRKN.",
+      "hashNum": 33570,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 150
+    },
+    {
+      "id": 151,
+      "board": "N . K / Q B R / . . .",
+      "hash": "...QBRN.K",
+      "hashNum": 33590,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 151
+    },
+    {
+      "id": 152,
+      "board": "N K . / Q B R / . . .",
+      "hash": "...QBRNK.",
+      "hashNum": 33600,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 152
+    },
+    {
+      "id": 153,
+      "board": "B N . / R K Q / . . .",
+      "hash": "...QKR.NB",
+      "hashNum": 34795,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 153
+    },
+    {
+      "id": 154,
+      "board": "B . N / Q K R / . . .",
+      "hash": "...QKRB.N",
+      "hashNum": 34815,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 154
+    },
+    {
+      "id": 155,
+      "board": "B N . / Q K R / . . .",
+      "hash": "...QKRBN.",
+      "hashNum": 34830,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 155
+    },
+    {
+      "id": 156,
+      "board": "B . N / R K Q / . . .",
+      "hash": "...QKRN.B",
+      "hashNum": 34885,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 156
+    },
+    {
+      "id": 157,
+      "board": "B K R / . . Q / . . N",
+      "hash": "..B..KNQR",
+      "hashNum": 47225,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 157
+    },
+    {
+      "id": 158,
+      "board": "B K Q / . . R / . . N",
+      "hash": "..B..KNRQ",
+      "hashNum": 47230,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 158
+    },
+    {
+      "id": 159,
+      "board": "B K R / . . N / . . Q",
+      "hash": "..B..KQNR",
+      "hashNum": 47255,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 159
+    },
+    {
+      "id": 160,
+      "board": "B K N / . . R / . . Q",
+      "hash": "..B..KQRN",
+      "hashNum": 47265,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 160
+    },
+    {
+      "id": 161,
+      "board": "B K Q / . . N / . . R",
+      "hash": "..B..KRNQ",
+      "hashNum": 47290,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 161
+    },
+    {
+      "id": 162,
+      "board": "B K N / . . Q / . . R",
+      "hash": "..B..KRQN",
+      "hashNum": 47295,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 162
+    },
+    {
+      "id": 163,
+      "board": "B N R / . . Q / . . K",
+      "hash": "..B..NKQR",
+      "hashNum": 47405,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 163
+    },
+    {
+      "id": 164,
+      "board": "B N Q / . . R / . . K",
+      "hash": "..B..NKRQ",
+      "hashNum": 47410,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 164
+    },
+    {
+      "id": 165,
+      "board": "B N R / . . K / . . Q",
+      "hash": "..B..NQKR",
+      "hashNum": 47465,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 165
+    },
+    {
+      "id": 166,
+      "board": "B N K / . . R / . . Q",
+      "hash": "..B..NQRK",
+      "hashNum": 47480,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 166
+    },
+    {
+      "id": 167,
+      "board": "B N Q / . . K / . . R",
+      "hash": "..B..NRKQ",
+      "hashNum": 47500,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 167
+    },
+    {
+      "id": 168,
+      "board": "B N K / . . Q / . . R",
+      "hash": "..B..NRQK",
+      "hashNum": 47510,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 168
+    },
+    {
+      "id": 169,
+      "board": "B Q R / . . N / . . K",
+      "hash": "..B..QKNR",
+      "hashNum": 47615,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 169
+    },
+    {
+      "id": 170,
+      "board": "B Q N / . . R / . . K",
+      "hash": "..B..QKRN",
+      "hashNum": 47625,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 170
+    },
+    {
+      "id": 171,
+      "board": "B Q R / . . K / . . N",
+      "hash": "..B..QNKR",
+      "hashNum": 47645,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 171
+    },
+    {
+      "id": 172,
+      "board": "B Q K / . . R / . . N",
+      "hash": "..B..QNRK",
+      "hashNum": 47660,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 172
+    },
+    {
+      "id": 173,
+      "board": "B Q N / . . K / . . R",
+      "hash": "..B..QRKN",
+      "hashNum": 47715,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 173
+    },
+    {
+      "id": 174,
+      "board": "B Q K / . . N / . . R",
+      "hash": "..B..QRNK",
+      "hashNum": 47720,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 174
+    },
+    {
+      "id": 175,
+      "board": "B R Q / . . N / . . K",
+      "hash": "..B..RKNQ",
+      "hashNum": 47830,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 175
+    },
+    {
+      "id": 176,
+      "board": "B R N / . . Q / . . K",
+      "hash": "..B..RKQN",
+      "hashNum": 47835,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 176
+    },
+    {
+      "id": 177,
+      "board": "B R Q / . . K / . . N",
+      "hash": "..B..RNKQ",
+      "hashNum": 47860,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 177
+    },
+    {
+      "id": 178,
+      "board": "B R K / . . Q / . . N",
+      "hash": "..B..RNQK",
+      "hashNum": 47870,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 178
+    },
+    {
+      "id": 179,
+      "board": "B R N / . . K / . . Q",
+      "hash": "..B..RQKN",
+      "hashNum": 47895,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 179
+    },
+    {
+      "id": 180,
+      "board": "B R K / . . N / . . Q",
+      "hash": "..B..RQNK",
+      "hashNum": 47900,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 180
+    },
+    {
+      "id": 181,
+      "board": "B . R / . K Q / . . N",
+      "hash": "..B.K.NQR",
+      "hashNum": 49385,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 181
+    },
+    {
+      "id": 182,
+      "board": "B . Q / . K R / . . N",
+      "hash": "..B.K.NRQ",
+      "hashNum": 49390,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 182
+    },
+    {
+      "id": 183,
+      "board": "B . R / . K N / . . Q",
+      "hash": "..B.K.QNR",
+      "hashNum": 49415,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 183
+    },
+    {
+      "id": 184,
+      "board": "B . N / . K R / . . Q",
+      "hash": "..B.K.QRN",
+      "hashNum": 49425,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 184
+    },
+    {
+      "id": 185,
+      "board": "B . Q / . K N / . . R",
+      "hash": "..B.K.RNQ",
+      "hashNum": 49450,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 185
+    },
+    {
+      "id": 186,
+      "board": "B . N / . K Q / . . R",
+      "hash": "..B.K.RQN",
+      "hashNum": 49455,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 186
+    },
+    {
+      "id": 187,
+      "board": "B N R / . K . / . . Q",
+      "hash": "..B.KNQ.R",
+      "hashNum": 50045,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 187
+    },
+    {
+      "id": 188,
+      "board": "B N . / . K R / . . Q",
+      "hash": "..B.KNQR.",
+      "hashNum": 50070,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 188
+    },
+    {
+      "id": 189,
+      "board": "B N Q / . K . / . . R",
+      "hash": "..B.KNR.Q",
+      "hashNum": 50080,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 189
+    },
+    {
+      "id": 190,
+      "board": "B N . / . K Q / . . R",
+      "hash": "..B.KNRQ.",
+      "hashNum": 50100,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 190
+    },
+    {
+      "id": 191,
+      "board": "B Q R / . K . / . . N",
+      "hash": "..B.KQN.R",
+      "hashNum": 50225,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 191
+    },
+    {
+      "id": 192,
+      "board": "B Q . / . K R / . . N",
+      "hash": "..B.KQNR.",
+      "hashNum": 50250,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 192
+    },
+    {
+      "id": 193,
+      "board": "B Q N / . K . / . . R",
+      "hash": "..B.KQR.N",
+      "hashNum": 50295,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 193
+    },
+    {
+      "id": 194,
+      "board": "B Q . / . K N / . . R",
+      "hash": "..B.KQRN.",
+      "hashNum": 50310,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 194
+    },
+    {
+      "id": 195,
+      "board": "B R Q / . K . / . . N",
+      "hash": "..B.KRN.Q",
+      "hashNum": 50440,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 195
+    },
+    {
+      "id": 196,
+      "board": "B R . / . K Q / . . N",
+      "hash": "..B.KRNQ.",
+      "hashNum": 50460,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 196
+    },
+    {
+      "id": 197,
+      "board": "B R N / . K . / . . Q",
+      "hash": "..B.KRQ.N",
+      "hashNum": 50475,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 197
+    },
+    {
+      "id": 198,
+      "board": "B R . / . K N / . . Q",
+      "hash": "..B.KRQN.",
+      "hashNum": 50490,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 198
+    },
+    {
+      "id": 199,
+      "board": "B . R / . Q N / . . K",
+      "hash": "..B.Q.KNR",
+      "hashNum": 51935,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 199
+    },
+    {
+      "id": 200,
+      "board": "B . N / . Q R / . . K",
+      "hash": "..B.Q.KRN",
+      "hashNum": 51945,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 200
+    },
+    {
+      "id": 201,
+      "board": "B . R / . Q K / . . N",
+      "hash": "..B.Q.NKR",
+      "hashNum": 51965,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 201
+    },
+    {
+      "id": 202,
+      "board": "B . K / . Q R / . . N",
+      "hash": "..B.Q.NRK",
+      "hashNum": 51980,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 202
+    },
+    {
+      "id": 203,
+      "board": "B . N / . Q K / . . R",
+      "hash": "..B.Q.RKN",
+      "hashNum": 52035,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 203
+    },
+    {
+      "id": 204,
+      "board": "B . K / . Q N / . . R",
+      "hash": "..B.Q.RNK",
+      "hashNum": 52040,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 204
+    },
+    {
+      "id": 205,
+      "board": "B K R / . Q . / . . N",
+      "hash": "..B.QKN.R",
+      "hashNum": 52385,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 205
+    },
+    {
+      "id": 206,
+      "board": "B K . / . Q R / . . N",
+      "hash": "..B.QKNR.",
+      "hashNum": 52410,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 206
+    },
+    {
+      "id": 207,
+      "board": "B K N / . Q . / . . R",
+      "hash": "..B.QKR.N",
+      "hashNum": 52455,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 207
+    },
+    {
+      "id": 208,
+      "board": "B K . / . Q N / . . R",
+      "hash": "..B.QKRN.",
+      "hashNum": 52470,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 208
+    },
+    {
+      "id": 209,
+      "board": "B N R / . Q . / . . K",
+      "hash": "..B.QNK.R",
+      "hashNum": 52565,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 209
+    },
+    {
+      "id": 210,
+      "board": "B N . / . Q R / . . K",
+      "hash": "..B.QNKR.",
+      "hashNum": 52590,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 210
+    },
+    {
+      "id": 211,
+      "board": "B N K / . Q . / . . R",
+      "hash": "..B.QNR.K",
+      "hashNum": 52670,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 211
+    },
+    {
+      "id": 212,
+      "board": "B N . / . Q K / . . R",
+      "hash": "..B.QNRK.",
+      "hashNum": 52680,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 212
+    },
+    {
+      "id": 213,
+      "board": "B R N / . Q . / . . K",
+      "hash": "..B.QRK.N",
+      "hashNum": 52995,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 213
+    },
+    {
+      "id": 214,
+      "board": "B R . / . Q N / . . K",
+      "hash": "..B.QRKN.",
+      "hashNum": 53010,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 214
+    },
+    {
+      "id": 215,
+      "board": "B R K / . Q . / . . N",
+      "hash": "..B.QRN.K",
+      "hashNum": 53030,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 215
+    },
+    {
+      "id": 216,
+      "board": "B R . / . Q K / . . N",
+      "hash": "..B.QRNK.",
+      "hashNum": 53040,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 216
+    },
+    {
+      "id": 217,
+      "board": "B . Q / . R N / . . K",
+      "hash": "..B.R.KNQ",
+      "hashNum": 53230,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 217
+    },
+    {
+      "id": 218,
+      "board": "B . N / . R Q / . . K",
+      "hash": "..B.R.KQN",
+      "hashNum": 53235,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 218
+    },
+    {
+      "id": 219,
+      "board": "B . Q / . R K / . . N",
+      "hash": "..B.R.NKQ",
+      "hashNum": 53260,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 219
+    },
+    {
+      "id": 220,
+      "board": "B . K / . R Q / . . N",
+      "hash": "..B.R.NQK",
+      "hashNum": 53270,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 220
+    },
+    {
+      "id": 221,
+      "board": "B . N / . R K / . . Q",
+      "hash": "..B.R.QKN",
+      "hashNum": 53295,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 221
+    },
+    {
+      "id": 222,
+      "board": "B . K / . R N / . . Q",
+      "hash": "..B.R.QNK",
+      "hashNum": 53300,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 222
+    },
+    {
+      "id": 223,
+      "board": "B K Q / . R . / . . N",
+      "hash": "..B.RKN.Q",
+      "hashNum": 53680,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 223
+    },
+    {
+      "id": 224,
+      "board": "B K . / . R Q / . . N",
+      "hash": "..B.RKNQ.",
+      "hashNum": 53700,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 224
+    },
+    {
+      "id": 225,
+      "board": "B K N / . R . / . . Q",
+      "hash": "..B.RKQ.N",
+      "hashNum": 53715,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 225
+    },
+    {
+      "id": 226,
+      "board": "B K . / . R N / . . Q",
+      "hash": "..B.RKQN.",
+      "hashNum": 53730,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 226
+    },
+    {
+      "id": 227,
+      "board": "B N Q / . R . / . . K",
+      "hash": "..B.RNK.Q",
+      "hashNum": 53860,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 227
+    },
+    {
+      "id": 228,
+      "board": "B N . / . R Q / . . K",
+      "hash": "..B.RNKQ.",
+      "hashNum": 53880,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 228
+    },
+    {
+      "id": 229,
+      "board": "B N K / . R . / . . Q",
+      "hash": "..B.RNQ.K",
+      "hashNum": 53930,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 229
+    },
+    {
+      "id": 230,
+      "board": "B N . / . R K / . . Q",
+      "hash": "..B.RNQK.",
+      "hashNum": 53940,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 230
+    },
+    {
+      "id": 231,
+      "board": "B Q N / . R . / . . K",
+      "hash": "..B.RQK.N",
+      "hashNum": 54075,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 231
+    },
+    {
+      "id": 232,
+      "board": "B Q . / . R N / . . K",
+      "hash": "..B.RQKN.",
+      "hashNum": 54090,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 232
+    },
+    {
+      "id": 233,
+      "board": "B Q K / . R . / . . N",
+      "hash": "..B.RQN.K",
+      "hashNum": 54110,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 233
+    },
+    {
+      "id": 234,
+      "board": "B Q . / . R K / . . N",
+      "hash": "..B.RQNK.",
+      "hashNum": 54120,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 234
+    },
+    {
+      "id": 235,
+      "board": "B . . / . . K / R Q N",
+      "hash": "..BK..NQR",
+      "hashNum": 62345,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 235
+    },
+    {
+      "id": 236,
+      "board": "B . . / . . K / Q R N",
+      "hash": "..BK..NRQ",
+      "hashNum": 62350,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 236
+    },
+    {
+      "id": 237,
+      "board": "B . R / . . N / . K Q",
+      "hash": "..BK..QNR",
+      "hashNum": 62375,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 237
+    },
+    {
+      "id": 238,
+      "board": "B . N / . . R / . K Q",
+      "hash": "..BK..QRN",
+      "hashNum": 62385,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 238
+    },
+    {
+      "id": 239,
+      "board": "B . Q / . . N / . K R",
+      "hash": "..BK..RNQ",
+      "hashNum": 62410,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 239
+    },
+    {
+      "id": 240,
+      "board": "B . N / . . Q / . K R",
+      "hash": "..BK..RQN",
+      "hashNum": 62415,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 240
+    },
+    {
+      "id": 241,
+      "board": "B N R / . . Q / . K .",
+      "hash": "..BK.N.QR",
+      "hashNum": 62885,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 241
+    },
+    {
+      "id": 242,
+      "board": "B N Q / . . R / . K .",
+      "hash": "..BK.N.RQ",
+      "hashNum": 62890,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 242
+    },
+    {
+      "id": 243,
+      "board": "B N R / . . . / . K Q",
+      "hash": "..BK.NQ.R",
+      "hashNum": 63005,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 243
+    },
+    {
+      "id": 244,
+      "board": "B N . / . . R / . K Q",
+      "hash": "..BK.NQR.",
+      "hashNum": 63030,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 244
+    },
+    {
+      "id": 245,
+      "board": "B N Q / . . . / . K R",
+      "hash": "..BK.NR.Q",
+      "hashNum": 63040,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 245
+    },
+    {
+      "id": 246,
+      "board": "B N . / . . Q / . K R",
+      "hash": "..BK.NRQ.",
+      "hashNum": 63060,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 246
+    },
+    {
+      "id": 247,
+      "board": "B Q R / . . N / . K .",
+      "hash": "..BK.Q.NR",
+      "hashNum": 63095,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 247
+    },
+    {
+      "id": 248,
+      "board": "B Q N / . . R / . K .",
+      "hash": "..BK.Q.RN",
+      "hashNum": 63105,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 248
+    },
+    {
+      "id": 249,
+      "board": "B . . / Q . K / R . N",
+      "hash": "..BK.QN.R",
+      "hashNum": 63185,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 249
+    },
+    {
+      "id": 250,
+      "board": "B . . / Q . K / . R N",
+      "hash": "..BK.QNR.",
+      "hashNum": 63210,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 250
+    },
+    {
+      "id": 251,
+      "board": "B Q N / . . . / . K R",
+      "hash": "..BK.QR.N",
+      "hashNum": 63255,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 251
+    },
+    {
+      "id": 252,
+      "board": "B Q . / . . N / . K R",
+      "hash": "..BK.QRN.",
+      "hashNum": 63270,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 252
+    },
+    {
+      "id": 253,
+      "board": "B R Q / . . N / . K .",
+      "hash": "..BK.R.NQ",
+      "hashNum": 63310,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 253
+    },
+    {
+      "id": 254,
+      "board": "B R N / . . Q / . K .",
+      "hash": "..BK.R.QN",
+      "hashNum": 63315,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 254
+    },
+    {
+      "id": 255,
+      "board": "B . . / R . K / Q . N",
+      "hash": "..BK.RN.Q",
+      "hashNum": 63400,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 255
+    },
+    {
+      "id": 256,
+      "board": "B . . / R . K / . Q N",
+      "hash": "..BK.RNQ.",
+      "hashNum": 63420,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 256
+    },
+    {
+      "id": 257,
+      "board": "B R N / . . . / . K Q",
+      "hash": "..BK.RQ.N",
+      "hashNum": 63435,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 257
+    },
+    {
+      "id": 258,
+      "board": "B R . / . . N / . K Q",
+      "hash": "..BK.RQN.",
+      "hashNum": 63450,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 258
+    },
+    {
+      "id": 259,
+      "board": "B . R / . Q N / . K .",
+      "hash": "..BKQ..NR",
+      "hashNum": 67415,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 259
+    },
+    {
+      "id": 260,
+      "board": "B . N / . Q R / . K .",
+      "hash": "..BKQ..RN",
+      "hashNum": 67425,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 260
+    },
+    {
+      "id": 261,
+      "board": "B . . / . Q K / R . N",
+      "hash": "..BKQ.N.R",
+      "hashNum": 67505,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 261
+    },
+    {
+      "id": 262,
+      "board": "B . . / . Q K / . R N",
+      "hash": "..BKQ.NR.",
+      "hashNum": 67530,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 262
+    },
+    {
+      "id": 263,
+      "board": "B . N / . Q . / . K R",
+      "hash": "..BKQ.R.N",
+      "hashNum": 67575,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 263
+    },
+    {
+      "id": 264,
+      "board": "B . . / . Q N / . K R",
+      "hash": "..BKQ.RN.",
+      "hashNum": 67590,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 264
+    },
+    {
+      "id": 265,
+      "board": "B N R / . Q . / . K .",
+      "hash": "..BKQN..R",
+      "hashNum": 68045,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 265
+    },
+    {
+      "id": 266,
+      "board": "B N . / . Q R / . K .",
+      "hash": "..BKQN.R.",
+      "hashNum": 68070,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 266
+    },
+    {
+      "id": 267,
+      "board": "B N . / . Q . / . K R",
+      "hash": "..BKQNR..",
+      "hashNum": 68220,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 267
+    },
+    {
+      "id": 268,
+      "board": "B R N / . Q . / . K .",
+      "hash": "..BKQR..N",
+      "hashNum": 68475,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 268
+    },
+    {
+      "id": 269,
+      "board": "B R . / . Q N / . K .",
+      "hash": "..BKQR.N.",
+      "hashNum": 68490,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 269
+    },
+    {
+      "id": 270,
+      "board": "B . . / R Q K / . . N",
+      "hash": "..BKQRN..",
+      "hashNum": 68580,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 270
+    },
+    {
+      "id": 271,
+      "board": "B . Q / . R N / . K .",
+      "hash": "..BKR..NQ",
+      "hashNum": 68710,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 271
+    },
+    {
+      "id": 272,
+      "board": "B . N / . R Q / . K .",
+      "hash": "..BKR..QN",
+      "hashNum": 68715,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 272
+    },
+    {
+      "id": 273,
+      "board": "B . . / . R K / Q . N",
+      "hash": "..BKR.N.Q",
+      "hashNum": 68800,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 273
+    },
+    {
+      "id": 274,
+      "board": "B . . / . R K / . Q N",
+      "hash": "..BKR.NQ.",
+      "hashNum": 68820,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 274
+    },
+    {
+      "id": 275,
+      "board": "B . N / . R . / . K Q",
+      "hash": "..BKR.Q.N",
+      "hashNum": 68835,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 275
+    },
+    {
+      "id": 276,
+      "board": "B . . / . R N / . K Q",
+      "hash": "..BKR.QN.",
+      "hashNum": 68850,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 276
+    },
+    {
+      "id": 277,
+      "board": "B N Q / . R . / . K .",
+      "hash": "..BKRN..Q",
+      "hashNum": 69340,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 277
+    },
+    {
+      "id": 278,
+      "board": "B N . / . R Q / . K .",
+      "hash": "..BKRN.Q.",
+      "hashNum": 69360,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 278
+    },
+    {
+      "id": 279,
+      "board": "B N . / . R . / . K Q",
+      "hash": "..BKRNQ..",
+      "hashNum": 69480,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 279
+    },
+    {
+      "id": 280,
+      "board": "B Q N / . R . / . K .",
+      "hash": "..BKRQ..N",
+      "hashNum": 69555,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 280
+    },
+    {
+      "id": 281,
+      "board": "B Q . / . R N / . K .",
+      "hash": "..BKRQ.N.",
+      "hashNum": 69570,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 281
+    },
+    {
+      "id": 282,
+      "board": "B . . / Q R K / . . N",
+      "hash": "..BKRQN..",
+      "hashNum": 69660,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 282
+    },
+    {
+      "id": 283,
+      "board": "B . . / . . N / R Q K",
+      "hash": "..BN..KQR",
+      "hashNum": 70085,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 283
+    },
+    {
+      "id": 284,
+      "board": "B . . / . . N / Q R K",
+      "hash": "..BN..KRQ",
+      "hashNum": 70090,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 284
+    },
+    {
+      "id": 285,
+      "board": "B . . / . . N / R K Q",
+      "hash": "..BN..QKR",
+      "hashNum": 70145,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 285
+    },
+    {
+      "id": 286,
+      "board": "B . . / . . N / K R Q",
+      "hash": "..BN..QRK",
+      "hashNum": 70160,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 286
+    },
+    {
+      "id": 287,
+      "board": "B . . / . . N / Q K R",
+      "hash": "..BN..RKQ",
+      "hashNum": 70180,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 287
+    },
+    {
+      "id": 288,
+      "board": "B . . / . . N / K Q R",
+      "hash": "..BN..RQK",
+      "hashNum": 70190,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 288
+    },
+    {
+      "id": 289,
+      "board": "B . . / K . N / R Q .",
+      "hash": "..BN.K.QR",
+      "hashNum": 70445,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 289
+    },
+    {
+      "id": 290,
+      "board": "B . . / K . N / Q R .",
+      "hash": "..BN.K.RQ",
+      "hashNum": 70450,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 290
+    },
+    {
+      "id": 291,
+      "board": "B . . / K . N / R . Q",
+      "hash": "..BN.KQ.R",
+      "hashNum": 70565,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 291
+    },
+    {
+      "id": 292,
+      "board": "B . . / K . N / . R Q",
+      "hash": "..BN.KQR.",
+      "hashNum": 70590,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 292
+    },
+    {
+      "id": 293,
+      "board": "B . . / K . N / Q . R",
+      "hash": "..BN.KR.Q",
+      "hashNum": 70600,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 293
+    },
+    {
+      "id": 294,
+      "board": "B . . / K . N / . Q R",
+      "hash": "..BN.KRQ.",
+      "hashNum": 70620,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 294
+    },
+    {
+      "id": 295,
+      "board": "B . . / Q . N / R K .",
+      "hash": "..BN.Q.KR",
+      "hashNum": 70865,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 295
+    },
+    {
+      "id": 296,
+      "board": "B . . / Q . N / K R .",
+      "hash": "..BN.Q.RK",
+      "hashNum": 70880,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 296
+    },
+    {
+      "id": 297,
+      "board": "B . . / Q . N / R . K",
+      "hash": "..BN.QK.R",
+      "hashNum": 70925,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 297
+    },
+    {
+      "id": 298,
+      "board": "B . . / Q . N / . R K",
+      "hash": "..BN.QKR.",
+      "hashNum": 70950,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 298
+    },
+    {
+      "id": 299,
+      "board": "B . . / Q . N / K . R",
+      "hash": "..BN.QR.K",
+      "hashNum": 71030,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 299
+    },
+    {
+      "id": 300,
+      "board": "B . . / Q . N / . K R",
+      "hash": "..BN.QRK.",
+      "hashNum": 71040,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 300
+    },
+    {
+      "id": 301,
+      "board": "B . . / R . N / Q K .",
+      "hash": "..BN.R.KQ",
+      "hashNum": 71080,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 301
+    },
+    {
+      "id": 302,
+      "board": "B . . / R . N / K Q .",
+      "hash": "..BN.R.QK",
+      "hashNum": 71090,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 302
+    },
+    {
+      "id": 303,
+      "board": "B . . / R . N / Q . K",
+      "hash": "..BN.RK.Q",
+      "hashNum": 71140,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 303
+    },
+    {
+      "id": 304,
+      "board": "B . . / R . N / . Q K",
+      "hash": "..BN.RKQ.",
+      "hashNum": 71160,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 304
+    },
+    {
+      "id": 305,
+      "board": "B . . / R . N / K . Q",
+      "hash": "..BN.RQ.K",
+      "hashNum": 71210,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 305
+    },
+    {
+      "id": 306,
+      "board": "B . . / R . N / . K Q",
+      "hash": "..BN.RQK.",
+      "hashNum": 71220,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 306
+    },
+    {
+      "id": 307,
+      "board": "B . . / . K N / R Q .",
+      "hash": "..BNK..QR",
+      "hashNum": 72605,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 307
+    },
+    {
+      "id": 308,
+      "board": "B . . / . K N / Q R .",
+      "hash": "..BNK..RQ",
+      "hashNum": 72610,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 308
+    },
+    {
+      "id": 309,
+      "board": "B . . / . K N / R . Q",
+      "hash": "..BNK.Q.R",
+      "hashNum": 72725,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 309
+    },
+    {
+      "id": 310,
+      "board": "B . . / . K N / . R Q",
+      "hash": "..BNK.QR.",
+      "hashNum": 72750,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 310
+    },
+    {
+      "id": 311,
+      "board": "B . . / . K N / Q . R",
+      "hash": "..BNK.R.Q",
+      "hashNum": 72760,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 311
+    },
+    {
+      "id": 312,
+      "board": "B . . / . K N / . Q R",
+      "hash": "..BNK.RQ.",
+      "hashNum": 72780,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 312
+    },
+    {
+      "id": 313,
+      "board": "B . . / Q K N / R . .",
+      "hash": "..BNKQ..R",
+      "hashNum": 73445,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 313
+    },
+    {
+      "id": 314,
+      "board": "B . . / Q K N / . R .",
+      "hash": "..BNKQ.R.",
+      "hashNum": 73470,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 314
+    },
+    {
+      "id": 315,
+      "board": "B . . / Q K N / . . R",
+      "hash": "..BNKQR..",
+      "hashNum": 73620,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 315
+    },
+    {
+      "id": 316,
+      "board": "B . . / R K N / Q . .",
+      "hash": "..BNKR..Q",
+      "hashNum": 73660,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 316
+    },
+    {
+      "id": 317,
+      "board": "B . . / R K N / . Q .",
+      "hash": "..BNKR.Q.",
+      "hashNum": 73680,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 317
+    },
+    {
+      "id": 318,
+      "board": "B . . / R K N / . . Q",
+      "hash": "..BNKRQ..",
+      "hashNum": 73800,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 318
+    },
+    {
+      "id": 319,
+      "board": "B . . / . Q N / R K .",
+      "hash": "..BNQ..KR",
+      "hashNum": 75185,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 319
+    },
+    {
+      "id": 320,
+      "board": "B . . / . Q N / K R .",
+      "hash": "..BNQ..RK",
+      "hashNum": 75200,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 320
+    },
+    {
+      "id": 321,
+      "board": "B . . / . Q N / R . K",
+      "hash": "..BNQ.K.R",
+      "hashNum": 75245,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 321
+    },
+    {
+      "id": 322,
+      "board": "B . . / . Q N / . R K",
+      "hash": "..BNQ.KR.",
+      "hashNum": 75270,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 322
+    },
+    {
+      "id": 323,
+      "board": "B . . / . Q N / K . R",
+      "hash": "..BNQ.R.K",
+      "hashNum": 75350,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 323
+    },
+    {
+      "id": 324,
+      "board": "B . . / K Q N / R . .",
+      "hash": "..BNQK..R",
+      "hashNum": 75605,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 324
+    },
+    {
+      "id": 325,
+      "board": "B . . / K Q N / . R .",
+      "hash": "..BNQK.R.",
+      "hashNum": 75630,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 325
+    },
+    {
+      "id": 326,
+      "board": "B . . / K Q N / . . R",
+      "hash": "..BNQKR..",
+      "hashNum": 75780,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 326
+    },
+    {
+      "id": 327,
+      "board": "B . . / R Q N / K . .",
+      "hash": "..BNQR..K",
+      "hashNum": 76250,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 327
+    },
+    {
+      "id": 328,
+      "board": "B . . / R Q N / . K .",
+      "hash": "..BNQR.K.",
+      "hashNum": 76260,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 328
+    },
+    {
+      "id": 329,
+      "board": "B . . / R Q N / . . K",
+      "hash": "..BNQRK..",
+      "hashNum": 76320,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 329
+    },
+    {
+      "id": 330,
+      "board": "B . . / . R N / Q K .",
+      "hash": "..BNR..KQ",
+      "hashNum": 76480,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 330
+    },
+    {
+      "id": 331,
+      "board": "B . . / . R N / K Q .",
+      "hash": "..BNR..QK",
+      "hashNum": 76490,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 331
+    },
+    {
+      "id": 332,
+      "board": "B . . / . R N / Q . K",
+      "hash": "..BNR.K.Q",
+      "hashNum": 76540,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 332
+    },
+    {
+      "id": 333,
+      "board": "B . . / . R N / . Q K",
+      "hash": "..BNR.KQ.",
+      "hashNum": 76560,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 333
+    },
+    {
+      "id": 334,
+      "board": "B . . / . R N / K . Q",
+      "hash": "..BNR.Q.K",
+      "hashNum": 76610,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 334
+    },
+    {
+      "id": 335,
+      "board": "B . . / K R N / Q . .",
+      "hash": "..BNRK..Q",
+      "hashNum": 76900,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 335
+    },
+    {
+      "id": 336,
+      "board": "B . . / K R N / . Q .",
+      "hash": "..BNRK.Q.",
+      "hashNum": 76920,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 336
+    },
+    {
+      "id": 337,
+      "board": "B . . / K R N / . . Q",
+      "hash": "..BNRKQ..",
+      "hashNum": 77040,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 337
+    },
+    {
+      "id": 338,
+      "board": "B . . / Q R N / K . .",
+      "hash": "..BNRQ..K",
+      "hashNum": 77330,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 338
+    },
+    {
+      "id": 339,
+      "board": "B . . / Q R N / . K .",
+      "hash": "..BNRQ.K.",
+      "hashNum": 77340,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 339
+    },
+    {
+      "id": 340,
+      "board": "B . . / Q R N / . . K",
+      "hash": "..BNRQK..",
+      "hashNum": 77400,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 340
+    },
+    {
+      "id": 341,
+      "board": "B . R / . . N / . Q K",
+      "hash": "..BQ..KNR",
+      "hashNum": 77855,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 341
+    },
+    {
+      "id": 342,
+      "board": "B . N / . . R / . Q K",
+      "hash": "..BQ..KRN",
+      "hashNum": 77865,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 342
+    },
+    {
+      "id": 343,
+      "board": "B . R / . . K / . Q N",
+      "hash": "..BQ..NKR",
+      "hashNum": 77885,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 343
+    },
+    {
+      "id": 344,
+      "board": "B . K / . . R / . Q N",
+      "hash": "..BQ..NRK",
+      "hashNum": 77900,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 344
+    },
+    {
+      "id": 345,
+      "board": "B . N / . . K / . Q R",
+      "hash": "..BQ..RKN",
+      "hashNum": 77955,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 345
+    },
+    {
+      "id": 346,
+      "board": "B . K / . . N / . Q R",
+      "hash": "..BQ..RNK",
+      "hashNum": 77960,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 346
+    },
+    {
+      "id": 347,
+      "board": "B K R / . . N / . Q .",
+      "hash": "..BQ.K.NR",
+      "hashNum": 78215,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 347
+    },
+    {
+      "id": 348,
+      "board": "B K N / . . R / . Q .",
+      "hash": "..BQ.K.RN",
+      "hashNum": 78225,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 348
+    },
+    {
+      "id": 349,
+      "board": "B K R / . . . / . Q N",
+      "hash": "..BQ.KN.R",
+      "hashNum": 78305,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 349
+    },
+    {
+      "id": 350,
+      "board": "B K . / . . R / . Q N",
+      "hash": "..BQ.KNR.",
+      "hashNum": 78330,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 350
+    },
+    {
+      "id": 351,
+      "board": "B K N / . . . / . Q R",
+      "hash": "..BQ.KR.N",
+      "hashNum": 78375,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 351
+    },
+    {
+      "id": 352,
+      "board": "B K . / . . N / . Q R",
+      "hash": "..BQ.KRN.",
+      "hashNum": 78390,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 352
+    },
+    {
+      "id": 353,
+      "board": "B N R / . . K / . Q .",
+      "hash": "..BQ.N.KR",
+      "hashNum": 78425,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 353
+    },
+    {
+      "id": 354,
+      "board": "B N K / . . R / . Q .",
+      "hash": "..BQ.N.RK",
+      "hashNum": 78440,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 354
+    },
+    {
+      "id": 355,
+      "board": "B N R / . . . / . Q K",
+      "hash": "..BQ.NK.R",
+      "hashNum": 78485,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 355
+    },
+    {
+      "id": 356,
+      "board": "B N . / . . R / . Q K",
+      "hash": "..BQ.NKR.",
+      "hashNum": 78510,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 356
+    },
+    {
+      "id": 357,
+      "board": "B N K / . . . / . Q R",
+      "hash": "..BQ.NR.K",
+      "hashNum": 78590,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 357
+    },
+    {
+      "id": 358,
+      "board": "B N . / . . K / . Q R",
+      "hash": "..BQ.NRK.",
+      "hashNum": 78600,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 358
+    },
+    {
+      "id": 359,
+      "board": "B R N / . . K / . Q .",
+      "hash": "..BQ.R.KN",
+      "hashNum": 78855,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 359
+    },
+    {
+      "id": 360,
+      "board": "B R K / . . N / . Q .",
+      "hash": "..BQ.R.NK",
+      "hashNum": 78860,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 360
+    },
+    {
+      "id": 361,
+      "board": "B R N / . . . / . Q K",
+      "hash": "..BQ.RK.N",
+      "hashNum": 78915,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 361
+    },
+    {
+      "id": 362,
+      "board": "B R . / . . N / . Q K",
+      "hash": "..BQ.RKN.",
+      "hashNum": 78930,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 362
+    },
+    {
+      "id": 363,
+      "board": "B R K / . . . / . Q N",
+      "hash": "..BQ.RN.K",
+      "hashNum": 78950,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 363
+    },
+    {
+      "id": 364,
+      "board": "B R . / . . K / . Q N",
+      "hash": "..BQ.RNK.",
+      "hashNum": 78960,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 364
+    },
+    {
+      "id": 365,
+      "board": "B . R / . K N / . Q .",
+      "hash": "..BQK..NR",
+      "hashNum": 80375,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 365
+    },
+    {
+      "id": 366,
+      "board": "B . N / . K R / . Q .",
+      "hash": "..BQK..RN",
+      "hashNum": 80385,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 366
+    },
+    {
+      "id": 367,
+      "board": "B . . / . K Q / R . N",
+      "hash": "..BQK.N.R",
+      "hashNum": 80465,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 367
+    },
+    {
+      "id": 368,
+      "board": "B . . / . K Q / . R N",
+      "hash": "..BQK.NR.",
+      "hashNum": 80490,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 368
+    },
+    {
+      "id": 369,
+      "board": "B . N / . K . / . Q R",
+      "hash": "..BQK.R.N",
+      "hashNum": 80535,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 369
+    },
+    {
+      "id": 370,
+      "board": "B N R / . K . / . Q .",
+      "hash": "..BQKN..R",
+      "hashNum": 81005,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 370
+    },
+    {
+      "id": 371,
+      "board": "B N . / . K R / . Q .",
+      "hash": "..BQKN.R.",
+      "hashNum": 81030,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 371
+    },
+    {
+      "id": 372,
+      "board": "B N . / . K . / . Q R",
+      "hash": "..BQKNR..",
+      "hashNum": 81180,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 372
+    },
+    {
+      "id": 373,
+      "board": "B R N / . K . / . Q .",
+      "hash": "..BQKR..N",
+      "hashNum": 81435,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 373
+    },
+    {
+      "id": 374,
+      "board": "B R . / . K N / . Q .",
+      "hash": "..BQKR.N.",
+      "hashNum": 81450,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 374
+    },
+    {
+      "id": 375,
+      "board": "B . . / R K Q / . . N",
+      "hash": "..BQKRN..",
+      "hashNum": 81540,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 375
+    },
+    {
+      "id": 376,
+      "board": "B . N / . R K / . Q .",
+      "hash": "..BQR..KN",
+      "hashNum": 84255,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 376
+    },
+    {
+      "id": 377,
+      "board": "B . K / . R N / . Q .",
+      "hash": "..BQR..NK",
+      "hashNum": 84260,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 377
+    },
+    {
+      "id": 378,
+      "board": "B . N / . R . / . Q K",
+      "hash": "..BQR.K.N",
+      "hashNum": 84315,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 378
+    },
+    {
+      "id": 379,
+      "board": "B . K / . R . / . Q N",
+      "hash": "..BQR.N.K",
+      "hashNum": 84350,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 379
+    },
+    {
+      "id": 380,
+      "board": "B K N / . R . / . Q .",
+      "hash": "..BQRK..N",
+      "hashNum": 84675,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 380
+    },
+    {
+      "id": 381,
+      "board": "B K . / . R N / . Q .",
+      "hash": "..BQRK.N.",
+      "hashNum": 84690,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 381
+    },
+    {
+      "id": 382,
+      "board": "B K . / . R . / . Q N",
+      "hash": "..BQRKN..",
+      "hashNum": 84780,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 382
+    },
+    {
+      "id": 383,
+      "board": "B N K / . R . / . Q .",
+      "hash": "..BQRN..K",
+      "hashNum": 84890,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 383
+    },
+    {
+      "id": 384,
+      "board": "B N . / . R K / . Q .",
+      "hash": "..BQRN.K.",
+      "hashNum": 84900,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 384
+    },
+    {
+      "id": 385,
+      "board": "B N . / . R . / . Q K",
+      "hash": "..BQRNK..",
+      "hashNum": 84960,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 385
+    },
+    {
+      "id": 386,
+      "board": "B . Q / . . N / . R K",
+      "hash": "..BR..KNQ",
+      "hashNum": 85630,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 386
+    },
+    {
+      "id": 387,
+      "board": "B . N / . . Q / . R K",
+      "hash": "..BR..KQN",
+      "hashNum": 85635,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 387
+    },
+    {
+      "id": 388,
+      "board": "B . Q / . . K / . R N",
+      "hash": "..BR..NKQ",
+      "hashNum": 85660,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 388
+    },
+    {
+      "id": 389,
+      "board": "B . K / . . Q / . R N",
+      "hash": "..BR..NQK",
+      "hashNum": 85670,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 389
+    },
+    {
+      "id": 390,
+      "board": "B . N / . . K / . R Q",
+      "hash": "..BR..QKN",
+      "hashNum": 85695,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 390
+    },
+    {
+      "id": 391,
+      "board": "B . K / . . N / . R Q",
+      "hash": "..BR..QNK",
+      "hashNum": 85700,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 391
+    },
+    {
+      "id": 392,
+      "board": "B K Q / . . N / . R .",
+      "hash": "..BR.K.NQ",
+      "hashNum": 85990,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 392
+    },
+    {
+      "id": 393,
+      "board": "B K N / . . Q / . R .",
+      "hash": "..BR.K.QN",
+      "hashNum": 85995,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 393
+    },
+    {
+      "id": 394,
+      "board": "B K Q / . . . / . R N",
+      "hash": "..BR.KN.Q",
+      "hashNum": 86080,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 394
+    },
+    {
+      "id": 395,
+      "board": "B K . / . . Q / . R N",
+      "hash": "..BR.KNQ.",
+      "hashNum": 86100,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 395
+    },
+    {
+      "id": 396,
+      "board": "B K N / . . . / . R Q",
+      "hash": "..BR.KQ.N",
+      "hashNum": 86115,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 396
+    },
+    {
+      "id": 397,
+      "board": "B K . / . . N / . R Q",
+      "hash": "..BR.KQN.",
+      "hashNum": 86130,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 397
+    },
+    {
+      "id": 398,
+      "board": "B N Q / . . K / . R .",
+      "hash": "..BR.N.KQ",
+      "hashNum": 86200,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 398
+    },
+    {
+      "id": 399,
+      "board": "B N K / . . Q / . R .",
+      "hash": "..BR.N.QK",
+      "hashNum": 86210,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 399
+    },
+    {
+      "id": 400,
+      "board": "B N Q / . . . / . R K",
+      "hash": "..BR.NK.Q",
+      "hashNum": 86260,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 400
+    },
+    {
+      "id": 401,
+      "board": "B N . / . . Q / . R K",
+      "hash": "..BR.NKQ.",
+      "hashNum": 86280,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 401
+    },
+    {
+      "id": 402,
+      "board": "B N K / . . . / . R Q",
+      "hash": "..BR.NQ.K",
+      "hashNum": 86330,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 402
+    },
+    {
+      "id": 403,
+      "board": "B N . / . . K / . R Q",
+      "hash": "..BR.NQK.",
+      "hashNum": 86340,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 403
+    },
+    {
+      "id": 404,
+      "board": "B Q N / . . K / . R .",
+      "hash": "..BR.Q.KN",
+      "hashNum": 86415,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 404
+    },
+    {
+      "id": 405,
+      "board": "B Q K / . . N / . R .",
+      "hash": "..BR.Q.NK",
+      "hashNum": 86420,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 405
+    },
+    {
+      "id": 406,
+      "board": "B Q N / . . . / . R K",
+      "hash": "..BR.QK.N",
+      "hashNum": 86475,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 406
+    },
+    {
+      "id": 407,
+      "board": "B Q . / . . N / . R K",
+      "hash": "..BR.QKN.",
+      "hashNum": 86490,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 407
+    },
+    {
+      "id": 408,
+      "board": "B Q K / . . . / . R N",
+      "hash": "..BR.QN.K",
+      "hashNum": 86510,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 408
+    },
+    {
+      "id": 409,
+      "board": "B Q . / . . K / . R N",
+      "hash": "..BR.QNK.",
+      "hashNum": 86520,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 409
+    },
+    {
+      "id": 410,
+      "board": "B . Q / . K N / . R .",
+      "hash": "..BRK..NQ",
+      "hashNum": 88150,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 410
+    },
+    {
+      "id": 411,
+      "board": "B . N / . K Q / . R .",
+      "hash": "..BRK..QN",
+      "hashNum": 88155,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 411
+    },
+    {
+      "id": 412,
+      "board": "B . Q / . K . / . R N",
+      "hash": "..BRK.N.Q",
+      "hashNum": 88240,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 412
+    },
+    {
+      "id": 413,
+      "board": "B . N / . K . / . R Q",
+      "hash": "..BRK.Q.N",
+      "hashNum": 88275,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 413
+    },
+    {
+      "id": 414,
+      "board": "B N Q / . K . / . R .",
+      "hash": "..BRKN..Q",
+      "hashNum": 88780,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 414
+    },
+    {
+      "id": 415,
+      "board": "B N . / . K Q / . R .",
+      "hash": "..BRKN.Q.",
+      "hashNum": 88800,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 415
+    },
+    {
+      "id": 416,
+      "board": "B N . / . K . / . R Q",
+      "hash": "..BRKNQ..",
+      "hashNum": 88920,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 416
+    },
+    {
+      "id": 417,
+      "board": "B Q N / . K . / . R .",
+      "hash": "..BRKQ..N",
+      "hashNum": 88995,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 417
+    },
+    {
+      "id": 418,
+      "board": "B Q . / . K N / . R .",
+      "hash": "..BRKQ.N.",
+      "hashNum": 89010,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 418
+    },
+    {
+      "id": 419,
+      "board": "B Q . / . K . / . R N",
+      "hash": "..BRKQN..",
+      "hashNum": 89100,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 419
+    },
+    {
+      "id": 420,
+      "board": "B . N / . Q K / . R .",
+      "hash": "..BRQ..KN",
+      "hashNum": 90735,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 420
+    },
+    {
+      "id": 421,
+      "board": "B . K / . Q N / . R .",
+      "hash": "..BRQ..NK",
+      "hashNum": 90740,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 421
+    },
+    {
+      "id": 422,
+      "board": "B . N / . Q . / . R K",
+      "hash": "..BRQ.K.N",
+      "hashNum": 90795,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 422
+    },
+    {
+      "id": 423,
+      "board": "B . K / . Q . / . R N",
+      "hash": "..BRQ.N.K",
+      "hashNum": 90830,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 423
+    },
+    {
+      "id": 424,
+      "board": "B K N / . Q . / . R .",
+      "hash": "..BRQK..N",
+      "hashNum": 91155,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 424
+    },
+    {
+      "id": 425,
+      "board": "B K . / . Q N / . R .",
+      "hash": "..BRQK.N.",
+      "hashNum": 91170,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 425
+    },
+    {
+      "id": 426,
+      "board": "B K . / . Q . / . R N",
+      "hash": "..BRQKN..",
+      "hashNum": 91260,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 426
+    },
+    {
+      "id": 427,
+      "board": "B N K / . Q . / . R .",
+      "hash": "..BRQN..K",
+      "hashNum": 91370,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 427
+    },
+    {
+      "id": 428,
+      "board": "B N . / . Q K / . R .",
+      "hash": "..BRQN.K.",
+      "hashNum": 91380,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 428
+    },
+    {
+      "id": 429,
+      "board": "B N . / . Q . / . R K",
+      "hash": "..BRQNK..",
+      "hashNum": 91440,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 429
+    },
+    {
+      "id": 430,
+      "board": "B N K / R . . / Q . .",
+      "hash": "..K..NQRB",
+      "hashNum": 94135,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 430
+    },
+    {
+      "id": 431,
+      "board": "B N K / Q . . / R . .",
+      "hash": "..K..NRQB",
+      "hashNum": 94165,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 431
+    },
+    {
+      "id": 432,
+      "board": "B R N / Q . . / K . .",
+      "hash": "..K..QNRB",
+      "hashNum": 94315,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 432
+    },
+    {
+      "id": 433,
+      "board": "B N R / Q . . / K . .",
+      "hash": "..K..QRNB",
+      "hashNum": 94375,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 433
+    },
+    {
+      "id": 434,
+      "board": "B Q N / R . . / K . .",
+      "hash": "..K..RNQB",
+      "hashNum": 94525,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 434
+    },
+    {
+      "id": 435,
+      "board": "B N Q / R . . / K . .",
+      "hash": "..K..RQNB",
+      "hashNum": 94555,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 435
+    },
+    {
+      "id": 436,
+      "board": "N Q R / . B . / . . K",
+      "hash": "..K.B.NQR",
+      "hashNum": 94745,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 436
+    },
+    {
+      "id": 437,
+      "board": "N R Q / . B . / . . K",
+      "hash": "..K.B.NRQ",
+      "hashNum": 94750,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 437
+    },
+    {
+      "id": 438,
+      "board": "R N Q / . B . / K . .",
+      "hash": "..K.B.QNR",
+      "hashNum": 94775,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 438
+    },
+    {
+      "id": 439,
+      "board": "N . K / R B . / Q . .",
+      "hash": "..K.B.QRN",
+      "hashNum": 94785,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 439
+    },
+    {
+      "id": 440,
+      "board": "Q N R / . B . / K . .",
+      "hash": "..K.B.RNQ",
+      "hashNum": 94810,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 440
+    },
+    {
+      "id": 441,
+      "board": "N . K / Q B . / R . .",
+      "hash": "..K.B.RQN",
+      "hashNum": 94815,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 441
+    },
+    {
+      "id": 442,
+      "board": "K N R / . B . / . . Q",
+      "hash": "..K.BNQ.R",
+      "hashNum": 95405,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 442
+    },
+    {
+      "id": 443,
+      "board": "K N . / . B R / . . Q",
+      "hash": "..K.BNQR.",
+      "hashNum": 95430,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 443
+    },
+    {
+      "id": 444,
+      "board": "K N Q / . B . / . . R",
+      "hash": "..K.BNR.Q",
+      "hashNum": 95440,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 444
+    },
+    {
+      "id": 445,
+      "board": "K N . / . B Q / . . R",
+      "hash": "..K.BNRQ.",
+      "hashNum": 95460,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 445
+    },
+    {
+      "id": 446,
+      "board": "N . R / . B Q / . . K",
+      "hash": "..K.BQN.R",
+      "hashNum": 95585,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 446
+    },
+    {
+      "id": 447,
+      "board": "N R . / . B Q / . . K",
+      "hash": "..K.BQNR.",
+      "hashNum": 95610,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 447
+    },
+    {
+      "id": 448,
+      "board": "N Q K / . B . / R . .",
+      "hash": "..K.BQR.N",
+      "hashNum": 95655,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 448
+    },
+    {
+      "id": 449,
+      "board": ". N R / Q B . / K . .",
+      "hash": "..K.BQRN.",
+      "hashNum": 95670,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 449
+    },
+    {
+      "id": 450,
+      "board": "N . Q / . B R / . . K",
+      "hash": "..K.BRN.Q",
+      "hashNum": 95800,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 450
+    },
+    {
+      "id": 451,
+      "board": "N Q . / . B R / . . K",
+      "hash": "..K.BRNQ.",
+      "hashNum": 95820,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 451
+    },
+    {
+      "id": 452,
+      "board": "N R K / . B . / Q . .",
+      "hash": "..K.BRQ.N",
+      "hashNum": 95835,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 452
+    },
+    {
+      "id": 453,
+      "board": ". N Q / R B . / K . .",
+      "hash": "..K.BRQN.",
+      "hashNum": 95850,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 453
+    },
+    {
+      "id": 454,
+      "board": "B R N / . Q . / K . .",
+      "hash": "..K.Q.NRB",
+      "hashNum": 98635,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 454
+    },
+    {
+      "id": 455,
+      "board": "B N R / . Q . / K . .",
+      "hash": "..K.Q.RNB",
+      "hashNum": 98695,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 455
+    },
+    {
+      "id": 456,
+      "board": "B N K / . Q . / R . .",
+      "hash": "..K.QNR.B",
+      "hashNum": 99325,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 456
+    },
+    {
+      "id": 457,
+      "board": "B . N / R Q . / K . .",
+      "hash": "..K.QRN.B",
+      "hashNum": 99685,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 457
+    },
+    {
+      "id": 458,
+      "board": "B Q N / . R . / K . .",
+      "hash": "..K.R.NQB",
+      "hashNum": 99925,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 458
+    },
+    {
+      "id": 459,
+      "board": "B N Q / . R . / K . .",
+      "hash": "..K.R.QNB",
+      "hashNum": 99955,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 459
+    },
+    {
+      "id": 460,
+      "board": "B N K / . R . / Q . .",
+      "hash": "..K.RNQ.B",
+      "hashNum": 100585,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 460
+    },
+    {
+      "id": 461,
+      "board": "B . N / Q R . / K . .",
+      "hash": "..K.RQN.B",
+      "hashNum": 100765,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 461
+    },
+    {
+      "id": 462,
+      "board": "B N . / Q . . / R . K",
+      "hash": "..KN..BQR",
+      "hashNum": 116705,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 462
+    },
+    {
+      "id": 463,
+      "board": "B N . / R . . / Q . K",
+      "hash": "..KN..BRQ",
+      "hashNum": 116710,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 463
+    },
+    {
+      "id": 464,
+      "board": "B R Q / . . N / K . .",
+      "hash": "..KN..QRB",
+      "hashNum": 116815,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 464
+    },
+    {
+      "id": 465,
+      "board": "B Q R / . . N / K . .",
+      "hash": "..KN..RQB",
+      "hashNum": 116845,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 465
+    },
+    {
+      "id": 466,
+      "board": "B R . / Q . N / K . .",
+      "hash": "..KN.Q.RB",
+      "hashNum": 117535,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 466
+    },
+    {
+      "id": 467,
+      "board": "B N . / . . . / R Q K",
+      "hash": "..KN.QB.R",
+      "hashNum": 117545,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 467
+    },
+    {
+      "id": 468,
+      "board": "B N . / R . . / . Q K",
+      "hash": "..KN.QBR.",
+      "hashNum": 117570,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 468
+    },
+    {
+      "id": 469,
+      "board": "B . R / Q . N / K . .",
+      "hash": "..KN.QR.B",
+      "hashNum": 117685,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 469
+    },
+    {
+      "id": 470,
+      "board": "B Q . / R . N / K . .",
+      "hash": "..KN.R.QB",
+      "hashNum": 117745,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 470
+    },
+    {
+      "id": 471,
+      "board": "B N . / . . . / Q R K",
+      "hash": "..KN.RB.Q",
+      "hashNum": 117760,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 471
+    },
+    {
+      "id": 472,
+      "board": "B N . / Q . . / . R K",
+      "hash": "..KN.RBQ.",
+      "hashNum": 117780,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 472
+    },
+    {
+      "id": 473,
+      "board": "B . Q / R . N / K . .",
+      "hash": "..KN.RQ.B",
+      "hashNum": 117865,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 473
+    },
+    {
+      "id": 474,
+      "board": ". N . / . B Q / K . R",
+      "hash": "..KNB..QR",
+      "hashNum": 117965,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 474
+    },
+    {
+      "id": 475,
+      "board": ". N . / . B R / K . Q",
+      "hash": "..KNB..RQ",
+      "hashNum": 117970,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 475
+    },
+    {
+      "id": 476,
+      "board": ". N Q / . B . / K . R",
+      "hash": "..KNB.Q.R",
+      "hashNum": 118085,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 476
+    },
+    {
+      "id": 477,
+      "board": ". N Q / . B R / K . .",
+      "hash": "..KNB.QR.",
+      "hashNum": 118110,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 477
+    },
+    {
+      "id": 478,
+      "board": ". N R / . B . / K . Q",
+      "hash": "..KNB.R.Q",
+      "hashNum": 118120,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 478
+    },
+    {
+      "id": 479,
+      "board": ". N R / . B Q / K . .",
+      "hash": "..KNB.RQ.",
+      "hashNum": 118140,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 479
+    },
+    {
+      "id": 480,
+      "board": ". N . / . B . / K Q R",
+      "hash": "..KNBQ..R",
+      "hashNum": 118805,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 480
+    },
+    {
+      "id": 481,
+      "board": ". N . / . B R / K Q .",
+      "hash": "..KNBQ.R.",
+      "hashNum": 118830,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 481
+    },
+    {
+      "id": 482,
+      "board": ". N R / . B . / K Q .",
+      "hash": "..KNBQR..",
+      "hashNum": 118980,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 482
+    },
+    {
+      "id": 483,
+      "board": ". N . / . B . / K R Q",
+      "hash": "..KNBR..Q",
+      "hashNum": 119020,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 483
+    },
+    {
+      "id": 484,
+      "board": ". N . / . B Q / K R .",
+      "hash": "..KNBR.Q.",
+      "hashNum": 119040,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 484
+    },
+    {
+      "id": 485,
+      "board": ". N Q / . B . / K R .",
+      "hash": "..KNBRQ..",
+      "hashNum": 119160,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 485
+    },
+    {
+      "id": 486,
+      "board": "B R . / . Q N / K . .",
+      "hash": "..KNQ..RB",
+      "hashNum": 121855,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 486
+    },
+    {
+      "id": 487,
+      "board": "B N . / . Q . / R . K",
+      "hash": "..KNQ.B.R",
+      "hashNum": 121865,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 487
+    },
+    {
+      "id": 488,
+      "board": "B N . / R Q . / . . K",
+      "hash": "..KNQ.BR.",
+      "hashNum": 121890,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 488
+    },
+    {
+      "id": 489,
+      "board": "B . R / . Q N / K . .",
+      "hash": "..KNQ.R.B",
+      "hashNum": 122005,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 489
+    },
+    {
+      "id": 490,
+      "board": "B Q . / . R N / K . .",
+      "hash": "..KNR..QB",
+      "hashNum": 123145,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 490
+    },
+    {
+      "id": 491,
+      "board": "B N . / . R . / Q . K",
+      "hash": "..KNR.B.Q",
+      "hashNum": 123160,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 491
+    },
+    {
+      "id": 492,
+      "board": "B N . / Q R . / . . K",
+      "hash": "..KNR.BQ.",
+      "hashNum": 123180,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 492
+    },
+    {
+      "id": 493,
+      "board": "B . Q / . R N / K . .",
+      "hash": "..KNR.Q.B",
+      "hashNum": 123265,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 493
+    },
+    {
+      "id": 494,
+      "board": "B N R / Q . . / . . K",
+      "hash": "..KQ..BNR",
+      "hashNum": 124475,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 494
+    },
+    {
+      "id": 495,
+      "board": "B R N / Q . . / . . K",
+      "hash": "..KQ..BRN",
+      "hashNum": 124485,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 495
+    },
+    {
+      "id": 496,
+      "board": "B R N / . . Q / K . .",
+      "hash": "..KQ..NRB",
+      "hashNum": 124555,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 496
+    },
+    {
+      "id": 497,
+      "board": "B N R / . . Q / K . .",
+      "hash": "..KQ..RNB",
+      "hashNum": 124615,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 497
+    },
+    {
+      "id": 498,
+      "board": "B N K / R . . / . Q .",
+      "hash": "..KQ.N.RB",
+      "hashNum": 125095,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 498
+    },
+    {
+      "id": 499,
+      "board": "B . R / Q . N / . . K",
+      "hash": "..KQ.NB.R",
+      "hashNum": 125105,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 499
+    },
+    {
+      "id": 500,
+      "board": "B R . / Q . N / . . K",
+      "hash": "..KQ.NBR.",
+      "hashNum": 125130,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 500
+    },
+    {
+      "id": 501,
+      "board": "B N K / . . . / R Q .",
+      "hash": "..KQ.NR.B",
+      "hashNum": 125245,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 501
+    },
+    {
+      "id": 502,
+      "board": "B N . / R . Q / K . .",
+      "hash": "..KQ.R.NB",
+      "hashNum": 125515,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 502
+    },
+    {
+      "id": 503,
+      "board": "B . N / Q . R / . . K",
+      "hash": "..KQ.RB.N",
+      "hashNum": 125535,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 503
+    },
+    {
+      "id": 504,
+      "board": "B N . / Q . R / . . K",
+      "hash": "..KQ.RBN.",
+      "hashNum": 125550,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 504
+    },
+    {
+      "id": 505,
+      "board": "B . N / R . Q / K . .",
+      "hash": "..KQ.RN.B",
+      "hashNum": 125605,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 505
+    },
+    {
+      "id": 506,
+      "board": "R N . / . B Q / K . .",
+      "hash": "..KQB..NR",
+      "hashNum": 125735,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 506
+    },
+    {
+      "id": 507,
+      "board": "N . K / R B . / . Q .",
+      "hash": "..KQB..RN",
+      "hashNum": 125745,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 507
+    },
+    {
+      "id": 508,
+      "board": "N Q . / . B . / R . K",
+      "hash": "..KQB.N.R",
+      "hashNum": 125825,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 508
+    },
+    {
+      "id": 509,
+      "board": "N Q . / R B . / . . K",
+      "hash": "..KQB.NR.",
+      "hashNum": 125850,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 509
+    },
+    {
+      "id": 510,
+      "board": "N . K / . B . / R Q .",
+      "hash": "..KQB.R.N",
+      "hashNum": 125895,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 510
+    },
+    {
+      "id": 511,
+      "board": "K N R / . B . / . Q .",
+      "hash": "..KQBN..R",
+      "hashNum": 126365,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 511
+    },
+    {
+      "id": 512,
+      "board": "K N . / . B R / . Q .",
+      "hash": "..KQBN.R.",
+      "hashNum": 126390,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 512
+    },
+    {
+      "id": 513,
+      "board": "K N . / . B . / . Q R",
+      "hash": "..KQBNR..",
+      "hashNum": 126540,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 513
+    },
+    {
+      "id": 514,
+      "board": "N R K / . B . / . Q .",
+      "hash": "..KQBR..N",
+      "hashNum": 126795,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 514
+    },
+    {
+      "id": 515,
+      "board": ". N . / R B Q / K . .",
+      "hash": "..KQBR.N.",
+      "hashNum": 126810,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 515
+    },
+    {
+      "id": 516,
+      "board": "N Q . / . B . / . R K",
+      "hash": "..KQBRN..",
+      "hashNum": 126900,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 516
+    },
+    {
+      "id": 517,
+      "board": "B N . / . R Q / K . .",
+      "hash": "..KQR..NB",
+      "hashNum": 130915,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 517
+    },
+    {
+      "id": 518,
+      "board": "B . N / Q R . / . . K",
+      "hash": "..KQR.B.N",
+      "hashNum": 130935,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 518
+    },
+    {
+      "id": 519,
+      "board": "B . N / . R Q / K . .",
+      "hash": "..KQR.N.B",
+      "hashNum": 131005,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 519
+    },
+    {
+      "id": 520,
+      "board": "B N Q / R . . / . . K",
+      "hash": "..KR..BNQ",
+      "hashNum": 132250,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 520
+    },
+    {
+      "id": 521,
+      "board": "B Q N / R . . / . . K",
+      "hash": "..KR..BQN",
+      "hashNum": 132255,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 521
+    },
+    {
+      "id": 522,
+      "board": "B Q N / . . R / K . .",
+      "hash": "..KR..NQB",
+      "hashNum": 132325,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 522
+    },
+    {
+      "id": 523,
+      "board": "B N Q / . . R / K . .",
+      "hash": "..KR..QNB",
+      "hashNum": 132355,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 523
+    },
+    {
+      "id": 524,
+      "board": "B N K / Q . . / . R .",
+      "hash": "..KR.N.QB",
+      "hashNum": 132865,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 524
+    },
+    {
+      "id": 525,
+      "board": "B . Q / R . N / . . K",
+      "hash": "..KR.NB.Q",
+      "hashNum": 132880,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 525
+    },
+    {
+      "id": 526,
+      "board": "B Q . / R . N / . . K",
+      "hash": "..KR.NBQ.",
+      "hashNum": 132900,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 526
+    },
+    {
+      "id": 527,
+      "board": "B N K / . . . / Q R .",
+      "hash": "..KR.NQ.B",
+      "hashNum": 132985,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 527
+    },
+    {
+      "id": 528,
+      "board": "B N . / Q . R / K . .",
+      "hash": "..KR.Q.NB",
+      "hashNum": 133075,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 528
+    },
+    {
+      "id": 529,
+      "board": "B . N / R . Q / . . K",
+      "hash": "..KR.QB.N",
+      "hashNum": 133095,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 529
+    },
+    {
+      "id": 530,
+      "board": "B N . / R . Q / . . K",
+      "hash": "..KR.QBN.",
+      "hashNum": 133110,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 530
+    },
+    {
+      "id": 531,
+      "board": "B . N / Q . R / K . .",
+      "hash": "..KR.QN.B",
+      "hashNum": 133165,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 531
+    },
+    {
+      "id": 532,
+      "board": "Q N . / . B R / K . .",
+      "hash": "..KRB..NQ",
+      "hashNum": 133510,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 532
+    },
+    {
+      "id": 533,
+      "board": "N . K / Q B . / . R .",
+      "hash": "..KRB..QN",
+      "hashNum": 133515,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 533
+    },
+    {
+      "id": 534,
+      "board": "N . Q / R B . / . . K",
+      "hash": "..KRB.N.Q",
+      "hashNum": 133600,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 534
+    },
+    {
+      "id": 535,
+      "board": "N . K / . B . / Q R .",
+      "hash": "..KRB.Q.N",
+      "hashNum": 133635,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 535
+    },
+    {
+      "id": 536,
+      "board": "K N Q / . B . / . R .",
+      "hash": "..KRBN..Q",
+      "hashNum": 134140,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 536
+    },
+    {
+      "id": 537,
+      "board": "K N . / . B Q / . R .",
+      "hash": "..KRBN.Q.",
+      "hashNum": 134160,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 537
+    },
+    {
+      "id": 538,
+      "board": "K N . / . B . / . R Q",
+      "hash": "..KRBNQ..",
+      "hashNum": 134280,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 538
+    },
+    {
+      "id": 539,
+      "board": "N Q K / . B . / . R .",
+      "hash": "..KRBQ..N",
+      "hashNum": 134355,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 539
+    },
+    {
+      "id": 540,
+      "board": ". N . / Q B R / K . .",
+      "hash": "..KRBQ.N.",
+      "hashNum": 134370,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 540
+    },
+    {
+      "id": 541,
+      "board": "N . . / R B Q / . . K",
+      "hash": "..KRBQN..",
+      "hashNum": 134460,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 541
+    },
+    {
+      "id": 542,
+      "board": "B N . / . Q R / K . .",
+      "hash": "..KRQ..NB",
+      "hashNum": 137395,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 542
+    },
+    {
+      "id": 543,
+      "board": "B . N / R Q . / . . K",
+      "hash": "..KRQ.B.N",
+      "hashNum": 137415,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 543
+    },
+    {
+      "id": 544,
+      "board": "B . N / . Q R / K . .",
+      "hash": "..KRQ.N.B",
+      "hashNum": 137485,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 544
+    },
+    {
+      "id": 545,
+      "board": "B K N / R . . / Q . .",
+      "hash": "..N..KQRB",
+      "hashNum": 140575,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 545
+    },
+    {
+      "id": 546,
+      "board": "B K N / Q . . / R . .",
+      "hash": "..N..KRQB",
+      "hashNum": 140605,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 546
+    },
+    {
+      "id": 547,
+      "board": "B Q N / K . . / R . .",
+      "hash": "..N..QRKB",
+      "hashNum": 141025,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 547
+    },
+    {
+      "id": 548,
+      "board": "B R N / K . . / Q . .",
+      "hash": "..N..RQKB",
+      "hashNum": 141205,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 548
+    },
+    {
+      "id": 549,
+      "board": "N . R / . B K / . . Q",
+      "hash": "..N.B.QKR",
+      "hashNum": 141425,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 549
+    },
+    {
+      "id": 550,
+      "board": "N . K / . B R / . . Q",
+      "hash": "..N.B.QRK",
+      "hashNum": 141440,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 550
+    },
+    {
+      "id": 551,
+      "board": "N . Q / . B K / . . R",
+      "hash": "..N.B.RKQ",
+      "hashNum": 141460,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 551
+    },
+    {
+      "id": 552,
+      "board": "N . K / . B Q / . . R",
+      "hash": "..N.B.RQK",
+      "hashNum": 141470,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 552
+    },
+    {
+      "id": 553,
+      "board": "N K R / . B . / . . Q",
+      "hash": "..N.BKQ.R",
+      "hashNum": 141845,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 553
+    },
+    {
+      "id": 554,
+      "board": "N K . / . B R / . . Q",
+      "hash": "..N.BKQR.",
+      "hashNum": 141870,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 554
+    },
+    {
+      "id": 555,
+      "board": "N K Q / . B . / . . R",
+      "hash": "..N.BKR.Q",
+      "hashNum": 141880,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 555
+    },
+    {
+      "id": 556,
+      "board": "N K . / . B Q / . . R",
+      "hash": "..N.BKRQ.",
+      "hashNum": 141900,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 556
+    },
+    {
+      "id": 557,
+      "board": "N Q K / . B . / . . R",
+      "hash": "..N.BQR.K",
+      "hashNum": 142310,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 557
+    },
+    {
+      "id": 558,
+      "board": "N Q . / . B K / . . R",
+      "hash": "..N.BQRK.",
+      "hashNum": 142320,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 558
+    },
+    {
+      "id": 559,
+      "board": "N R K / . B . / . . Q",
+      "hash": "..N.BRQ.K",
+      "hashNum": 142490,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 559
+    },
+    {
+      "id": 560,
+      "board": "N R . / . B K / . . Q",
+      "hash": "..N.BRQK.",
+      "hashNum": 142500,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 560
+    },
+    {
+      "id": 561,
+      "board": "B . N / R K . / Q . .",
+      "hash": "..N.K.QRB",
+      "hashNum": 142735,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 561
+    },
+    {
+      "id": 562,
+      "board": "B . N / Q K . / R . .",
+      "hash": "..N.K.RQB",
+      "hashNum": 142765,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 562
+    },
+    {
+      "id": 563,
+      "board": "B Q N / . K . / R . .",
+      "hash": "..N.KQR.B",
+      "hashNum": 143605,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 563
+    },
+    {
+      "id": 564,
+      "board": "B R N / . K . / Q . .",
+      "hash": "..N.KRQ.B",
+      "hashNum": 143785,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 564
+    },
+    {
+      "id": 565,
+      "board": "B . N / K Q . / R . .",
+      "hash": "..N.Q.RKB",
+      "hashNum": 145345,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 565
+    },
+    {
+      "id": 566,
+      "board": "B K N / . Q . / R . .",
+      "hash": "..N.QKR.B",
+      "hashNum": 145765,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 566
+    },
+    {
+      "id": 567,
+      "board": "B . N / K R . / Q . .",
+      "hash": "..N.R.QKB",
+      "hashNum": 146605,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 567
+    },
+    {
+      "id": 568,
+      "board": "B K N / . R . / Q . .",
+      "hash": "..N.RKQ.B",
+      "hashNum": 147025,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 568
+    },
+    {
+      "id": 569,
+      "board": "B K . / Q . . / R . N",
+      "hash": "..NK..BQR",
+      "hashNum": 155585,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 569
+    },
+    {
+      "id": 570,
+      "board": "B K . / R . . / Q . N",
+      "hash": "..NK..BRQ",
+      "hashNum": 155590,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 570
+    },
+    {
+      "id": 571,
+      "board": "B . N / R . . / Q K .",
+      "hash": "..NK..QRB",
+      "hashNum": 155695,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 571
+    },
+    {
+      "id": 572,
+      "board": "B . N / Q . . / R K .",
+      "hash": "..NK..RQB",
+      "hashNum": 155725,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 572
+    },
+    {
+      "id": 573,
+      "board": "B Q N / R . . / . K .",
+      "hash": "..NK.Q.RB",
+      "hashNum": 156415,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 573
+    },
+    {
+      "id": 574,
+      "board": "B K . / . . . / R Q N",
+      "hash": "..NK.QB.R",
+      "hashNum": 156425,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 574
+    },
+    {
+      "id": 575,
+      "board": "B K . / R . . / . Q N",
+      "hash": "..NK.QBR.",
+      "hashNum": 156450,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 575
+    },
+    {
+      "id": 576,
+      "board": "B Q N / . . . / R K .",
+      "hash": "..NK.QR.B",
+      "hashNum": 156565,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 576
+    },
+    {
+      "id": 577,
+      "board": "B R N / Q . . / . K .",
+      "hash": "..NK.R.QB",
+      "hashNum": 156625,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 577
+    },
+    {
+      "id": 578,
+      "board": "B K . / . . . / Q R N",
+      "hash": "..NK.RB.Q",
+      "hashNum": 156640,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 578
+    },
+    {
+      "id": 579,
+      "board": "B K . / Q . . / . R N",
+      "hash": "..NK.RBQ.",
+      "hashNum": 156660,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 579
+    },
+    {
+      "id": 580,
+      "board": "B R N / . . . / Q K .",
+      "hash": "..NK.RQ.B",
+      "hashNum": 156745,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 580
+    },
+    {
+      "id": 581,
+      "board": "N . . / . B K / R Q .",
+      "hash": "..NKB..QR",
+      "hashNum": 156845,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 581
+    },
+    {
+      "id": 582,
+      "board": "N . . / . B K / Q R .",
+      "hash": "..NKB..RQ",
+      "hashNum": 156850,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 582
+    },
+    {
+      "id": 583,
+      "board": "N . . / . B K / R . Q",
+      "hash": "..NKB.Q.R",
+      "hashNum": 156965,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 583
+    },
+    {
+      "id": 584,
+      "board": "N . . / . B K / . R Q",
+      "hash": "..NKB.QR.",
+      "hashNum": 156990,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 584
+    },
+    {
+      "id": 585,
+      "board": "N . . / . B K / Q . R",
+      "hash": "..NKB.R.Q",
+      "hashNum": 157000,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 585
+    },
+    {
+      "id": 586,
+      "board": "N . . / . B K / . Q R",
+      "hash": "..NKB.RQ.",
+      "hashNum": 157020,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 586
+    },
+    {
+      "id": 587,
+      "board": "N . . / Q B K / R . .",
+      "hash": "..NKBQ..R",
+      "hashNum": 157685,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 587
+    },
+    {
+      "id": 588,
+      "board": "N . . / Q B K / . R .",
+      "hash": "..NKBQ.R.",
+      "hashNum": 157710,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 588
+    },
+    {
+      "id": 589,
+      "board": "N . . / Q B K / . . R",
+      "hash": "..NKBQR..",
+      "hashNum": 157860,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 589
+    },
+    {
+      "id": 590,
+      "board": "N . . / R B K / Q . .",
+      "hash": "..NKBR..Q",
+      "hashNum": 157900,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 590
+    },
+    {
+      "id": 591,
+      "board": "N . . / R B K / . Q .",
+      "hash": "..NKBR.Q.",
+      "hashNum": 157920,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 591
+    },
+    {
+      "id": 592,
+      "board": "N . . / R B K / . . Q",
+      "hash": "..NKBRQ..",
+      "hashNum": 158040,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 592
+    },
+    {
+      "id": 593,
+      "board": "B . N / R Q . / . K .",
+      "hash": "..NKQ..RB",
+      "hashNum": 160735,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 593
+    },
+    {
+      "id": 594,
+      "board": "B K . / . Q . / R . N",
+      "hash": "..NKQ.B.R",
+      "hashNum": 160745,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 594
+    },
+    {
+      "id": 595,
+      "board": "B K . / R Q . / . . N",
+      "hash": "..NKQ.BR.",
+      "hashNum": 160770,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 595
+    },
+    {
+      "id": 596,
+      "board": "B . N / . Q . / R K .",
+      "hash": "..NKQ.R.B",
+      "hashNum": 160885,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 596
+    },
+    {
+      "id": 597,
+      "board": "B . N / Q R . / . K .",
+      "hash": "..NKR..QB",
+      "hashNum": 162025,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 597
+    },
+    {
+      "id": 598,
+      "board": "B K . / . R . / Q . N",
+      "hash": "..NKR.B.Q",
+      "hashNum": 162040,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 598
+    },
+    {
+      "id": 599,
+      "board": "B K . / Q R . / . . N",
+      "hash": "..NKR.BQ.",
+      "hashNum": 162060,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 599
+    },
+    {
+      "id": 600,
+      "board": "B . N / . R . / Q K .",
+      "hash": "..NKR.Q.B",
+      "hashNum": 162145,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 600
+    },
+    {
+      "id": 601,
+      "board": "B K R / Q . . / . . N",
+      "hash": "..NQ..BKR",
+      "hashNum": 171125,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 601
+    },
+    {
+      "id": 602,
+      "board": "B R K / Q . . / . . N",
+      "hash": "..NQ..BRK",
+      "hashNum": 171140,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 602
+    },
+    {
+      "id": 603,
+      "board": "B . N / R . . / K Q .",
+      "hash": "..NQ..KRB",
+      "hashNum": 171175,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 603
+    },
+    {
+      "id": 604,
+      "board": "B . N / K . . / R Q .",
+      "hash": "..NQ..RKB",
+      "hashNum": 171265,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 604
+    },
+    {
+      "id": 605,
+      "board": "B K N / R . . / . Q .",
+      "hash": "..NQ.K.RB",
+      "hashNum": 171535,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 605
+    },
+    {
+      "id": 606,
+      "board": "B . R / Q . K / . . N",
+      "hash": "..NQ.KB.R",
+      "hashNum": 171545,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 606
+    },
+    {
+      "id": 607,
+      "board": "B R . / Q . K / . . N",
+      "hash": "..NQ.KBR.",
+      "hashNum": 171570,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 607
+    },
+    {
+      "id": 608,
+      "board": "B K N / . . . / R Q .",
+      "hash": "..NQ.KR.B",
+      "hashNum": 171685,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 608
+    },
+    {
+      "id": 609,
+      "board": "B R N / K . . / . Q .",
+      "hash": "..NQ.R.KB",
+      "hashNum": 172165,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 609
+    },
+    {
+      "id": 610,
+      "board": "B . K / Q . R / . . N",
+      "hash": "..NQ.RB.K",
+      "hashNum": 172190,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 610
+    },
+    {
+      "id": 611,
+      "board": "B K . / Q . R / . . N",
+      "hash": "..NQ.RBK.",
+      "hashNum": 172200,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 611
+    },
+    {
+      "id": 612,
+      "board": "B R N / . . . / K Q .",
+      "hash": "..NQ.RK.B",
+      "hashNum": 172225,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 612
+    },
+    {
+      "id": 613,
+      "board": "N . R / . B K / . Q .",
+      "hash": "..NQB..KR",
+      "hashNum": 172385,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 613
+    },
+    {
+      "id": 614,
+      "board": "N . K / . B R / . Q .",
+      "hash": "..NQB..RK",
+      "hashNum": 172400,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 614
+    },
+    {
+      "id": 615,
+      "board": "N . . / . B Q / R . K",
+      "hash": "..NQB.K.R",
+      "hashNum": 172445,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 615
+    },
+    {
+      "id": 616,
+      "board": "N . . / . B Q / . R K",
+      "hash": "..NQB.KR.",
+      "hashNum": 172470,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 616
+    },
+    {
+      "id": 617,
+      "board": "N . K / . B . / . Q R",
+      "hash": "..NQB.R.K",
+      "hashNum": 172550,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 617
+    },
+    {
+      "id": 618,
+      "board": "N K R / . B . / . Q .",
+      "hash": "..NQBK..R",
+      "hashNum": 172805,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 618
+    },
+    {
+      "id": 619,
+      "board": "N K . / . B R / . Q .",
+      "hash": "..NQBK.R.",
+      "hashNum": 172830,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 619
+    },
+    {
+      "id": 620,
+      "board": "N K . / . B . / . Q R",
+      "hash": "..NQBKR..",
+      "hashNum": 172980,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 620
+    },
+    {
+      "id": 621,
+      "board": "N R . / . B K / . Q .",
+      "hash": "..NQBR.K.",
+      "hashNum": 173460,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 621
+    },
+    {
+      "id": 622,
+      "board": "B . N / R K . / . Q .",
+      "hash": "..NQK..RB",
+      "hashNum": 173695,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 622
+    },
+    {
+      "id": 623,
+      "board": "B Q . / . K . / R . N",
+      "hash": "..NQK.B.R",
+      "hashNum": 173705,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 623
+    },
+    {
+      "id": 624,
+      "board": "B Q . / R K . / . . N",
+      "hash": "..NQK.BR.",
+      "hashNum": 173730,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 624
+    },
+    {
+      "id": 625,
+      "board": "B . N / . K . / R Q .",
+      "hash": "..NQK.R.B",
+      "hashNum": 173845,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 625
+    },
+    {
+      "id": 626,
+      "board": "B . N / K R . / . Q .",
+      "hash": "..NQR..KB",
+      "hashNum": 177565,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 626
+    },
+    {
+      "id": 627,
+      "board": "B . K / Q R . / . . N",
+      "hash": "..NQR.B.K",
+      "hashNum": 177590,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 627
+    },
+    {
+      "id": 628,
+      "board": "B . N / . R . / K Q .",
+      "hash": "..NQR.K.B",
+      "hashNum": 177625,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 628
+    },
+    {
+      "id": 629,
+      "board": "B K Q / R . . / . . N",
+      "hash": "..NR..BKQ",
+      "hashNum": 178900,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 629
+    },
+    {
+      "id": 630,
+      "board": "B Q K / R . . / . . N",
+      "hash": "..NR..BQK",
+      "hashNum": 178910,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 630
+    },
+    {
+      "id": 631,
+      "board": "B . N / Q . . / K R .",
+      "hash": "..NR..KQB",
+      "hashNum": 178945,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 631
+    },
+    {
+      "id": 632,
+      "board": "B . N / K . . / Q R .",
+      "hash": "..NR..QKB",
+      "hashNum": 179005,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 632
+    },
+    {
+      "id": 633,
+      "board": "B K N / Q . . / . R .",
+      "hash": "..NR.K.QB",
+      "hashNum": 179305,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 633
+    },
+    {
+      "id": 634,
+      "board": "B . Q / R . K / . . N",
+      "hash": "..NR.KB.Q",
+      "hashNum": 179320,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 634
+    },
+    {
+      "id": 635,
+      "board": "B Q . / R . K / . . N",
+      "hash": "..NR.KBQ.",
+      "hashNum": 179340,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 635
+    },
+    {
+      "id": 636,
+      "board": "B K N / . . . / Q R .",
+      "hash": "..NR.KQ.B",
+      "hashNum": 179425,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 636
+    },
+    {
+      "id": 637,
+      "board": "B Q N / K . . / . R .",
+      "hash": "..NR.Q.KB",
+      "hashNum": 179725,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 637
+    },
+    {
+      "id": 638,
+      "board": "B . K / R . Q / . . N",
+      "hash": "..NR.QB.K",
+      "hashNum": 179750,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 638
+    },
+    {
+      "id": 639,
+      "board": "B K . / R . Q / . . N",
+      "hash": "..NR.QBK.",
+      "hashNum": 179760,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 639
+    },
+    {
+      "id": 640,
+      "board": "B Q N / . . . / K R .",
+      "hash": "..NR.QK.B",
+      "hashNum": 179785,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 640
+    },
+    {
+      "id": 641,
+      "board": "N . Q / . B K / . R .",
+      "hash": "..NRB..KQ",
+      "hashNum": 180160,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 641
+    },
+    {
+      "id": 642,
+      "board": "N . K / . B Q / . R .",
+      "hash": "..NRB..QK",
+      "hashNum": 180170,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 642
+    },
+    {
+      "id": 643,
+      "board": "N . Q / . B . / . R K",
+      "hash": "..NRB.K.Q",
+      "hashNum": 180220,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 643
+    },
+    {
+      "id": 644,
+      "board": "N . K / . B . / . R Q",
+      "hash": "..NRB.Q.K",
+      "hashNum": 180290,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 644
+    },
+    {
+      "id": 645,
+      "board": "N K Q / . B . / . R .",
+      "hash": "..NRBK..Q",
+      "hashNum": 180580,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 645
+    },
+    {
+      "id": 646,
+      "board": "N K . / . B Q / . R .",
+      "hash": "..NRBK.Q.",
+      "hashNum": 180600,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 646
+    },
+    {
+      "id": 647,
+      "board": "N K . / . B . / . R Q",
+      "hash": "..NRBKQ..",
+      "hashNum": 180720,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 647
+    },
+    {
+      "id": 648,
+      "board": "N Q . / . B K / . R .",
+      "hash": "..NRBQ.K.",
+      "hashNum": 181020,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 648
+    },
+    {
+      "id": 649,
+      "board": "B . N / Q K . / . R .",
+      "hash": "..NRK..QB",
+      "hashNum": 181465,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 649
+    },
+    {
+      "id": 650,
+      "board": "B . Q / R K . / . . N",
+      "hash": "..NRK.B.Q",
+      "hashNum": 181480,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 650
+    },
+    {
+      "id": 651,
+      "board": "B . N / . K . / Q R .",
+      "hash": "..NRK.Q.B",
+      "hashNum": 181585,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 651
+    },
+    {
+      "id": 652,
+      "board": "B . N / K Q . / . R .",
+      "hash": "..NRQ..KB",
+      "hashNum": 184045,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 652
+    },
+    {
+      "id": 653,
+      "board": "B . K / R Q . / . . N",
+      "hash": "..NRQ.B.K",
+      "hashNum": 184070,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 653
+    },
+    {
+      "id": 654,
+      "board": "B . N / . Q . / K R .",
+      "hash": "..NRQ.K.B",
+      "hashNum": 184105,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 654
+    },
+    {
+      "id": 655,
+      "board": "B N R / K . . / Q . .",
+      "hash": "..Q..KRNB",
+      "hashNum": 187255,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 655
+    },
+    {
+      "id": 656,
+      "board": "B N Q / K . . / R . .",
+      "hash": "..Q..NRKB",
+      "hashNum": 187465,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 656
+    },
+    {
+      "id": 657,
+      "board": "N K R / . B . / Q . .",
+      "hash": "..Q.B.RKN",
+      "hashNum": 188115,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 657
+    },
+    {
+      "id": 658,
+      "board": "K N R / . B . / Q . .",
+      "hash": "..Q.B.RNK",
+      "hashNum": 188120,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 658
+    },
+    {
+      "id": 659,
+      "board": "N K Q / . B . / R . .",
+      "hash": "..Q.BKR.N",
+      "hashNum": 188535,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 659
+    },
+    {
+      "id": 660,
+      "board": ". N R / K B . / Q . .",
+      "hash": "..Q.BKRN.",
+      "hashNum": 188550,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 660
+    },
+    {
+      "id": 661,
+      "board": "K N Q / . B . / R . .",
+      "hash": "..Q.BNR.K",
+      "hashNum": 188750,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 661
+    },
+    {
+      "id": 662,
+      "board": ". N Q / K B . / R . .",
+      "hash": "..Q.BNRK.",
+      "hashNum": 188760,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 662
+    },
+    {
+      "id": 663,
+      "board": "B N R / . K . / Q . .",
+      "hash": "..Q.K.RNB",
+      "hashNum": 189415,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 663
+    },
+    {
+      "id": 664,
+      "board": "B N Q / . K . / R . .",
+      "hash": "..Q.KNR.B",
+      "hashNum": 190045,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 664
+    },
+    {
+      "id": 665,
+      "board": "B N R / K . . / . . Q",
+      "hash": "..QK..BNR",
+      "hashNum": 202235,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 665
+    },
+    {
+      "id": 666,
+      "board": "B R N / K . . / . . Q",
+      "hash": "..QK..BRN",
+      "hashNum": 202245,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 666
+    },
+    {
+      "id": 667,
+      "board": "B R N / . . K / Q . .",
+      "hash": "..QK..NRB",
+      "hashNum": 202315,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 667
+    },
+    {
+      "id": 668,
+      "board": "B N R / . . K / Q . .",
+      "hash": "..QK..RNB",
+      "hashNum": 202375,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 668
+    },
+    {
+      "id": 669,
+      "board": "B N Q / R . . / . K .",
+      "hash": "..QK.N.RB",
+      "hashNum": 202855,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 669
+    },
+    {
+      "id": 670,
+      "board": "B . R / K . N / . . Q",
+      "hash": "..QK.NB.R",
+      "hashNum": 202865,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 670
+    },
+    {
+      "id": 671,
+      "board": "B R . / K . N / . . Q",
+      "hash": "..QK.NBR.",
+      "hashNum": 202890,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 671
+    },
+    {
+      "id": 672,
+      "board": "B N Q / . . . / R K .",
+      "hash": "..QK.NR.B",
+      "hashNum": 203005,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 672
+    },
+    {
+      "id": 673,
+      "board": "B N . / R . K / Q . .",
+      "hash": "..QK.R.NB",
+      "hashNum": 203275,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 673
+    },
+    {
+      "id": 674,
+      "board": "B . N / K . R / . . Q",
+      "hash": "..QK.RB.N",
+      "hashNum": 203295,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 674
+    },
+    {
+      "id": 675,
+      "board": "B N . / K . R / . . Q",
+      "hash": "..QK.RBN.",
+      "hashNum": 203310,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 675
+    },
+    {
+      "id": 676,
+      "board": "B . N / R . K / Q . .",
+      "hash": "..QK.RN.B",
+      "hashNum": 203365,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 676
+    },
+    {
+      "id": 677,
+      "board": ". N R / K B . / . . Q",
+      "hash": "..QKB..NR",
+      "hashNum": 203495,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 677
+    },
+    {
+      "id": 678,
+      "board": "N R . / . B K / Q . .",
+      "hash": "..QKB..RN",
+      "hashNum": 203505,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 678
+    },
+    {
+      "id": 679,
+      "board": "N K . / . B . / R . Q",
+      "hash": "..QKB.N.R",
+      "hashNum": 203585,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 679
+    },
+    {
+      "id": 680,
+      "board": "N K . / R B . / . . Q",
+      "hash": "..QKB.NR.",
+      "hashNum": 203610,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 680
+    },
+    {
+      "id": 681,
+      "board": "N . R / . B K / Q . .",
+      "hash": "..QKB.R.N",
+      "hashNum": 203655,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 681
+    },
+    {
+      "id": 682,
+      "board": "R N . / K B . / . . Q",
+      "hash": "..QKB.RN.",
+      "hashNum": 203670,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 682
+    },
+    {
+      "id": 683,
+      "board": "Q N R / . B . / . K .",
+      "hash": "..QKBN..R",
+      "hashNum": 204125,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 683
+    },
+    {
+      "id": 684,
+      "board": "Q N . / . B R / . K .",
+      "hash": "..QKBN.R.",
+      "hashNum": 204150,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 684
+    },
+    {
+      "id": 685,
+      "board": "Q N . / . B . / . K R",
+      "hash": "..QKBNR..",
+      "hashNum": 204300,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 685
+    },
+    {
+      "id": 686,
+      "board": ". N . / K B R / . . Q",
+      "hash": "..QKBR.N.",
+      "hashNum": 204570,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 686
+    },
+    {
+      "id": 687,
+      "board": "B N . / . R K / Q . .",
+      "hash": "..QKR..NB",
+      "hashNum": 208675,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 687
+    },
+    {
+      "id": 688,
+      "board": "B . N / K R . / . . Q",
+      "hash": "..QKR.B.N",
+      "hashNum": 208695,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 688
+    },
+    {
+      "id": 689,
+      "board": "B N . / K R . / . . Q",
+      "hash": "..QKR.BN.",
+      "hashNum": 208710,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 689
+    },
+    {
+      "id": 690,
+      "board": "B . N / . R K / Q . .",
+      "hash": "..QKR.N.B",
+      "hashNum": 208765,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 690
+    },
+    {
+      "id": 691,
+      "board": "B N . / K . . / R . Q",
+      "hash": "..QN..BKR",
+      "hashNum": 210005,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 691
+    },
+    {
+      "id": 692,
+      "board": "B N . / R . . / K . Q",
+      "hash": "..QN..BRK",
+      "hashNum": 210020,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 692
+    },
+    {
+      "id": 693,
+      "board": "B R K / . . N / Q . .",
+      "hash": "..QN..KRB",
+      "hashNum": 210055,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 693
+    },
+    {
+      "id": 694,
+      "board": "B K R / . . N / Q . .",
+      "hash": "..QN..RKB",
+      "hashNum": 210145,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 694
+    },
+    {
+      "id": 695,
+      "board": "B R . / K . N / Q . .",
+      "hash": "..QN.K.RB",
+      "hashNum": 210415,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 695
+    },
+    {
+      "id": 696,
+      "board": "B N . / . . . / R K Q",
+      "hash": "..QN.KB.R",
+      "hashNum": 210425,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 696
+    },
+    {
+      "id": 697,
+      "board": "B N . / R . . / . K Q",
+      "hash": "..QN.KBR.",
+      "hashNum": 210450,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 697
+    },
+    {
+      "id": 698,
+      "board": "B . R / K . N / Q . .",
+      "hash": "..QN.KR.B",
+      "hashNum": 210565,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 698
+    },
+    {
+      "id": 699,
+      "board": "B K . / R . N / Q . .",
+      "hash": "..QN.R.KB",
+      "hashNum": 211045,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 699
+    },
+    {
+      "id": 700,
+      "board": "B N . / . . . / K R Q",
+      "hash": "..QN.RB.K",
+      "hashNum": 211070,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 700
+    },
+    {
+      "id": 701,
+      "board": "B N . / K . . / . R Q",
+      "hash": "..QN.RBK.",
+      "hashNum": 211080,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 701
+    },
+    {
+      "id": 702,
+      "board": "B . K / R . N / Q . .",
+      "hash": "..QN.RK.B",
+      "hashNum": 211105,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 702
+    },
+    {
+      "id": 703,
+      "board": ". N . / K B . / R . Q",
+      "hash": "..QNB..KR",
+      "hashNum": 211265,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 703
+    },
+    {
+      "id": 704,
+      "board": ". N . / R B . / K . Q",
+      "hash": "..QNB..RK",
+      "hashNum": 211280,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 704
+    },
+    {
+      "id": 705,
+      "board": "K N . / . B . / R . Q",
+      "hash": "..QNB.K.R",
+      "hashNum": 211325,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 705
+    },
+    {
+      "id": 706,
+      "board": "K N . / R B . / . . Q",
+      "hash": "..QNB.KR.",
+      "hashNum": 211350,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 706
+    },
+    {
+      "id": 707,
+      "board": "R N . / . B . / K . Q",
+      "hash": "..QNB.R.K",
+      "hashNum": 211430,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 707
+    },
+    {
+      "id": 708,
+      "board": ". N . / . B . / Q K R",
+      "hash": "..QNBK..R",
+      "hashNum": 211685,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 708
+    },
+    {
+      "id": 709,
+      "board": ". N . / . B R / Q K .",
+      "hash": "..QNBK.R.",
+      "hashNum": 211710,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 709
+    },
+    {
+      "id": 710,
+      "board": ". N R / . B . / Q K .",
+      "hash": "..QNBKR..",
+      "hashNum": 211860,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 710
+    },
+    {
+      "id": 711,
+      "board": ". N . / K B . / . R Q",
+      "hash": "..QNBR.K.",
+      "hashNum": 212340,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 711
+    },
+    {
+      "id": 712,
+      "board": "B R . / . K N / Q . .",
+      "hash": "..QNK..RB",
+      "hashNum": 212575,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 712
+    },
+    {
+      "id": 713,
+      "board": "B N . / . K . / R . Q",
+      "hash": "..QNK.B.R",
+      "hashNum": 212585,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 713
+    },
+    {
+      "id": 714,
+      "board": "B N . / R K . / . . Q",
+      "hash": "..QNK.BR.",
+      "hashNum": 212610,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 714
+    },
+    {
+      "id": 715,
+      "board": "B . R / . K N / Q . .",
+      "hash": "..QNK.R.B",
+      "hashNum": 212725,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 715
+    },
+    {
+      "id": 716,
+      "board": "B K . / . R N / Q . .",
+      "hash": "..QNR..KB",
+      "hashNum": 216445,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 716
+    },
+    {
+      "id": 717,
+      "board": "B N . / . R . / K . Q",
+      "hash": "..QNR.B.K",
+      "hashNum": 216470,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 717
+    },
+    {
+      "id": 718,
+      "board": "B . K / . R N / Q . .",
+      "hash": "..QNR.K.B",
+      "hashNum": 216505,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 718
+    },
+    {
+      "id": 719,
+      "board": "B K N / R . . / . . Q",
+      "hash": "..QR..BKN",
+      "hashNum": 225555,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 719
+    },
+    {
+      "id": 720,
+      "board": "B N K / R . . / . . Q",
+      "hash": "..QR..BNK",
+      "hashNum": 225560,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 720
+    },
+    {
+      "id": 721,
+      "board": "B N K / . . R / Q . .",
+      "hash": "..QR..KNB",
+      "hashNum": 225595,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 721
+    },
+    {
+      "id": 722,
+      "board": "B K N / . . R / Q . .",
+      "hash": "..QR..NKB",
+      "hashNum": 225625,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 722
+    },
+    {
+      "id": 723,
+      "board": "B N . / K . R / Q . .",
+      "hash": "..QR.K.NB",
+      "hashNum": 225955,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 723
+    },
+    {
+      "id": 724,
+      "board": "B . N / R . K / . . Q",
+      "hash": "..QR.KB.N",
+      "hashNum": 225975,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 724
+    },
+    {
+      "id": 725,
+      "board": "B N . / R . K / . . Q",
+      "hash": "..QR.KBN.",
+      "hashNum": 225990,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 725
+    },
+    {
+      "id": 726,
+      "board": "B . N / K . R / Q . .",
+      "hash": "..QR.KN.B",
+      "hashNum": 226045,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 726
+    },
+    {
+      "id": 727,
+      "board": "B N Q / K . . / . R .",
+      "hash": "..QR.N.KB",
+      "hashNum": 226165,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 727
+    },
+    {
+      "id": 728,
+      "board": "B . K / R . N / . . Q",
+      "hash": "..QR.NB.K",
+      "hashNum": 226190,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 728
+    },
+    {
+      "id": 729,
+      "board": "B K . / R . N / . . Q",
+      "hash": "..QR.NBK.",
+      "hashNum": 226200,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 729
+    },
+    {
+      "id": 730,
+      "board": "B N Q / . . . / K R .",
+      "hash": "..QR.NK.B",
+      "hashNum": 226225,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 730
+    },
+    {
+      "id": 731,
+      "board": "N K . / . B R / Q . .",
+      "hash": "..QRB..KN",
+      "hashNum": 226815,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 731
+    },
+    {
+      "id": 732,
+      "board": "K N . / . B R / Q . .",
+      "hash": "..QRB..NK",
+      "hashNum": 226820,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 732
+    },
+    {
+      "id": 733,
+      "board": "N . K / . B R / Q . .",
+      "hash": "..QRB.K.N",
+      "hashNum": 226875,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 733
+    },
+    {
+      "id": 734,
+      "board": "N . K / R B . / . . Q",
+      "hash": "..QRB.N.K",
+      "hashNum": 226910,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 734
+    },
+    {
+      "id": 735,
+      "board": ". N . / K B R / Q . .",
+      "hash": "..QRBK.N.",
+      "hashNum": 227250,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 735
+    },
+    {
+      "id": 736,
+      "board": ". N Q / K B . / . R .",
+      "hash": "..QRBN.K.",
+      "hashNum": 227460,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 736
+    },
+    {
+      "id": 737,
+      "board": "B N . / . K R / Q . .",
+      "hash": "..QRK..NB",
+      "hashNum": 228115,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 737
+    },
+    {
+      "id": 738,
+      "board": "B . N / R K . / . . Q",
+      "hash": "..QRK.B.N",
+      "hashNum": 228135,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 738
+    },
+    {
+      "id": 739,
+      "board": "B . N / . K R / Q . .",
+      "hash": "..QRK.N.B",
+      "hashNum": 228205,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 739
+    },
+    {
+      "id": 740,
+      "board": "B N Q / K . . / . . R",
+      "hash": "..RK..BNQ",
+      "hashNum": 248890,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 740
+    },
+    {
+      "id": 741,
+      "board": "B Q N / K . . / . . R",
+      "hash": "..RK..BQN",
+      "hashNum": 248895,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 741
+    },
+    {
+      "id": 742,
+      "board": "B Q N / . . K / R . .",
+      "hash": "..RK..NQB",
+      "hashNum": 248965,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 742
+    },
+    {
+      "id": 743,
+      "board": "B N Q / . . K / R . .",
+      "hash": "..RK..QNB",
+      "hashNum": 248995,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 743
+    },
+    {
+      "id": 744,
+      "board": "B N R / Q . . / . K .",
+      "hash": "..RK.N.QB",
+      "hashNum": 249505,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 744
+    },
+    {
+      "id": 745,
+      "board": "B . Q / K . N / . . R",
+      "hash": "..RK.NB.Q",
+      "hashNum": 249520,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 745
+    },
+    {
+      "id": 746,
+      "board": "B Q . / K . N / . . R",
+      "hash": "..RK.NBQ.",
+      "hashNum": 249540,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 746
+    },
+    {
+      "id": 747,
+      "board": "B N R / . . . / Q K .",
+      "hash": "..RK.NQ.B",
+      "hashNum": 249625,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 747
+    },
+    {
+      "id": 748,
+      "board": "B N . / Q . K / R . .",
+      "hash": "..RK.Q.NB",
+      "hashNum": 249715,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 748
+    },
+    {
+      "id": 749,
+      "board": "B . N / K . Q / . . R",
+      "hash": "..RK.QB.N",
+      "hashNum": 249735,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 749
+    },
+    {
+      "id": 750,
+      "board": "B N . / K . Q / . . R",
+      "hash": "..RK.QBN.",
+      "hashNum": 249750,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 750
+    },
+    {
+      "id": 751,
+      "board": "B . N / Q . K / R . .",
+      "hash": "..RK.QN.B",
+      "hashNum": 249805,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 751
+    },
+    {
+      "id": 752,
+      "board": ". N Q / K B . / . . R",
+      "hash": "..RKB..NQ",
+      "hashNum": 250150,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 752
+    },
+    {
+      "id": 753,
+      "board": "N Q . / . B K / R . .",
+      "hash": "..RKB..QN",
+      "hashNum": 250155,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 753
+    },
+    {
+      "id": 754,
+      "board": "N K . / . B . / Q . R",
+      "hash": "..RKB.N.Q",
+      "hashNum": 250240,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 754
+    },
+    {
+      "id": 755,
+      "board": "N K . / Q B . / . . R",
+      "hash": "..RKB.NQ.",
+      "hashNum": 250260,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 755
+    },
+    {
+      "id": 756,
+      "board": "N . Q / . B K / R . .",
+      "hash": "..RKB.Q.N",
+      "hashNum": 250275,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 756
+    },
+    {
+      "id": 757,
+      "board": "Q N . / K B . / . . R",
+      "hash": "..RKB.QN.",
+      "hashNum": 250290,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 757
+    },
+    {
+      "id": 758,
+      "board": ". N R / Q B . / . K .",
+      "hash": "..RKBN.Q.",
+      "hashNum": 250800,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 758
+    },
+    {
+      "id": 759,
+      "board": ". N . / K B Q / . . R",
+      "hash": "..RKBQ.N.",
+      "hashNum": 251010,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 759
+    },
+    {
+      "id": 760,
+      "board": "B N . / . Q K / R . .",
+      "hash": "..RKQ..NB",
+      "hashNum": 254035,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 760
+    },
+    {
+      "id": 761,
+      "board": "B . N / K Q . / . . R",
+      "hash": "..RKQ.B.N",
+      "hashNum": 254055,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 761
+    },
+    {
+      "id": 762,
+      "board": "B N . / K Q . / . . R",
+      "hash": "..RKQ.BN.",
+      "hashNum": 254070,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 762
+    },
+    {
+      "id": 763,
+      "board": "B . N / . Q K / R . .",
+      "hash": "..RKQ.N.B",
+      "hashNum": 254125,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 763
+    },
+    {
+      "id": 764,
+      "board": "B N . / K . . / Q . R",
+      "hash": "..RN..BKQ",
+      "hashNum": 256660,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 764
+    },
+    {
+      "id": 765,
+      "board": "B N . / Q . . / K . R",
+      "hash": "..RN..BQK",
+      "hashNum": 256670,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 765
+    },
+    {
+      "id": 766,
+      "board": "B Q K / . . N / R . .",
+      "hash": "..RN..KQB",
+      "hashNum": 256705,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 766
+    },
+    {
+      "id": 767,
+      "board": "B K Q / . . N / R . .",
+      "hash": "..RN..QKB",
+      "hashNum": 256765,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 767
+    },
+    {
+      "id": 768,
+      "board": "B Q . / K . N / R . .",
+      "hash": "..RN.K.QB",
+      "hashNum": 257065,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 768
+    },
+    {
+      "id": 769,
+      "board": "B N . / . . . / Q K R",
+      "hash": "..RN.KB.Q",
+      "hashNum": 257080,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 769
+    },
+    {
+      "id": 770,
+      "board": "B N . / Q . . / . K R",
+      "hash": "..RN.KBQ.",
+      "hashNum": 257100,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 770
+    },
+    {
+      "id": 771,
+      "board": "B . Q / K . N / R . .",
+      "hash": "..RN.KQ.B",
+      "hashNum": 257185,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 771
+    },
+    {
+      "id": 772,
+      "board": "B K . / Q . N / R . .",
+      "hash": "..RN.Q.KB",
+      "hashNum": 257485,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 772
+    },
+    {
+      "id": 773,
+      "board": "B N . / . . . / K Q R",
+      "hash": "..RN.QB.K",
+      "hashNum": 257510,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 773
+    },
+    {
+      "id": 774,
+      "board": "B N . / K . . / . Q R",
+      "hash": "..RN.QBK.",
+      "hashNum": 257520,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 774
+    },
+    {
+      "id": 775,
+      "board": "B . K / Q . N / R . .",
+      "hash": "..RN.QK.B",
+      "hashNum": 257545,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 775
+    },
+    {
+      "id": 776,
+      "board": ". N . / K B . / Q . R",
+      "hash": "..RNB..KQ",
+      "hashNum": 257920,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 776
+    },
+    {
+      "id": 777,
+      "board": ". N . / Q B . / K . R",
+      "hash": "..RNB..QK",
+      "hashNum": 257930,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 777
+    },
+    {
+      "id": 778,
+      "board": "K N . / . B . / Q . R",
+      "hash": "..RNB.K.Q",
+      "hashNum": 257980,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 778
+    },
+    {
+      "id": 779,
+      "board": "K N . / Q B . / . . R",
+      "hash": "..RNB.KQ.",
+      "hashNum": 258000,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 779
+    },
+    {
+      "id": 780,
+      "board": "Q N . / . B . / K . R",
+      "hash": "..RNB.Q.K",
+      "hashNum": 258050,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 780
+    },
+    {
+      "id": 781,
+      "board": ". N . / Q B . / . K R",
+      "hash": "..RNBK.Q.",
+      "hashNum": 258360,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 781
+    },
+    {
+      "id": 782,
+      "board": ". N . / K B . / . Q R",
+      "hash": "..RNBQ.K.",
+      "hashNum": 258780,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 782
+    },
+    {
+      "id": 783,
+      "board": "B Q . / . K N / R . .",
+      "hash": "..RNK..QB",
+      "hashNum": 259225,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 783
+    },
+    {
+      "id": 784,
+      "board": "B N . / . K . / Q . R",
+      "hash": "..RNK.B.Q",
+      "hashNum": 259240,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 784
+    },
+    {
+      "id": 785,
+      "board": "B N . / Q K . / . . R",
+      "hash": "..RNK.BQ.",
+      "hashNum": 259260,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 785
+    },
+    {
+      "id": 786,
+      "board": "B . Q / . K N / R . .",
+      "hash": "..RNK.Q.B",
+      "hashNum": 259345,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 786
+    },
+    {
+      "id": 787,
+      "board": "B K . / . Q N / R . .",
+      "hash": "..RNQ..KB",
+      "hashNum": 261805,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 787
+    },
+    {
+      "id": 788,
+      "board": "B N . / . Q . / K . R",
+      "hash": "..RNQ.B.K",
+      "hashNum": 261830,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 788
+    },
+    {
+      "id": 789,
+      "board": "B . K / . Q N / R . .",
+      "hash": "..RNQ.K.B",
+      "hashNum": 261865,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 789
+    },
+    {
+      "id": 790,
+      "board": "B K N / Q . . / . . R",
+      "hash": "..RQ..BKN",
+      "hashNum": 264435,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 790
+    },
+    {
+      "id": 791,
+      "board": "B N K / Q . . / . . R",
+      "hash": "..RQ..BNK",
+      "hashNum": 264440,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 791
+    },
+    {
+      "id": 792,
+      "board": "B N K / . . Q / R . .",
+      "hash": "..RQ..KNB",
+      "hashNum": 264475,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 792
+    },
+    {
+      "id": 793,
+      "board": "B K N / . . Q / R . .",
+      "hash": "..RQ..NKB",
+      "hashNum": 264505,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 793
+    },
+    {
+      "id": 794,
+      "board": "B N . / K . Q / R . .",
+      "hash": "..RQ.K.NB",
+      "hashNum": 264835,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 794
+    },
+    {
+      "id": 795,
+      "board": "B . N / Q . K / . . R",
+      "hash": "..RQ.KB.N",
+      "hashNum": 264855,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 795
+    },
+    {
+      "id": 796,
+      "board": "B N . / Q . K / . . R",
+      "hash": "..RQ.KBN.",
+      "hashNum": 264870,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 796
+    },
+    {
+      "id": 797,
+      "board": "B . N / K . Q / R . .",
+      "hash": "..RQ.KN.B",
+      "hashNum": 264925,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 797
+    },
+    {
+      "id": 798,
+      "board": "B N R / K . . / . Q .",
+      "hash": "..RQ.N.KB",
+      "hashNum": 265045,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 798
+    },
+    {
+      "id": 799,
+      "board": "B . K / Q . N / . . R",
+      "hash": "..RQ.NB.K",
+      "hashNum": 265070,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 799
+    },
+    {
+      "id": 800,
+      "board": "B K . / Q . N / . . R",
+      "hash": "..RQ.NBK.",
+      "hashNum": 265080,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 800
+    },
+    {
+      "id": 801,
+      "board": "B N R / . . . / K Q .",
+      "hash": "..RQ.NK.B",
+      "hashNum": 265105,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 801
+    },
+    {
+      "id": 802,
+      "board": "N K . / . B Q / R . .",
+      "hash": "..RQB..KN",
+      "hashNum": 265695,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 802
+    },
+    {
+      "id": 803,
+      "board": "K N . / . B Q / R . .",
+      "hash": "..RQB..NK",
+      "hashNum": 265700,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 803
+    },
+    {
+      "id": 804,
+      "board": "N . K / . B Q / R . .",
+      "hash": "..RQB.K.N",
+      "hashNum": 265755,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 804
+    },
+    {
+      "id": 805,
+      "board": "N . K / Q B . / . . R",
+      "hash": "..RQB.N.K",
+      "hashNum": 265790,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 805
+    },
+    {
+      "id": 806,
+      "board": ". N . / K B Q / R . .",
+      "hash": "..RQBK.N.",
+      "hashNum": 266130,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 806
+    },
+    {
+      "id": 807,
+      "board": ". N R / K B . / . Q .",
+      "hash": "..RQBN.K.",
+      "hashNum": 266340,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 807
+    },
+    {
+      "id": 808,
+      "board": "B N . / . K Q / R . .",
+      "hash": "..RQK..NB",
+      "hashNum": 266995,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 808
+    },
+    {
+      "id": 809,
+      "board": "B . N / Q K . / . . R",
+      "hash": "..RQK.B.N",
+      "hashNum": 267015,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 809
+    },
+    {
+      "id": 810,
+      "board": "B . N / . K Q / R . .",
+      "hash": "..RQK.N.B",
+      "hashNum": 267085,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 810
+    },
+    {
+      "id": 811,
+      "board": "B R . / Q . N / . K .",
+      "hash": ".K.N.Q.RB",
+      "hashNum": 584095,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 811
+    },
+    {
+      "id": 812,
+      "board": "B N . / . . K / R Q .",
+      "hash": ".K.N.QB.R",
+      "hashNum": 584105,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 812
+    },
+    {
+      "id": 813,
+      "board": "B N . / R . K / . Q .",
+      "hash": ".K.N.QBR.",
+      "hashNum": 584130,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 813
+    },
+    {
+      "id": 814,
+      "board": "B . R / Q . N / . K .",
+      "hash": ".K.N.QR.B",
+      "hashNum": 584245,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 814
+    },
+    {
+      "id": 815,
+      "board": "B Q . / R . N / . K .",
+      "hash": ".K.N.R.QB",
+      "hashNum": 584305,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 815
+    },
+    {
+      "id": 816,
+      "board": "B N . / . . K / Q R .",
+      "hash": ".K.N.RB.Q",
+      "hashNum": 584320,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 816
+    },
+    {
+      "id": 817,
+      "board": "B N . / Q . K / . R .",
+      "hash": ".K.N.RBQ.",
+      "hashNum": 584340,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 817
+    },
+    {
+      "id": 818,
+      "board": "B . Q / R . N / . K .",
+      "hash": ".K.N.RQ.B",
+      "hashNum": 584425,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 818
+    },
+    {
+      "id": 819,
+      "board": ". N . / K B R / . Q .",
+      "hash": ".K.NBQ.R.",
+      "hashNum": 585390,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 819
+    },
+    {
+      "id": 820,
+      "board": ". N . / K B Q / . R .",
+      "hash": ".K.NBR.Q.",
+      "hashNum": 585600,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 820
+    },
+    {
+      "id": 821,
+      "board": "B N . / R . Q / . K .",
+      "hash": ".K.Q.R.NB",
+      "hashNum": 592075,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 821
+    },
+    {
+      "id": 822,
+      "board": "B . N / Q . R / . K .",
+      "hash": ".K.Q.RB.N",
+      "hashNum": 592095,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 822
+    },
+    {
+      "id": 823,
+      "board": "B N . / Q . R / . K .",
+      "hash": ".K.Q.RBN.",
+      "hashNum": 592110,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 823
+    },
+    {
+      "id": 824,
+      "board": "B . N / R . Q / . K .",
+      "hash": ".K.Q.RN.B",
+      "hashNum": 592165,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 824
+    },
+    {
+      "id": 825,
+      "board": ". N . / Q B R / . K .",
+      "hash": ".K.QBR.N.",
+      "hashNum": 593370,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 825
+    },
+    {
+      "id": 826,
+      "board": "B K . / . . N / R Q .",
+      "hash": ".KBN...QR",
+      "hashNum": 629885,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 826
+    },
+    {
+      "id": 827,
+      "board": "B K . / . . N / Q R .",
+      "hash": ".KBN...RQ",
+      "hashNum": 629890,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 827
+    },
+    {
+      "id": 828,
+      "board": "B K . / . . N / R . Q",
+      "hash": ".KBN..Q.R",
+      "hashNum": 630005,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 828
+    },
+    {
+      "id": 829,
+      "board": "B K . / . . N / Q . R",
+      "hash": ".KBN..R.Q",
+      "hashNum": 630040,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 829
+    },
+    {
+      "id": 830,
+      "board": "B K . / Q . N / . R .",
+      "hash": ".KBN.Q.R.",
+      "hashNum": 630750,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 830
+    },
+    {
+      "id": 831,
+      "board": "B K . / R . N / . Q .",
+      "hash": ".KBN.R.Q.",
+      "hashNum": 630960,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 831
+    },
+    {
+      "id": 832,
+      "board": "B . R / K . N / . Q .",
+      "hash": ".KBQ...NR",
+      "hashNum": 637655,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 832
+    },
+    {
+      "id": 833,
+      "board": "B . N / K . R / . Q .",
+      "hash": ".KBQ...RN",
+      "hashNum": 637665,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 833
+    },
+    {
+      "id": 834,
+      "board": "B K . / . . Q / R . N",
+      "hash": ".KBQ..N.R",
+      "hashNum": 637745,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 834
+    },
+    {
+      "id": 835,
+      "board": "B . N / K . . / . Q R",
+      "hash": ".KBQ..R.N",
+      "hashNum": 637815,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 835
+    },
+    {
+      "id": 836,
+      "board": "B N . / K . R / . Q .",
+      "hash": ".KBQ.N.R.",
+      "hashNum": 638310,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 836
+    },
+    {
+      "id": 837,
+      "board": "B R . / K . N / . Q .",
+      "hash": ".KBQ.R.N.",
+      "hashNum": 638730,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 837
+    },
+    {
+      "id": 838,
+      "board": "B . Q / K . N / . R .",
+      "hash": ".KBR...NQ",
+      "hashNum": 645430,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 838
+    },
+    {
+      "id": 839,
+      "board": "B . N / K . Q / . R .",
+      "hash": ".KBR...QN",
+      "hashNum": 645435,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 839
+    },
+    {
+      "id": 840,
+      "board": "B K . / . . R / Q . N",
+      "hash": ".KBR..N.Q",
+      "hashNum": 645520,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 840
+    },
+    {
+      "id": 841,
+      "board": "B . N / K . . / . R Q",
+      "hash": ".KBR..Q.N",
+      "hashNum": 645555,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 841
+    },
+    {
+      "id": 842,
+      "board": "B N . / K . Q / . R .",
+      "hash": ".KBR.N.Q.",
+      "hashNum": 646080,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 842
+    },
+    {
+      "id": 843,
+      "board": "B Q . / K . N / . R .",
+      "hash": ".KBR.Q.N.",
+      "hashNum": 646290,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 843
+    },
+    {
+      "id": 844,
+      "board": "B . N / R . K / . Q .",
+      "hash": ".KNQ...RB",
+      "hashNum": 730975,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 844
+    },
+    {
+      "id": 845,
+      "board": "B Q . / . . K / R . N",
+      "hash": ".KNQ..B.R",
+      "hashNum": 730985,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 845
+    },
+    {
+      "id": 846,
+      "board": "B . N / . . K / R Q .",
+      "hash": ".KNQ..R.B",
+      "hashNum": 731125,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 846
+    },
+    {
+      "id": 847,
+      "board": "B . N / Q . K / . R .",
+      "hash": ".KNR...QB",
+      "hashNum": 738745,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 847
+    },
+    {
+      "id": 848,
+      "board": "B R . / . . K / Q . N",
+      "hash": ".KNR..B.Q",
+      "hashNum": 738760,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 848
+    },
+    {
+      "id": 849,
+      "board": "B . N / . . K / Q R .",
+      "hash": ".KNR..Q.B",
+      "hashNum": 738865,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 849
+    },
+    {
+      "id": 850,
+      "board": "B R . / . . N / Q K .",
+      "hash": ".KQN...RB",
+      "hashNum": 769855,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 850
+    },
+    {
+      "id": 851,
+      "board": "B N . / . . K / R . Q",
+      "hash": ".KQN..B.R",
+      "hashNum": 769865,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 851
+    },
+    {
+      "id": 852,
+      "board": "B . R / . . N / Q K .",
+      "hash": ".KQN..R.B",
+      "hashNum": 770005,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 852
+    },
+    {
+      "id": 853,
+      "board": "B N . / . . R / Q K .",
+      "hash": ".KQR...NB",
+      "hashNum": 785395,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 853
+    },
+    {
+      "id": 854,
+      "board": "B . N / R . . / . K Q",
+      "hash": ".KQR..B.N",
+      "hashNum": 785415,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 854
+    },
+    {
+      "id": 855,
+      "board": "B . N / . . R / Q K .",
+      "hash": ".KQR..N.B",
+      "hashNum": 785485,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 855
+    },
+    {
+      "id": 856,
+      "board": "B Q . / . . N / R K .",
+      "hash": ".KRN...QB",
+      "hashNum": 816505,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 856
+    },
+    {
+      "id": 857,
+      "board": "B N . / . . K / Q . R",
+      "hash": ".KRN..B.Q",
+      "hashNum": 816520,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 857
+    },
+    {
+      "id": 858,
+      "board": "B . Q / . . N / R K .",
+      "hash": ".KRN..Q.B",
+      "hashNum": 816625,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 858
+    },
+    {
+      "id": 859,
+      "board": "B N . / . . Q / R K .",
+      "hash": ".KRQ...NB",
+      "hashNum": 824275,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 859
+    },
+    {
+      "id": 860,
+      "board": "B . N / Q . . / . K R",
+      "hash": ".KRQ..B.N",
+      "hashNum": 824295,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 860
+    },
+    {
+      "id": 861,
+      "board": "B . N / . . Q / R K .",
+      "hash": ".KRQ..N.B",
+      "hashNum": 824365,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 861
+    },
+    {
+      "id": 862,
+      "board": "B Q . / . . N / K R .",
+      "hash": ".N.Q.RB.K",
+      "hashNum": 872030,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 862
+    },
+    {
+      "id": 863,
+      "board": "B R . / . . N / K Q .",
+      "hash": ".N.Q.RK.B",
+      "hashNum": 872065,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 863
+    },
+    {
+      "id": 864,
+      "board": "B N . / . . Q / K R .",
+      "hash": ".NBQ...RK",
+      "hashNum": 917600,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 864
+    },
+    {
+      "id": 865,
+      "board": "B N . / . . Q / R . K",
+      "hash": ".NBQ..K.R",
+      "hashNum": 917645,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 865
+    },
+    {
+      "id": 866,
+      "board": "B N . / . . Q / K . R",
+      "hash": ".NBQ..R.K",
+      "hashNum": 917750,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 866
+    },
+    {
+      "id": 867,
+      "board": "B N . / . . R / K Q .",
+      "hash": ".NBR...QK",
+      "hashNum": 925370,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 867
+    },
+    {
+      "id": 868,
+      "board": "B N . / . . R / Q . K",
+      "hash": ".NBR..K.Q",
+      "hashNum": 925420,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 868
+    },
+    {
+      "id": 869,
+      "board": "B N . / . . R / K . Q",
+      "hash": ".NBR..Q.K",
+      "hashNum": 925490,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 869
+    },
+    {
+      "id": 870,
+      "board": "B . K / R . N / . Q .",
+      "hash": ".NKQ...RB",
+      "hashNum": 964255,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 870
+    },
+    {
+      "id": 871,
+      "board": "B Q . / . . N / R . K",
+      "hash": ".NKQ..B.R",
+      "hashNum": 964265,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 871
+    },
+    {
+      "id": 872,
+      "board": "B . K / . . N / R Q .",
+      "hash": ".NKQ..R.B",
+      "hashNum": 964405,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 872
+    },
+    {
+      "id": 873,
+      "board": "B . K / Q . N / . R .",
+      "hash": ".NKR...QB",
+      "hashNum": 972025,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 873
+    },
+    {
+      "id": 874,
+      "board": "B R . / . . N / Q . K",
+      "hash": ".NKR..B.Q",
+      "hashNum": 972040,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 874
+    },
+    {
+      "id": 875,
+      "board": "B . K / . . N / Q R .",
+      "hash": ".NKR..Q.B",
+      "hashNum": 972145,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 875
+    },
+    {
+      "id": 876,
+      "board": "B R . / . . N / K . Q",
+      "hash": ".NQR..B.K",
+      "hashNum": 1065350,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 876
+    },
+    {
+      "id": 877,
+      "board": "B . Q / . . N / K R .",
+      "hash": ".NQR..K.B",
+      "hashNum": 1065385,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 877
+    },
+    {
+      "id": 878,
+      "board": "B Q . / . . N / K . R",
+      "hash": ".NRQ..B.K",
+      "hashNum": 1104230,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 878
+    },
+    {
+      "id": 879,
+      "board": "B . R / . . N / K Q .",
+      "hash": ".NRQ..K.B",
+      "hashNum": 1104265,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 879
+    },
+    {
+      "id": 880,
+      "board": "B . N / Q . . / . R K",
+      "hash": ".QBR..K.N",
+      "hashNum": 1205355,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 880
+    },
+    {
+      "id": 881,
+      "board": "B . K / Q . . / . R N",
+      "hash": ".QBR..N.K",
+      "hashNum": 1205390,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 881
+    },
+    {
+      "id": 882,
+      "board": "B . N / R . . / . Q K",
+      "hash": ".QKR..B.N",
+      "hashNum": 1251975,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 882
+    },
+    {
+      "id": 883,
+      "board": "B . N / . . R / K Q .",
+      "hash": ".QKR..N.B",
+      "hashNum": 1252045,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 883
+    },
+    {
+      "id": 884,
+      "board": "B . K / R . . / . Q N",
+      "hash": ".QNR..B.K",
+      "hashNum": 1298630,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 884
+    },
+    {
+      "id": 885,
+      "board": "B . N / . . Q / K R .",
+      "hash": ".QNR..K.B",
+      "hashNum": 1298665,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 885
+    },
+    {
+      "id": 886,
+      "board": "B . N / . . Q / K . R",
+      "hash": "B.K...NQR",
+      "hashNum": 1773065,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 886
+    },
+    {
+      "id": 887,
+      "board": "B . N / . . R / K . Q",
+      "hash": "B.K...NRQ",
+      "hashNum": 1773070,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 887
+    },
+    {
+      "id": 888,
+      "board": "B . Q / . . N / K . R",
+      "hash": "B.K...QNR",
+      "hashNum": 1773095,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 888
+    },
+    {
+      "id": 889,
+      "board": "B . K / . . . / Q R N",
+      "hash": "B.K...QRN",
+      "hashNum": 1773105,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 889
+    },
+    {
+      "id": 890,
+      "board": "B . R / . . N / K . Q",
+      "hash": "B.K...RNQ",
+      "hashNum": 1773130,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 890
+    },
+    {
+      "id": 891,
+      "board": "B . K / . . . / R Q N",
+      "hash": "B.K...RQN",
+      "hashNum": 1773135,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 891
+    },
+    {
+      "id": 892,
+      "board": "B . K / . . N / Q . R",
+      "hash": "B.K..NQ.R",
+      "hashNum": 1773725,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 892
+    },
+    {
+      "id": 893,
+      "board": "B . K / . . N / R . Q",
+      "hash": "B.K..NR.Q",
+      "hashNum": 1773760,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 893
+    },
+    {
+      "id": 894,
+      "board": "B . N / . . . / K Q R",
+      "hash": "B.K..QN.R",
+      "hashNum": 1773905,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 894
+    },
+    {
+      "id": 895,
+      "board": "B . K / . . Q / R . N",
+      "hash": "B.K..QR.N",
+      "hashNum": 1773975,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 895
+    },
+    {
+      "id": 896,
+      "board": "B . N / . . . / K R Q",
+      "hash": "B.K..RN.Q",
+      "hashNum": 1774120,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 896
+    },
+    {
+      "id": 897,
+      "board": "B . K / . . R / Q . N",
+      "hash": "B.K..RQ.N",
+      "hashNum": 1774155,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 897
+    },
+    {
+      "id": 898,
+      "board": "B . N / . Q . / K . R",
+      "hash": "B.K.Q.N.R",
+      "hashNum": 1778225,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 898
+    },
+    {
+      "id": 899,
+      "board": "B . K / . Q . / R . N",
+      "hash": "B.K.Q.R.N",
+      "hashNum": 1778295,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 899
+    },
+    {
+      "id": 900,
+      "board": "B . N / . R . / K . Q",
+      "hash": "B.K.R.N.Q",
+      "hashNum": 1779520,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 900
+    },
+    {
+      "id": 901,
+      "board": "B . K / . R . / Q . N",
+      "hash": "B.K.R.Q.N",
+      "hashNum": 1779555,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 901
+    },
+    {
+      "id": 902,
+      "board": "B N Q / . . . / K . R",
+      "hash": "B.KN..Q.R",
+      "hashNum": 1796405,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 902
+    },
+    {
+      "id": 903,
+      "board": "B N R / . . . / K . Q",
+      "hash": "B.KN..R.Q",
+      "hashNum": 1796440,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 903
+    },
+    {
+      "id": 904,
+      "board": "B Q N / . . . / K . R",
+      "hash": "B.KQ..N.R",
+      "hashNum": 1804145,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 904
+    },
+    {
+      "id": 905,
+      "board": "B . K / Q . . / R . N",
+      "hash": "B.KQ..R.N",
+      "hashNum": 1804215,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 905
+    },
+    {
+      "id": 906,
+      "board": "B R N / . . . / K . Q",
+      "hash": "B.KR..N.Q",
+      "hashNum": 1811920,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 906
+    },
+    {
+      "id": 907,
+      "board": "B . K / R . . / Q . N",
+      "hash": "B.KR..Q.N",
+      "hashNum": 1811955,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 907
+    },
+    {
+      "id": 908,
+      "board": "B . N / . . . / Q K R",
+      "hash": "B.N...QKR",
+      "hashNum": 1819745,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 908
+    },
+    {
+      "id": 909,
+      "board": "B . N / . . . / Q R K",
+      "hash": "B.N...QRK",
+      "hashNum": 1819760,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 909
+    },
+    {
+      "id": 910,
+      "board": "B . N / . . . / R K Q",
+      "hash": "B.N...RKQ",
+      "hashNum": 1819780,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 910
+    },
+    {
+      "id": 911,
+      "board": "B . N / . . . / R Q K",
+      "hash": "B.N...RQK",
+      "hashNum": 1819790,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 911
+    },
+    {
+      "id": 912,
+      "board": "B . N / . . K / Q . R",
+      "hash": "B.N..KQ.R",
+      "hashNum": 1820165,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 912
+    },
+    {
+      "id": 913,
+      "board": "B . N / . . K / R . Q",
+      "hash": "B.N..KR.Q",
+      "hashNum": 1820200,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 913
+    },
+    {
+      "id": 914,
+      "board": "B . N / . . Q / R . K",
+      "hash": "B.N..QR.K",
+      "hashNum": 1820630,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 914
+    },
+    {
+      "id": 915,
+      "board": "B . N / . . R / Q . K",
+      "hash": "B.N..RQ.K",
+      "hashNum": 1820810,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 915
+    },
+    {
+      "id": 916,
+      "board": "B . N / . K . / Q . R",
+      "hash": "B.N.K.Q.R",
+      "hashNum": 1822325,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 916
+    },
+    {
+      "id": 917,
+      "board": "B . N / . K . / R . Q",
+      "hash": "B.N.K.R.Q",
+      "hashNum": 1822360,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 917
+    },
+    {
+      "id": 918,
+      "board": "B . N / . Q . / R . K",
+      "hash": "B.N.Q.R.K",
+      "hashNum": 1824950,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 918
+    },
+    {
+      "id": 919,
+      "board": "B . N / . R . / Q . K",
+      "hash": "B.N.R.Q.K",
+      "hashNum": 1826210,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 919
+    },
+    {
+      "id": 920,
+      "board": "B . N / K . . / Q . R",
+      "hash": "B.NK..Q.R",
+      "hashNum": 1835285,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 920
+    },
+    {
+      "id": 921,
+      "board": "B . N / K . . / R . Q",
+      "hash": "B.NK..R.Q",
+      "hashNum": 1835320,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 921
+    },
+    {
+      "id": 922,
+      "board": "B . N / Q . . / K . R",
+      "hash": "B.NQ..K.R",
+      "hashNum": 1850765,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 922
+    },
+    {
+      "id": 923,
+      "board": "B . N / Q . . / R . K",
+      "hash": "B.NQ..R.K",
+      "hashNum": 1850870,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 923
+    },
+    {
+      "id": 924,
+      "board": "B . N / R . . / K . Q",
+      "hash": "B.NR..K.Q",
+      "hashNum": 1858540,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 924
+    },
+    {
+      "id": 925,
+      "board": "B . N / R . . / Q . K",
+      "hash": "B.NR..Q.K",
+      "hashNum": 1858610,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 925
+    },
+    {
+      "id": 926,
+      "board": "B . R / . . K / Q . N",
+      "hash": "B.Q...RKN",
+      "hashNum": 1866435,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 926
+    },
+    {
+      "id": 927,
+      "board": "B . R / . . N / Q . K",
+      "hash": "B.Q...RNK",
+      "hashNum": 1866440,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 927
+    },
+    {
+      "id": 928,
+      "board": "B . Q / . . K / R . N",
+      "hash": "B.Q..KR.N",
+      "hashNum": 1866855,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 928
+    },
+    {
+      "id": 929,
+      "board": "B . Q / . . N / R . K",
+      "hash": "B.Q..NR.K",
+      "hashNum": 1867070,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 929
+    },
+    {
+      "id": 930,
+      "board": "B . Q / . K . / R . N",
+      "hash": "B.Q.K.R.N",
+      "hashNum": 1869015,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 930
+    },
+    {
+      "id": 931,
+      "board": "B K N / . . . / Q . R",
+      "hash": "B.QK..N.R",
+      "hashNum": 1881905,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 931
+    },
+    {
+      "id": 932,
+      "board": "B K R / . . . / Q . N",
+      "hash": "B.QK..R.N",
+      "hashNum": 1881975,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 932
+    },
+    {
+      "id": 933,
+      "board": "B N K / . . . / Q . R",
+      "hash": "B.QN..K.R",
+      "hashNum": 1889645,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 933
+    },
+    {
+      "id": 934,
+      "board": "B N R / . . . / Q . K",
+      "hash": "B.QN..R.K",
+      "hashNum": 1889750,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 934
+    },
+    {
+      "id": 935,
+      "board": "B R K / . . . / Q . N",
+      "hash": "B.QR..K.N",
+      "hashNum": 1905195,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 935
+    },
+    {
+      "id": 936,
+      "board": "B R N / . . . / Q . K",
+      "hash": "B.QR..N.K",
+      "hashNum": 1905230,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 936
+    },
+    {
+      "id": 937,
+      "board": "B K N / . . . / R . Q",
+      "hash": "B.RK..N.Q",
+      "hashNum": 1928560,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 937
+    },
+    {
+      "id": 938,
+      "board": "B K Q / . . . / R . N",
+      "hash": "B.RK..Q.N",
+      "hashNum": 1928595,
+      "orbitSize": 8,
+      "inDeck": true,
+      "poolId": 938
+    },
+    {
+      "id": 939,
+      "board": "B N K / . . . / R . Q",
+      "hash": "B.RN..K.Q",
+      "hashNum": 1936300,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 939
+    },
+    {
+      "id": 940,
+      "board": "B N Q / . . . / R . K",
+      "hash": "B.RN..Q.K",
+      "hashNum": 1936370,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 940
+    },
+    {
+      "id": 941,
+      "board": "B Q K / . . . / R . N",
+      "hash": "B.RQ..K.N",
+      "hashNum": 1944075,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 941
+    },
+    {
+      "id": 942,
+      "board": "B Q N / . . . / R . K",
+      "hash": "B.RQ..N.K",
+      "hashNum": 1944110,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 942
+    },
+    {
+      "id": 943,
+      "board": "N . K / . B . / R . Q",
+      "hash": "K.N.B.Q.R",
+      "hashNum": 3500645,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 943
+    },
+    {
+      "id": 944,
+      "board": "N . K / . B . / Q . R",
+      "hash": "K.N.B.R.Q",
+      "hashNum": 3500680,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 944
+    },
+    {
+      "id": 945,
+      "board": "N . Q / . B . / R . K",
+      "hash": "K.Q.B.R.N",
+      "hashNum": 3547335,
+      "orbitSize": 8,
+      "inDeck": false,
+      "poolId": 945
+    }
+  ]
+}

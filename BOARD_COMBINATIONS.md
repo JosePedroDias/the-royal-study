@@ -302,10 +302,13 @@ the action is clean on the constrained set.
 of the dark-component canonical boards — the same fraction a 60-card physical
 deck would cover if it is all-dark (as the 10 known cards suggest). The
 remaining 885 canonical dark boards are available as alternates; the full
-enumeration lives in `enumerate-boards.js` / `canonical-boards.json`.
+catalog lives in `pool.json` / `POOL.md` (945 entries, one per orbit, no pars
+— pars are only meaningful per-card-deck because of carry-over, not for a
+catalog). `enumerate-boards.js` produces the raw enumeration; `generate-pool.js`
+turns it into the catalog and cross-checks the 60 deck hashes against it.
 
 **Implication for verification.** When the physical deck is available,
-`boardHash` each real card and look it up in `canonical-boards.json`: a hit
+`boardHash` each real card and look it up by `hash` in `pool.json`: a hit
 confirms the card is one of our 945 dark boards (it must be, by the
 constraint), and matching it against `cards.json`'s 60 tells us how many of
 our generated 50 are real vs. novel.
