@@ -1,12 +1,17 @@
 // generate-web.js
 //
-// Builds web/index.html from web/index.html.template by inlining the 945
-// canonical dark boards from pool.json as window.__POOL, so the web app
-// works as a static site over file:// (no fetch needed).
+// Builds docs/index.html from docs/index.html.template by inlining the 945
+// canonical dark boards from pool.json, so the web app works as a static
+// site over file:// (no fetch needed).
 //
-//   node generate-web.js   # writes web/index.html
+// Also copies royal-study-engine.js into docs/: GitHub Pages only serves
+// files inside the published folder, and the page imports it with a
+// site-relative "./royal-study-engine.js" so it resolves under the
+// /<repo>/ prefix of a project Pages site.
+//
+//   node generate-web.js   # writes docs/index.html + docs/royal-study-engine.js
 
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, copyFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -22,4 +27,6 @@ const html = template.replace(
 );
 
 writeFileSync(join(__dirname, "docs/index.html"), html);
+copyFileSync(join(__dirname, "royal-study-engine.js"), join(__dirname, "docs/royal-study-engine.js"));
 console.log(`Wrote docs/index.html (${(html.length / 1024).toFixed(1)} kb, ${pool.pool.length} boards inlined).`);
+console.log("Copied royal-study-engine.js → docs/royal-study-engine.js.");

@@ -47,9 +47,10 @@ light-square Bishop) and the constrained generators (`randomValidPlacement`,
 | `generate-cards.js` | Builds the 60-card deck: seeds the 10 deployed-site cards, fills 50 more from `randomValidPlacement` with Level-1 par in [2,9], dedups by `boardHash`. Writes `cards.json` + `CARDS.md`. |
 | `simulate-deck.js` | Plays the 60-card carry-over chain end-to-end (start → card 1 → … → card 60), reports per-step Level-1 and Level-2/3 pars. Writes `deck-simulation.json`. |
 | `play.js` | Terminal TUI: pick a level (1/2/3), study start + goal, **bid** an estimate, then play to that budget. Reveals the three pars only on completion. `npm run play`. |
-| `generate-web.js` | Builds `web/index.html` from `web/index.html.template` by inlining the 945 boards from `pool.json`, so the web app works as a static site over `file://`. `npm run web`. |
-| `web/index.html.template` | Static web app (click-based): level picker → bid → click pieces/destinations + rotate/mirror buttons → win/par reveal. Imports `royal-study-engine.js` as a module (isomorphic). |
-| `web/index.html` | Generated from the template (gitignored). Open in a browser or serve with `npx serve web/`. |
+| `generate-web.js` | Builds `docs/index.html` from `docs/index.html.template` by inlining the 945 boards from `pool.json` (static site works over `file://`), and copies `royal-study-engine.js` into `docs/` so GitHub Pages can serve it. `npm run web`. |
+| `docs/index.html.template` | Static web app (click-based): level picker → bid → click pieces/destinations + rotate/mirror buttons → win/par reveal. Imports `./royal-study-engine.js` as a module (isomorphic). |
+| `docs/index.html` | Generated from the template (committed — GitHub Pages serves `docs/` on `main`). Open locally in a browser, or serve with `npx serve docs`. Live at `https://josepedrodias.github.io/the-royal-study/`. |
+| `docs/royal-study-engine.js` | Build-time copy of the root engine, committed so Pages can serve the module import. Regenerate with `npm run web` after editing the root engine. |
 | `pool.json` / `POOL.md` | The 945 canonical dark boards — the complete universe a dark deck can draw from. Use `hash` to verify a physical card. |
 | `cards.json` / `CARDS.md` | The 60-card deck (10 `isSeed:true` confirmed real; 50 unverified). |
 | `deck-simulation.json` | Per-step carry-over pars for the 60-card chain. |
